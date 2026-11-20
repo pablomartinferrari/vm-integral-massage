@@ -4,7 +4,7 @@
     "number": "01",
     "slugs": { "en": "relaxing-massage", "es": "masaje-relajante" },
     "anchors": ["masaje-relajante", "relaxing-massage"],
-    "image": "/images/services/relaxing.png",
+    "image": "/images/services/relaxing.jpg",
     "price": null,
     "duration": null,
     "name": {
@@ -29,7 +29,7 @@
     "number": "02",
     "slugs": { "en": "decontracting-massage", "es": "masaje-descontracturante" },
     "anchors": ["masajedescontracturante", "masaje-descontracturante", "decontracting-massage"],
-    "image": "/images/services/descontracturante.png",
+    "image": "/images/services/descontracturante.jpg",
     "price": null,
     "duration": null,
     "name": {
@@ -104,7 +104,7 @@
     "number": "05",
     "slugs": { "en": "sports-massage", "es": "masaje-deportivo" },
     "anchors": ["masajedeportivo", "masaje-deportivo", "sports-massage"],
-    "image": "/images/services/sports.png",
+    "image": "/images/services/sports.jpg",
     "price": null,
     "duration": null,
     "name": {

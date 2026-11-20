@@ -13,8 +13,20 @@ const aboutQuote = testimonials.find((item) => item.id === 'alvert-escobar');
 const clinic = [
   { src: '/images/gallery/clinic-lymphatic-01.jpg', alt: t.aboutPage.galleryIntro },
   { src: '/images/gallery/clinic-lymphatic-02.jpg', alt: t.aboutPage.galleryIntro },
-  { src: '/images/shoulder-massage.jpg', alt: '' },
-  { src: '/images/couples-massage.jpg', alt: '' },
+  {
+    src: '/images/shoulder-massage.jpg',
+    alt:
+      locale === 'es'
+        ? 'Masaje de hombros en la sala de tratamiento'
+        : 'Shoulder massage in the treatment room',
+  },
+  {
+    src: '/images/couples-massage.jpg',
+    alt:
+      locale === 'es'
+        ? 'Masaje para parejas en dos camillas'
+        : 'Couples massage on two treatment tables',
+  },
 ];
 const results = [
   '/images/results/result-01.jpg',
@@ -43,25 +55,36 @@ const results = [
     </div>
   </section>
 
-  <section class="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-2 md:px-6 md:py-24">
+  <section class="mx-auto grid max-w-6xl items-start gap-10 px-4 py-16 md:grid-cols-2 md:px-6 md:py-24">
     <div class="space-y-5 text-lg leading-relaxed text-ink-soft">
       <p>{t.aboutPage.experience}</p>
       <p>{t.aboutPage.commitment}</p>
       <p>{t.aboutPage.experts}</p>
     </div>
-    {
-      aboutQuote && (
-        <blockquote class="rounded-3xl bg-ivory p-8">
-          <p class="font-serif text-2xl leading-relaxed">
-            “{locale === 'es' ? aboutQuote.quoteEs : aboutQuote.quoteEn}”
-          </p>
-          <footer class="mt-6 text-sm text-ink-soft">
-            {aboutQuote.name}
-            {aboutQuote.location ? ` · ${aboutQuote.location}` : ''}
-          </footer>
-        </blockquote>
-      )
-    }
+    <div class="space-y-6">
+      <img
+        src="/images/wellness-portrait.jpg"
+        alt={
+          locale === 'es'
+            ? 'Invitada en bata relajándose con una bebida caliente'
+            : 'Guest in a robe relaxing with a warm drink'
+        }
+        class="h-[420px] w-full rounded-3xl object-cover"
+      />
+      {
+        aboutQuote && (
+          <blockquote class="rounded-3xl bg-ivory p-8">
+            <p class="font-serif text-2xl leading-relaxed">
+              “{locale === 'es' ? aboutQuote.quoteEs : aboutQuote.quoteEn}”
+            </p>
+            <footer class="mt-6 text-sm text-ink-soft">
+              {aboutQuote.name}
+              {aboutQuote.location ? ` · ${aboutQuote.location}` : ''}
+            </footer>
+          </blockquote>
+        )
+      }
+    </div>
   </section>
 
   <section class="bg-ivory px-4 py-16 md:px-6 md:py-24">

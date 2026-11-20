@@ -39,7 +39,7 @@ const t = copy(locale);
             index % 2 === 1 && 'md:[&>img]:order-last',
           ]}
         >
-          <img src={s.image} alt="" class="h-80 w-full rounded-3xl object-cover" />
+          <img src={s.image} alt={s.name[locale]} class="h-80 w-full rounded-3xl object-cover" />
           <div>
             <p class="text-xs tracking-[0.2em] text-gold-deep">{s.number}</p>
             <h2 class="mt-2 font-serif text-4xl">{s.name[locale]}</h2>

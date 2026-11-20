@@ -25,7 +25,7 @@ const featured = testimonials.slice(0, 4);
   <section class="relative min-h-[88vh] overflow-hidden bg-night text-ivory">
     <img
       src="/images/hero.jpg"
-      alt=""
+      alt={locale === 'es' ? 'Masaje de espalda en una sala de tratamiento serena' : 'Back massage in a calm treatment room'}
       class="absolute inset-0 h-full w-full object-cover object-center"
       fetchpriority="high"
     />
@@ -57,7 +57,7 @@ const featured = testimonials.slice(0, 4);
         services.map((s) => (
           <article id={s.anchors[0]} class="group overflow-hidden rounded-3xl border border-sand bg-ivory">
             <a href={servicePath(locale, s.slugs)} class="block">
-              <img src={s.image} alt="" class="h-56 w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+              <img src={s.image} alt={s.name[locale]} class="h-56 w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
             </a>
             <div class="p-6 md:p-8">
               <p class="text-xs tracking-[0.2em] text-gold-deep">{s.number}</p>
