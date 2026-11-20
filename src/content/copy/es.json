@@ -83,8 +83,6 @@
     "locationTitle": "Nuestra nueva ubicación",
     "hoursTitle": "Horario",
     "contactTitle": "Contacto",
-    "sundayTodo": "TODO: el horario del domingo no estaba publicado en el sitio anterior.",
-    "hoursConflict": "TODO: la página de Servicios anterior indicaba lunes a viernes de 8 a.m. a 7 p.m. Inicio y Contacto indicaban 7 a.m. a 7 p.m. Este sitio usa el horario de Inicio/Contacto hasta que el estudio lo confirme.",
     "bookingNote": "Aún no hay reserva en línea. Elige WhatsApp, una llamada o el correo — las mismas vías con las que los clientes se comunican hoy."
   },
   "servicesPage": {

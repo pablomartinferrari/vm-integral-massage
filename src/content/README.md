@@ -12,4 +12,4 @@ Non-developers can update copy without touching page layouts.
 
 After editing JSON, run `npm run build` (or keep `npm run dev` running) to see changes.
 
-Do not invent prices, hours, or credentials. If a fact is unknown, keep the `TODO` wording already in the copy files.
+Hours are confirmed in `site.json`. Do not invent prices or credentials. If a fact is unknown, keep the `TODO` wording already in the copy files.

@@ -1,6 +1,5 @@
 ---
 import Base from '../../layouts/Base.astro';
-import TodoNote from '../TodoNote.astro';
 import { copy, site } from '../../lib/content';
 import { tPath, whatsappUrl, type Locale } from '../../lib/i18n';
 
@@ -48,8 +47,6 @@ const t = copy(locale);
             ))
           }
         </ul>
-        <TodoNote text={t.contactPage.sundayTodo} />
-        <TodoNote text={t.contactPage.hoursConflict} />
       </div>
       <div>
         <p class="text-xs tracking-[0.2em] uppercase text-gold-deep">{t.contactPage.contactTitle}</p>

@@ -83,8 +83,6 @@
     "locationTitle": "Our new location",
     "hoursTitle": "Hours",
     "contactTitle": "Contact",
-    "sundayTodo": "TODO: Sunday hours were not published on the previous website.",
-    "hoursConflict": "TODO: The previous Services page listed Monday–Friday as 8am–7pm. Home and Contact listed 7am–7pm. This site uses the Home/Contact hours until the studio confirms.",
     "bookingNote": "There is no online checkout yet. Choose WhatsApp, a phone call, or email — the same ways clients reach the studio today."
   },
   "servicesPage": {

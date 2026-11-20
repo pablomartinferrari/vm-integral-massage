@@ -26,11 +26,12 @@
     {
       "daysEn": "Monday–Friday",
       "daysEs": "Lunes a viernes",
-      "opens": "07:00",
+      "opens": "08:00",
       "closes": "19:00",
-      "displayEn": "7:00am–7:00pm",
-      "displayEs": "7:00 a.m.–7:00 p.m.",
-      "schemaDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+      "displayEn": "8:00am–7:00pm",
+      "displayEs": "8:00 a.m.–7:00 p.m.",
+      "schemaDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "schemaHours": "Mo-Fr 08:00-19:00"
     },
     {
       "daysEn": "Saturday",
@@ -39,10 +40,21 @@
       "closes": "14:00",
       "displayEn": "8:00am–2:00pm",
       "displayEs": "8:00 a.m.–2:00 p.m.",
-      "schemaDays": ["Saturday"]
+      "schemaDays": ["Saturday"],
+      "schemaHours": "Sa 08:00-14:00"
+    },
+    {
+      "daysEn": "Sunday",
+      "daysEs": "Domingo",
+      "opens": null,
+      "closes": null,
+      "displayEn": "Closed",
+      "displayEs": "Cerrado",
+      "schemaDays": ["Sunday"],
+      "schemaHours": null
     }
   ],
-  "hoursSource": "Home and Contact pages of the previous WordPress site (Mon–Fri 7am–7pm, Sat 8am–2pm).",
+  "hoursSource": "Confirmed by the owner: Monday–Friday 8:00am–7:00pm, Saturday 8:00am–2:00pm, Sunday closed.",
   "googleRatingClaim": "5.0",
   "experienceYearsClaim": 17,
   "oldWordPressPages": {

@@ -47,6 +47,15 @@ const year = new Date().getFullYear();
         <p>
           <a class="hover:text-gold" href={`mailto:${site.email}`}>{site.email}</a>
         </p>
+        <ul class="space-y-1 pt-2 text-ivory/70">
+          {
+            site.hours.map((h) => (
+              <li>
+                {locale === 'es' ? h.daysEs : h.daysEn}: {locale === 'es' ? h.displayEs : h.displayEn}
+              </li>
+            ))
+          }
+        </ul>
         <p class="flex gap-4 pt-2">
           <a class="hover:text-gold" href={site.social.instagram} rel="noopener noreferrer">Instagram</a>
           <a class="hover:text-gold" href={site.social.facebook} rel="noopener noreferrer">Facebook</a>

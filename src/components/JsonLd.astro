@@ -34,12 +34,15 @@ const data = {
   hasMap: site.mapsUrl,
   sameAs: [site.social.facebook, site.social.instagram],
   areaServed: ['Kissimmee', 'Orlando', 'Osceola County', 'Florida'],
-  openingHoursSpecification: site.hours.map((h) => ({
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: h.schemaDays,
-    opens: h.opens,
-    closes: h.closes,
-  })),
+  openingHours: site.hours.map((h) => h.schemaHours).filter((value): value is string => Boolean(value)),
+  openingHoursSpecification: site.hours
+    .filter((h) => h.opens && h.closes)
+    .map((h) => ({
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: h.schemaDays,
+      opens: h.opens,
+      closes: h.closes,
+    })),
   contactPoint: [
     {
       '@type': 'ContactPoint',
