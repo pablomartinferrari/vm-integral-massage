@@ -1,0 +1,16 @@
+---
+import ServiceDetailPage from '../../../components/pages/ServiceDetailPage.astro';
+import { services, serviceBySlug } from '../../../lib/content';
+
+export function getStaticPaths() {
+  return services.map((service) => ({
+    params: { slug: service.slugs.es },
+    props: { service },
+  }));
+}
+
+const { service } = Astro.props;
+const resolved = service ?? serviceBySlug('es', Astro.params.slug ?? '');
+if (!resolved) throw new Error('Unknown service');
+---
+<ServiceDetailPage locale="es" service={resolved} />

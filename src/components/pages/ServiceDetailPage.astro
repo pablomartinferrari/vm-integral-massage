@@ -1,0 +1,60 @@
+---
+import Base from '../../layouts/Base.astro';
+import CtaBand from '../CtaBand.astro';
+import TodoNote from '../TodoNote.astro';
+import { copy, type Service } from '../../lib/content';
+import { servicePath, tPath, type Locale } from '../../lib/i18n';
+
+interface Props {
+  locale: Locale;
+  service: Service;
+}
+const { locale, service } = Astro.props;
+const t = copy(locale);
+const otherLocale: Locale = locale === 'en' ? 'es' : 'en';
+---
+
+<Base
+  locale={locale}
+  page="services"
+  title={service.name[locale]}
+  description={service.summary[locale]}
+  canonicalPath={servicePath(locale, service.slugs)}
+  alternatePath={servicePath(otherLocale, service.slugs)}
+>
+  <section class="relative overflow-hidden bg-night text-ivory">
+    <img src={service.image} alt="" class="absolute inset-0 h-full w-full object-cover opacity-40" />
+    <div class="relative mx-auto max-w-4xl px-4 py-20 md:px-6 md:py-28">
+      <p class="text-xs tracking-[0.25em] uppercase text-gold">{service.number} · {t.nav.services}</p>
+      <h1 class="mt-4 font-serif text-5xl md:text-6xl">{service.name[locale]}</h1>
+    </div>
+  </section>
+
+  <article class="mx-auto max-w-3xl px-4 py-16 md:px-6">
+    <p class="whitespace-pre-line text-lg leading-relaxed text-ink-soft">{service.body[locale]}</p>
+    <dl class="mt-10 grid gap-4 sm:grid-cols-2">
+      <div class="rounded-2xl border border-sand bg-ivory p-5">
+        <dt class="text-xs tracking-[0.2em] uppercase text-gold-deep">{t.servicesPage.priceLabel}</dt>
+        <dd class="mt-2">
+          <span class="todo-chip">{t.todo.label}</span>
+          <p class="mt-2 text-sm text-ink-soft">{t.servicesPage.priceTodo}</p>
+        </dd>
+      </div>
+      <div class="rounded-2xl border border-sand bg-ivory p-5">
+        <dt class="text-xs tracking-[0.2em] uppercase text-gold-deep">{t.servicesPage.durationLabel}</dt>
+        <dd class="mt-2">
+          <span class="todo-chip">{t.todo.label}</span>
+          <p class="mt-2 text-sm text-ink-soft">{t.servicesPage.durationTodo}</p>
+        </dd>
+      </div>
+    </dl>
+    <TodoNote text={t.servicesPage.askToBook} />
+    <p class="mt-8">
+      <a class="text-sm tracking-[0.14em] uppercase text-gold-deep" href={tPath(locale, 'services')}>
+        ← {t.servicesPage.back}
+      </a>
+    </p>
+  </article>
+
+  <CtaBand locale={locale} />
+</Base>

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "relaxing",
+    "number": "01",
+    "slugs": { "en": "relaxing-massage", "es": "masaje-relajante" },
+    "anchors": ["masaje-relajante", "relaxing-massage"],
+    "image": "/images/services/relaxing.png",
+    "price": null,
+    "duration": null,
+    "name": {
+      "en": "Relaxing Massage | Anti-Stress",
+      "es": "Masaje Relajante | Anti-Estrés"
+    },
+    "shortName": {
+      "en": "Relaxing Massage",
+      "es": "Masaje Relajante"
+    },
+    "summary": {
+      "en": "A calming massage that helps turn stress, fatigue, and negative energy into restoration — easing muscle tension, supporting circulation, and encouraging the body’s own sense of relief.",
+      "es": "El principal objetivo del Masaje Relajante para nuestros clientes es transformar su energía negativa, estrés y cansancio en energía positiva."
+    },
+    "body": {
+      "en": "The main goal of our Relaxing Massage is to help clients transform negative energy, stress, and fatigue into positive energy. People who seek this service are often stressed and exhausted, needing to release and heal.\n\nOur work focuses on reducing stress, pain, and tension in the muscles, which can lower heart rate and blood pressure, improve circulation, and promote the production of endorphins — so beneficial for the body.",
+      "es": "El principal objetivo del Masaje Relajante para nuestros clientes es transformar su energía negativa, estrés y cansancio en energía positiva. Las personas que buscan este tipo de servicio generalmente están estresadas y agotadas, necesitando liberar y sanar.\n\nNuestro trabajo se enfoca en reducir el estrés, el dolor y la tensión en los músculos, disminuyendo así la frecuencia cardiaca y la presión arterial, mejorando la circulación y promoviendo la producción de endorfinas, las cuales son tan beneficiosas para el organismo."
+    }
+  },
+  {
+    "id": "decontracting",
+    "number": "02",
+    "slugs": { "en": "decontracting-massage", "es": "masaje-descontracturante" },
+    "anchors": ["masajedescontracturante", "masaje-descontracturante", "decontracting-massage"],
+    "image": "/images/services/descontracturante.png",
+    "price": null,
+    "duration": null,
+    "name": {
+      "en": "Decontracting Massage",
+      "es": "Masaje Descontracturante"
+    },
+    "shortName": {
+      "en": "Decontracting Massage",
+      "es": "Masaje Descontracturante"
+    },
+    "summary": {
+      "en": "A more intense massage using techniques on the superficial and deep layers of muscle — indicated for contractions, strains, and pain in general.",
+      "es": "Un masaje más intenso que utiliza técnicas de manipulación de las capas superficiales y profundas de los músculos. Indicado para tratar contracciones musculares, distensiones y el dolor en general."
+    },
+    "body": {
+      "en": "Decontracting Massage uses techniques that work the superficial and deep layers of the muscles. The massage is more intense, and it is indicated for treating muscle contractions, strains, and pain in general.\n\nIf a client has a specific pain — for example in the lower back, the neck, and so on — we apply slow, deep internal pressure that reaches the muscle and connective tissues, promoting blood flow, reducing inflammation, and relieving pain.",
+      "es": "El Masaje Descontracturante es un masaje que utiliza técnicas de manipulación de las capas superficiales y profundas de los músculos. El masaje es más intenso, y es el indicado para tratar contracciones musculares, las distensiones y el dolor en general.\n\nSi un cliente tiene un dolor específico, como por ejemplo dolor en la parte baja de la espalda, en el cuello, etc., hacemos una presión interna profunda con movimientos lentos, que penetra al músculo y los tejidos conectivos, promoviendo el flujo sanguíneo, reduciendo la inflamación y aliviando el dolor."
+    }
+  },
+  {
+    "id": "post-operative",
+    "number": "03",
+    "slugs": { "en": "post-operative-massage", "es": "masaje-post-operatorio" },
+    "anchors": ["masajepostoperatorio", "masaje-post-operatorio", "post-operative-massage"],
+    "image": "/images/services/post-operative.jpg",
+    "price": null,
+    "duration": null,
+    "name": {
+      "en": "Post-Operative Massage",
+      "es": "Masaje Post Operatorio"
+    },
+    "shortName": {
+      "en": "Post-Operative Massage",
+      "es": "Masaje Post Operatorio"
+    },
+    "summary": {
+      "en": "Recommended by plastic surgeons during recovery after procedures such as liposuction, abdominoplasty, fat transfer, breast augmentation, and facelift — helping drain accumulated fluids and reduce swelling, bruising, fibrosis, and adhesions.",
+      "es": "Recomendado por cirujanos plásticos durante la recuperación a pacientes que se realizaron liposucción, abdominoplastia, transferencia de grasa corporal, aumento de senos, lifting facial, etc."
+    },
+    "body": {
+      "en": "Recommended by plastic surgeons during recovery for patients who have had liposuction, abdominoplasty, body-fat transfer, breast augmentation, facelift, and similar procedures. This massage helps drain fluids accumulated in surgical areas, reducing inflammation, bruising, fibrosis, adhesions, and more.\n\nA course of 10 to 20 lymphatic drainage massages (minimum) is recommended, because this process can substantially shorten recovery time and noticeably improve results.",
+      "es": "Recomendado por cirujanos plásticos durante la recuperación a pacientes que se realizaron liposucción, abdominoplastia, transferencia de grasa corporal, aumento de senos, lifting facial, etc. Este masaje ayuda a drenar los líquidos acumulados en las áreas quirúrgicas, reduciendo así la inflamación, hematomas, fibrosis, las adherencias, etc.\n\nSe recomienda, de 10 a 20 masajes de drenaje linfático (como mínimo), dado que este proceso disminuye en gran porcentaje el tiempo de recuperación, mejorando notablemente los resultados."
+    }
+  },
+  {
+    "id": "lymphatic",
+    "number": "04",
+    "slugs": { "en": "lymphatic-drainage", "es": "drenaje-linfatico" },
+    "anchors": ["drenajelinfatico", "drenaje-linfatico", "masajelinfatico", "lymphatic-drainage"],
+    "image": "/images/services/lymphatic.jpg",
+    "price": null,
+    "duration": null,
+    "name": {
+      "en": "Lymphatic Drainage",
+      "es": "Drenaje Linfático"
+    },
+    "shortName": {
+      "en": "Lymphatic Drainage",
+      "es": "Drenaje Linfático"
+    },
+    "summary": {
+      "en": "A gentle, superficial massage complemented with pressotherapy (air-compression boots on the legs to stimulate circulation) and ultrasound to support recovery — a detoxifying massage that helps the body eliminate waste and toxins.",
+      "es": "Un masaje suave y superficial, que se complementa con presoterapia (bota de compresión de aire en las piernas que estimula la circulación) y ultrasonidos para acelerar la recuperación."
+    },
+    "body": {
+      "en": "Lymphatic drainage is a gentle, superficial massage, complemented with pressotherapy (an air-compression boot on the legs that stimulates circulation) and ultrasound to speed recovery. This is a detoxifying massage that helps eliminate waste and toxins from the body.",
+      "es": "El drenaje linfático es un masaje suave y superficial, que se complementa con presoterapia (bota de compresión de aire en las piernas que estimula la circulación) y ultrasonidos para acelerar la recuperación. Este es un masaje de desintoxicación que ayuda a eliminar desechos, toxinas de nuestro organismo."
+    }
+  },
+  {
+    "id": "sports",
+    "number": "05",
+    "slugs": { "en": "sports-massage", "es": "masaje-deportivo" },
+    "anchors": ["masajedeportivo", "masaje-deportivo", "sports-massage"],
+    "image": "/images/services/sports.png",
+    "price": null,
+    "duration": null,
+    "name": {
+      "en": "Sports Massage",
+      "es": "Masaje Deportivo"
+    },
+    "shortName": {
+      "en": "Sports Massage",
+      "es": "Masaje Deportivo"
+    },
+    "summary": {
+      "en": "Prepares the athlete for competition by oxygenating the muscles and supporting flexibility, and helps with recovery afterward by reducing the lactic acid accumulated during sport or training.",
+      "es": "Prepara al deportista para la competencia, oxigenando los músculos y aportando flexibilidad. También ayuda en su recuperación y descarga de los músculos."
+    },
+    "body": {
+      "en": "Sports Massage is intended to prepare the athlete for competition, oxygenating the muscles and supporting flexibility. It also helps with recovery and unloading of the muscles, reducing the lactic acid the athlete has accumulated while practicing a sport or after training or competition.\n\nThis massage is among the physiotherapy techniques most valued by athletes, helping them recover their physical performance.",
+      "es": "El Masaje Deportivo tiene como objetivo preparar al deportista para la competencia, oxigenando los músculos y aportando flexibilidad. También ayuda en su recuperación y descarga de los músculos, reduciendo el ácido láctico que el atleta ha acumulado mientras practicaba un deporte o después de un entrenamiento o competencia.\n\nEste masaje está tal vez dentro de las técnicas fisioterapéuticas más apreciadas por el deportista, ayudando a recuperar su rendimiento físico."
+    }
+  },
+  {
+    "id": "recovery",
+    "number": "06",
+    "slugs": { "en": "muscle-recovery", "es": "recuperacion-muscular" },
+    "anchors": ["recuperacionmuscular", "recuperacion-muscular", "muscle-recovery"],
+    "image": "/images/services/recovery.jpg",
+    "price": null,
+    "duration": null,
+    "name": {
+      "en": "Muscle Recovery",
+      "es": "Recuperación Muscular"
+    },
+    "shortName": {
+      "en": "Muscle Recovery",
+      "es": "Recuperación Muscular"
+    },
+    "summary": {
+      "en": "Indicated for muscle tears, specific upper and lower back pain, sciatic nerve discomfort, and similar concerns — focused on the injured area to help ease pain, stiffness, and swelling.",
+      "es": "Indicado para tratar el desgarro, el dolor específico de espalda baja y alta, el nervio ciático, y más. Se enfoca en el área de la lesión para aliviar dolor, rigidez e inflamación."
+    },
+    "body": {
+      "en": "Muscle Recovery Massage is indicated for treating tears, specific pain in the lower and upper back, the sciatic nerve, and similar issues. This massage focuses on the area of the injury, helping to relieve the symptoms it causes — which may include pain, stiffness, swelling, inflammation, and more.",
+      "es": "El Masaje de Recuperación Muscular es indicado para tratar el desgarro, el dolor específico de espalda baja y alta; el nervio ciático; etc. Este masaje se enfoca en tratar el área donde se encuentra la lesión ayudando a aliviar los síntomas provocados por la lesión, los cuales pueden ser dolor, rigidez, hinchazón, inflamación, etc."
+    }
+  }
+]

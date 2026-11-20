@@ -1,0 +1,120 @@
+---
+import Base from '../../layouts/Base.astro';
+import CtaBand from '../CtaBand.astro';
+import { copy, site, services, testimonials } from '../../lib/content';
+import { servicePath, tPath, whatsappUrl, type Locale } from '../../lib/i18n';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = copy(locale);
+const featured = testimonials.slice(0, 4);
+---
+
+<Base
+  locale={locale}
+  page="home"
+  title={t.meta.homeTitle}
+  description={t.meta.homeDescription}
+  canonicalPath={tPath(locale, 'home')}
+  alternatePath={tPath(locale === 'en' ? 'es' : 'en', 'home')}
+>
+  <section class="relative min-h-[88vh] overflow-hidden bg-night text-ivory">
+    <img
+      src="/images/hero.jpg"
+      alt=""
+      class="absolute inset-0 h-full w-full object-cover object-center"
+      fetchpriority="high"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-night/85 via-night/55 to-night/25"></div>
+    <div class="relative mx-auto flex min-h-[88vh] max-w-6xl flex-col justify-end px-4 pb-16 pt-28 md:px-6 md:pb-24">
+      <p class="text-xs tracking-[0.28em] uppercase text-gold">{t.hero.eyebrow}</p>
+      <h1 class="mt-4 max-w-3xl font-serif text-4xl leading-tight md:text-6xl">{t.hero.title}</h1>
+      <p class="mt-6 max-w-xl text-base text-ivory/80 md:text-lg">{t.hero.lede}</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a
+          class="rounded-full bg-gold px-6 py-3 text-sm tracking-[0.14em] uppercase text-night hover:bg-gold-deep hover:text-cream"
+          href={whatsappUrl(site.whatsapp, t.cta.whatsappPrefill)}>{t.cta.bookWhatsApp}</a
+        >
+        <a
+          class="rounded-full border border-ivory/40 px-6 py-3 text-sm tracking-[0.14em] uppercase hover:border-gold hover:text-gold"
+          href={tPath(locale, 'services')}>{t.cta.viewServices}</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
+    <p class="text-xs tracking-[0.25em] uppercase text-gold-deep">{t.attention.eyebrow}</p>
+    <div class="gold-rule mt-4"></div>
+    <h2 class="mt-5 max-w-2xl font-serif text-4xl md:text-5xl">{t.attention.title}</h2>
+    <p class="mt-4 max-w-2xl text-ink-soft">{t.attention.intro}</p>
+    <div class="mt-12 grid gap-8 md:grid-cols-2">
+      {
+        services.map((s) => (
+          <article id={s.anchors[0]} class="group overflow-hidden rounded-3xl border border-sand bg-ivory">
+            <a href={servicePath(locale, s.slugs)} class="block">
+              <img src={s.image} alt="" class="h-56 w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+            </a>
+            <div class="p-6 md:p-8">
+              <p class="text-xs tracking-[0.2em] text-gold-deep">{s.number}</p>
+              <h3 class="mt-2 font-serif text-3xl">
+                <a href={servicePath(locale, s.slugs)} class="hover:text-gold-deep">
+                  {s.name[locale]}
+                </a>
+              </h3>
+              <p class="mt-3 text-sm leading-relaxed text-ink-soft">{s.summary[locale]}</p>
+              <p class="mt-5">
+                <a class="text-sm tracking-[0.12em] uppercase text-gold-deep" href={servicePath(locale, s.slugs)}>
+                  {t.servicesPage.detailCta} →
+                </a>
+              </p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="bg-ivory">
+    <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-2 md:px-6 md:py-24">
+      <img
+        src="/images/gallery/clinic-lymphatic-01.jpg"
+        alt={locale === 'es' ? 'Drenaje linfático con presoterapia en el estudio' : 'Lymphatic drainage with pressotherapy in the studio'}
+        class="h-[420px] w-full rounded-3xl object-cover"
+      />
+      <div>
+        <p class="text-xs tracking-[0.25em] uppercase text-gold-deep">{t.aboutPreview.eyebrow}</p>
+        <h2 class="mt-4 font-serif text-4xl">{t.aboutPreview.title}</h2>
+        <p class="mt-5 leading-relaxed text-ink-soft">{t.aboutPreview.body}</p>
+        <a class="mt-6 inline-block text-sm tracking-[0.14em] uppercase text-gold-deep" href={tPath(locale, 'about')}>
+          {t.aboutPreview.link} →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
+    <p class="text-xs tracking-[0.25em] uppercase text-gold-deep">{t.reviews.eyebrow}</p>
+    <h2 class="mt-4 font-serif text-4xl">{t.reviews.title}</h2>
+    <p class="mt-3 max-w-2xl text-sm text-ink-soft">{t.reviews.source}</p>
+    <div class="mt-10 grid gap-6 md:grid-cols-2">
+      {
+        featured.map((review) => (
+          <blockquote class="rounded-3xl border border-sand bg-cream p-6 md:p-8">
+            <p class="font-serif text-xl leading-relaxed">
+              “{locale === 'es' ? review.quoteEs : review.quoteEn}”
+            </p>
+            <footer class="mt-5 text-sm text-ink-soft">
+              {review.name}
+              {review.location ? ` · ${review.location}` : ''}
+            </footer>
+          </blockquote>
+        ))
+      }
+    </div>
+  </section>
+
+  <CtaBand locale={locale} heading={t.nav.bookNow} />
+</Base>

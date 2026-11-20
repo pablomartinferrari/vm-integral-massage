@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "siteTitle": "VM Integral Massage | Masajes terapéuticos en Kissimmee, FL",
+    "homeTitle": "Masajes terapéuticos en Kissimmee",
+    "homeDescription": "VM Integral Massage ofrece masaje relajante, descontracturante, post operatorio, drenaje linfático, masaje deportivo y recuperación muscular en Kissimmee, Florida. Reserva por WhatsApp, teléfono o correo.",
+    "aboutTitle": "Quiénes somos — Maria Victoria Malacre",
+    "aboutDescription": "VM Integral Massage Inc. fue fundada en 2021 por Maria Victoria Malacre en Kissimmee, Florida. Más de 17 años de experiencia en masajes terapéuticos.",
+    "servicesTitle": "Servicios de masaje terapéutico",
+    "servicesDescription": "Masaje relajante anti-estrés, descontracturante, post operatorio, drenaje linfático con presoterapia, masaje deportivo y recuperación muscular en Kissimmee, FL.",
+    "contactTitle": "Haz tu cita",
+    "contactDescription": "Visita VM Integral Massage en 211 Broadway, Kissimmee, FL 34741. Llama al +1 407-388-4928, WhatsApp, o escribe a info@vmintegralmassage.com.",
+    "journalTitle": "Diario",
+    "journalDescription": "Notas de VM Integral Massage en Kissimmee, Florida.",
+    "privacyTitle": "Privacidad",
+    "privacyDescription": "Cómo VM Integral Massage trata la información que compartes al reservar por teléfono, WhatsApp o correo.",
+    "notFoundTitle": "Página no encontrada",
+    "ogLocale": "es_US",
+    "ogLocaleAlt": "en_US"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "journal": "Diario",
+    "privacy": "Privacidad",
+    "bookNow": "Haz tu cita",
+    "menu": "Menú",
+    "close": "Cerrar menú",
+    "skip": "Saltar al contenido",
+    "language": "Idioma",
+    "languageName": "Español",
+    "otherLanguage": "English"
+  },
+  "cta": {
+    "bookWhatsApp": "Reservar por WhatsApp",
+    "call": "Llamar",
+    "email": "Correo",
+    "whatsapp": "WhatsApp",
+    "viewServices": "Ver servicios",
+    "getDirections": "Cómo llegar",
+    "whatsappPrefill": "Hola, me gustaría reservar un masaje en VM Integral Massage."
+  },
+  "hero": {
+    "eyebrow": "Kissimmee, Florida",
+    "title": "El masaje no es un lujo, es una necesidad en los tiempos que vivimos.",
+    "lede": "Descubre el poder del masaje con VM Integral Massage Inc. Cuidado terapéutico para el estrés, la recuperación y el post operatorio — en un estudio calmado en Broadway.",
+    "secondary": "Reserva por WhatsApp, teléfono o correo. Confirmamos tu cita en persona."
+  },
+  "attention": {
+    "eyebrow": "Masajes terapéuticos",
+    "title": "Presta atención a nuestros servicios",
+    "intro": "Seis tratamientos, descritos con las palabras del estudio. Los precios y la duración de las sesiones aún no están publicados — consúltanos al reservar."
+  },
+  "aboutPreview": {
+    "eyebrow": "Quiénes somos",
+    "title": "Un estudio nacido del trabajo que Maria Victoria ama",
+    "body": "VM Integral Massage Inc. fue fundada en el año 2021 por Maria Victoria Malacre, siendo prueba de que cuando tu trabajo te apasiona, la satisfacción y la lealtad de tus clientes es tu recompensa.",
+    "link": "Conoce nuestra historia"
+  },
+  "aboutPage": {
+    "eyebrow": "Sepa más sobre",
+    "title": "Quiénes somos",
+    "studio": "VM Integral Massage, INC",
+    "tagline": "Donde puedes relajarte y disfrutar.",
+    "experience": "En VM Integral Massage, contamos con más de 17 años de experiencia en masajes terapéuticos para el tratamiento de diversos dolores corporales. Nuestro enfoque es mejorar la salud, el bienestar físico y la calidad de vida de nuestros clientes.",
+    "commitment": "Nuestro compromiso es brindar un servicio de alta calidad, priorizando al cliente mediante el masaje integral, acompañado del respeto, valor y cuidado que el cliente necesita.",
+    "experts": "Somos también expertos en masajes de drenaje linfático.",
+    "missionTitle": "Nuestra misión",
+    "mission1": "Porque amamos nuestro trabajo, estamos comprometidos con el bienestar de nuestros clientes. Nos tomamos el tiempo para conocer las necesidades individuales y el estado de salud de cada cliente, creando un clima de confianza y una experiencia personalizada enfocada en su salud física y emocional.",
+    "mission2": "Ofrecemos a nuestros clientes terapia de relajación, masajes de drenaje linfático postoperatorio, masajes para terapia de lesiones, etc. En cada servicio, nuestros clientes reciben una atención amable, profesional, personalizada, y de alta calidad.",
+    "mission3": "Las reseñas de nuestros clientes sobre la terapia de masaje y los servicios que brindamos tienen ‘5.0 estrellas’ en Google. Esto es testimonio de satisfacción y prueba de nuestra experiencia, integridad y excelente servicio.",
+    "galleryTitle": "Galería de fotos",
+    "galleryIntro": "Fotografías de la sala de tratamiento, incluido el drenaje linfático con presoterapia.",
+    "resultsTitle": "Resultados post operatorios",
+    "resultsIntro": "Fotografías de antes y después publicadas en la página Nosotros del sitio anterior. Muestran recuperación post operatoria real; algunas incluyen desnudez clínica con las flores que ya había colocado el estudio.",
+    "resultsNote": "Estas fotos se copiaron de la galería pública de WordPress. En la biblioteca de medios anterior quedan más archivos si más adelante se desea un conjunto mayor."
+  },
+  "contactPage": {
+    "eyebrow": "Contáctanos",
+    "title": "Qué estás esperando...",
+    "lede": "Haz tu cita. Respondemos por WhatsApp, teléfono o correo.",
+    "locationTitle": "Nuestra nueva ubicación",
+    "hoursTitle": "Horario",
+    "contactTitle": "Contacto",
+    "sundayTodo": "TODO: el horario del domingo no estaba publicado en el sitio anterior.",
+    "hoursConflict": "TODO: la página de Servicios anterior indicaba lunes a viernes de 8 a.m. a 7 p.m. Inicio y Contacto indicaban 7 a.m. a 7 p.m. Este sitio usa el horario de Inicio/Contacto hasta que el estudio lo confirme.",
+    "bookingNote": "Aún no hay reserva en línea. Elige WhatsApp, una llamada o el correo — las mismas vías con las que los clientes se comunican hoy."
+  },
+  "servicesPage": {
+    "eyebrow": "Nuestros servicios",
+    "title": "VM Integral Massage",
+    "lede": "Masajes terapéuticos en el estudio de Kissimmee. Entra a cada servicio para leer la descripción completa.",
+    "detailCta": "Ver detalle",
+    "priceLabel": "Precio",
+    "durationLabel": "Duración",
+    "priceTodo": "TODO: el precio no estaba publicado en el sitio anterior",
+    "durationTodo": "TODO: la duración de la sesión no estaba publicada en el sitio anterior",
+    "askToBook": "Consúltanos al reservar — confirmamos disponibilidad, duración y precio contigo.",
+    "back": "Todos los servicios"
+  },
+  "journalPage": {
+    "eyebrow": "Diario",
+    "title": "Notas del estudio",
+    "empty": "Todavía no hay artículos publicados. El sitio de WordPress solo tenía la entrada predeterminada “Hello world!”, que no era contenido del estudio, así que no se republica aquí.",
+    "todo": "TODO: añade la primera nota del diario cuando tengas una historia, una oferta o un consejo de recuperación para compartir."
+  },
+  "privacyPage": {
+    "eyebrow": "Privacidad",
+    "title": "Privacidad",
+    "intro": "VM Integral Massage Inc. es un estudio local de masajes. Esta página describe cómo tratamos la información que eliges enviar al reservar.",
+    "body1": "Las citas se solicitan por WhatsApp, teléfono o correo. Usamos el nombre, teléfono y mensaje que envías solo para responderte y agendar tu atención.",
+    "body2": "Este sitio no incluye cuentas ni una base de datos de reservas. Elegir inglés o español simplemente abre las páginas correspondientes.",
+    "body3": "TODO: pide a un abogado de Florida que revise esta página antes de tratarla como aviso de privacidad legal. Aún no hay formularios de pago ni listas de correo conectados.",
+    "contact": "Preguntas: info@vmintegralmassage.com o +1 407-388-4928."
+  },
+  "reviews": {
+    "eyebrow": "De nuestros clientes",
+    "title": "Palabras que ya estaban en el sitio",
+    "source": "Mostradas en la portada anterior mediante un widget de reseñas de Google, más una cita de la página Nosotros. Se conservan nombres y wording; las citas en inglés se traducen en esta página."
+  },
+  "footer": {
+    "blurb": "VM Integral Massage Inc. fue fundada en el año 2021 por Maria Victoria Malacre, siendo prueba de que cuando tu trabajo te apasiona, la satisfacción y la lealtad de tus clientes es tu recompensa.",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "copyright": "VM Integral Massage Inc.",
+    "rights": "Masajes terapéuticos en Kissimmee, Florida."
+  },
+  "todo": {
+    "label": "TODO"
+  },
+  "notFound": {
+    "title": "Esta página no está aquí",
+    "body": "La dirección puede haber cambiado al salir de WordPress. Prueba el menú, o reserva con nosotros directamente.",
+    "home": "Volver al inicio"
+  },
+  "assistant": {
+    "label": "Asistente del estudio",
+    "placeholder": "Más adelante vivirá aquí un chat para preguntas sobre servicios, precios, horario y reservas. Todavía no está conectado."
+  }
+}

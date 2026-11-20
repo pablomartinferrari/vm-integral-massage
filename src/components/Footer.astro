@@ -1,0 +1,64 @@
+---
+import { copy, site, services } from '../lib/content';
+import { servicePath, tPath, type Locale } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = copy(locale);
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-night pb-24 pt-16 text-ivory/80 md:pb-12">
+  <div class="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-3 md:px-6">
+    <div>
+      <img
+        src="/images/brand/logo-on-black.jpg"
+        alt=""
+        width="88"
+        height="88"
+        class="mb-4 h-20 w-20 rounded-full object-cover ring-1 ring-gold/30"
+      />
+      <p class="font-serif text-2xl text-ivory">{site.brandName}</p>
+      <p class="mt-4 max-w-sm text-sm leading-relaxed text-ivory/70">{t.footer.blurb}</p>
+    </div>
+    <div>
+      <p class="text-xs tracking-[0.2em] uppercase text-gold">{t.footer.services}</p>
+      <ul class="mt-4 space-y-2 text-sm">
+        {
+          services.map((s) => (
+            <li>
+              <a class="hover:text-gold" href={servicePath(locale, s.slugs)}>
+                {s.shortName[locale]}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div>
+      <p class="text-xs tracking-[0.2em] uppercase text-gold">{t.footer.contact}</p>
+      <address class="mt-4 space-y-2 text-sm not-italic">
+        <p>{site.address.full}</p>
+        <p>
+          <a class="hover:text-gold" href={`tel:${site.phoneTel}`}>{site.phoneDisplay}</a>
+        </p>
+        <p>
+          <a class="hover:text-gold" href={`mailto:${site.email}`}>{site.email}</a>
+        </p>
+        <p class="flex gap-4 pt-2">
+          <a class="hover:text-gold" href={site.social.instagram} rel="noopener noreferrer">Instagram</a>
+          <a class="hover:text-gold" href={site.social.facebook} rel="noopener noreferrer">Facebook</a>
+        </p>
+      </address>
+    </div>
+  </div>
+  <div class="mx-auto mt-12 flex max-w-6xl flex-wrap items-center justify-between gap-3 border-t border-white/10 px-4 pt-6 text-xs text-ivory/50 md:px-6">
+    <p>© {year} {t.footer.copyright} · {t.footer.rights}</p>
+    <div class="flex gap-4">
+      <a class="hover:text-gold" href={tPath(locale, 'journal')}>{t.nav.journal}</a>
+      <a class="hover:text-gold" href={tPath(locale, 'privacy')}>{t.nav.privacy}</a>
+    </div>
+  </div>
+</footer>

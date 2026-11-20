@@ -1,0 +1,70 @@
+---
+import Base from '../../layouts/Base.astro';
+import CtaBand from '../CtaBand.astro';
+import TodoNote from '../TodoNote.astro';
+import { copy, services } from '../../lib/content';
+import { servicePath, tPath, type Locale } from '../../lib/i18n';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = copy(locale);
+---
+
+<Base
+  locale={locale}
+  page="services"
+  title={t.meta.servicesTitle}
+  description={t.meta.servicesDescription}
+  canonicalPath={tPath(locale, 'services')}
+  alternatePath={tPath(locale === 'en' ? 'es' : 'en', 'services')}
+>
+  <section class="bg-night py-16 text-ivory md:py-24">
+    <div class="mx-auto max-w-4xl px-4 md:px-6">
+      <p class="text-xs tracking-[0.25em] uppercase text-gold">{t.servicesPage.eyebrow}</p>
+      <h1 class="mt-4 font-serif text-5xl md:text-6xl">{t.servicesPage.title}</h1>
+      <p class="mt-5 max-w-2xl text-ivory/75">{t.servicesPage.lede}</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl space-y-16 px-4 py-16 md:px-6 md:py-24">
+    {
+      services.map((s, index) => (
+        <div class="space-y-0">
+        {s.anchors.map((anchor) => <div id={anchor} class="scroll-mt-28" />)}
+        <article
+          class:list={[
+            'grid items-center gap-8 md:grid-cols-2',
+            index % 2 === 1 && 'md:[&>img]:order-last',
+          ]}
+        >
+          <img src={s.image} alt="" class="h-80 w-full rounded-3xl object-cover" />
+          <div>
+            <p class="text-xs tracking-[0.2em] text-gold-deep">{s.number}</p>
+            <h2 class="mt-2 font-serif text-4xl">{s.name[locale]}</h2>
+            <p class="mt-4 whitespace-pre-line leading-relaxed text-ink-soft">{s.body[locale]}</p>
+            <div class="mt-5 flex flex-wrap gap-3 text-sm">
+              <span class="todo-chip">{t.todo.label}</span>
+              <span>{t.servicesPage.priceTodo}</span>
+            </div>
+            <div class="mt-2 flex flex-wrap gap-3 text-sm">
+              <span class="todo-chip">{t.todo.label}</span>
+              <span>{t.servicesPage.durationTodo}</span>
+            </div>
+            <a
+              class="mt-6 inline-block text-sm tracking-[0.14em] uppercase text-gold-deep"
+              href={servicePath(locale, s.slugs)}
+            >
+              {t.servicesPage.detailCta} →
+            </a>
+          </div>
+        </article>
+        </div>
+      ))
+    }
+    <TodoNote text={t.servicesPage.askToBook} />
+  </section>
+
+  <CtaBand locale={locale} />
+</Base>

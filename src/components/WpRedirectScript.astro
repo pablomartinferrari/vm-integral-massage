@@ -1,0 +1,40 @@
+---
+import { site } from '../lib/content';
+import type { Locale } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const pageMap = site.oldWordPressPages;
+const hashMap: Record<string, string> = {
+  drenajelinfatico: locale === 'es' ? '/es/servicios/drenaje-linfatico' : '/services/lymphatic-drainage',
+  masajelinfatico: locale === 'es' ? '/es/servicios/drenaje-linfatico' : '/services/lymphatic-drainage',
+  masajedeportivo: locale === 'es' ? '/es/servicios/masaje-deportivo' : '/services/sports-massage',
+  masajedescontracturante: locale === 'es' ? '/es/servicios/masaje-descontracturante' : '/services/decontracting-massage',
+  masajepostoperatorio: locale === 'es' ? '/es/servicios/masaje-post-operatorio' : '/services/post-operative-massage',
+  recuperacionmuscular: locale === 'es' ? '/es/servicios/recuperacion-muscular' : '/services/muscle-recovery',
+};
+---
+
+<script is:inline define:vars={{ pageMap, hashMap, locale }}>
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var pageId = params.get('page_id');
+    if (pageId && pageMap[pageId]) {
+      var dest = locale === 'es' ? pageMap[pageId].pathEs : pageMap[pageId].pathEn;
+      if (window.location.pathname + window.location.search !== dest) {
+        window.location.replace(dest);
+        return;
+      }
+    }
+    if (params.get('p') === '1') {
+      window.location.replace(locale === 'es' ? '/es/diario' : '/journal');
+      return;
+    }
+    var hash = (window.location.hash || '').replace('#', '');
+    if (hash && hashMap[hash] && (window.location.pathname === '/' || window.location.pathname === '/es')) {
+      window.location.replace(hashMap[hash]);
+    }
+  })();
+</script>

@@ -1,0 +1,36 @@
+---
+import { copy, site } from '../lib/content';
+import { whatsappUrl, type Locale } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+  heading?: string;
+}
+const { locale, heading } = Astro.props;
+const t = copy(locale);
+---
+
+<section class="relative overflow-hidden bg-night text-ivory">
+  <img
+    src="/images/candles.jpg"
+    alt=""
+    class="absolute inset-0 h-full w-full object-cover opacity-25"
+  />
+  <div class="relative mx-auto max-w-4xl px-4 py-16 text-center md:py-20">
+    <p class="text-xs tracking-[0.25em] uppercase text-gold">{t.contactPage.eyebrow}</p>
+    <h2 class="mt-4 font-serif text-4xl md:text-5xl">{heading ?? t.contactPage.title}</h2>
+    <p class="mx-auto mt-4 max-w-xl text-ivory/75">{t.hero.secondary}</p>
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+      <a
+        class="rounded-full bg-gold px-6 py-3 text-sm tracking-[0.12em] uppercase text-night hover:bg-gold-deep hover:text-cream"
+        href={whatsappUrl(site.whatsapp, t.cta.whatsappPrefill)}>{t.cta.bookWhatsApp}</a
+      >
+      <a class="rounded-full border border-ivory/30 px-6 py-3 text-sm tracking-[0.12em] uppercase hover:border-gold hover:text-gold" href={`tel:${site.phoneTel}`}>
+        {t.cta.call} {site.phoneDisplay}
+      </a>
+      <a class="rounded-full border border-ivory/30 px-6 py-3 text-sm tracking-[0.12em] uppercase hover:border-gold hover:text-gold" href={`mailto:${site.email}`}>
+        {t.cta.email}
+      </a>
+    </div>
+  </div>
+</section>

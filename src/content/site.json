@@ -1,0 +1,54 @@
+{
+  "legalName": "VM Integral Massage Inc.",
+  "brandName": "VM Integral Massage",
+  "founder": "Maria Victoria Malacre",
+  "foundedYear": 2021,
+  "phoneDisplay": "+1 407-388-4928",
+  "phoneTel": "+14073884928",
+  "whatsapp": "14073884928",
+  "email": "info@vmintegralmassage.com",
+  "address": {
+    "street": "211 Broadway",
+    "city": "Kissimmee",
+    "region": "FL",
+    "postalCode": "34741",
+    "country": "US",
+    "full": "211 Broadway, Kissimmee, FL 34741"
+  },
+  "mapsQuery": "211 Broadway, Kissimmee, FL 34741",
+  "mapsUrl": "https://maps.google.com/?q=211%20Broadway%2C%20Kissimmee%2C%20FL%2034741",
+  "mapsEmbed": "https://maps.google.com/maps?q=211%20Broadway%2C%20Kissimmee%2C%20FL%2034741&t=m&z=15&output=embed&iwloc=near",
+  "social": {
+    "facebook": "https://www.facebook.com/vmintegralmassage",
+    "instagram": "https://www.instagram.com/vmintegralmassage/"
+  },
+  "hours": [
+    {
+      "daysEn": "Monday–Friday",
+      "daysEs": "Lunes a viernes",
+      "opens": "07:00",
+      "closes": "19:00",
+      "displayEn": "7:00am–7:00pm",
+      "displayEs": "7:00 a.m.–7:00 p.m.",
+      "schemaDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+    },
+    {
+      "daysEn": "Saturday",
+      "daysEs": "Sábado",
+      "opens": "08:00",
+      "closes": "14:00",
+      "displayEn": "8:00am–2:00pm",
+      "displayEs": "8:00 a.m.–2:00 p.m.",
+      "schemaDays": ["Saturday"]
+    }
+  ],
+  "hoursSource": "Home and Contact pages of the previous WordPress site (Mon–Fri 7am–7pm, Sat 8am–2pm).",
+  "googleRatingClaim": "5.0",
+  "experienceYearsClaim": 17,
+  "oldWordPressPages": {
+    "11": { "slug": "home", "pathEn": "/", "pathEs": "/es" },
+    "239": { "slug": "about", "pathEn": "/about", "pathEs": "/es/nosotros" },
+    "467": { "slug": "services", "pathEn": "/services", "pathEs": "/es/servicios" },
+    "647": { "slug": "contact", "pathEn": "/contact", "pathEs": "/es/contacto" }
+  }
+}

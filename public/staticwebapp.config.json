@@ -1,0 +1,69 @@
+{
+  "trailingSlash": "auto",
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-Frame-Options": "DENY",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=()"
+  },
+  "routes": [
+    {
+      "route": "/index.php",
+      "rewrite": "/wp-redirect"
+    },
+    {
+      "route": "/xmlrpc.php",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/feed",
+      "redirect": "/journal",
+      "statusCode": 301
+    },
+    {
+      "route": "/comments/feed",
+      "redirect": "/journal",
+      "statusCode": 301
+    },
+    {
+      "route": "/home",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/contacto",
+      "redirect": "/es/contacto",
+      "statusCode": 301
+    },
+    {
+      "route": "/nosotros",
+      "redirect": "/es/nosotros",
+      "statusCode": 301
+    },
+    {
+      "route": "/servicios",
+      "redirect": "/es/servicios",
+      "statusCode": 301
+    },
+    {
+      "route": "/about-us",
+      "redirect": "/about",
+      "statusCode": 301
+    },
+    {
+      "route": "/privacy-policy",
+      "redirect": "/privacy",
+      "statusCode": 301
+    }
+  ],
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404"
+    }
+  },
+  "mimeTypes": {
+    ".json": "application/json",
+    ".webp": "image/webp"
+  }
+}

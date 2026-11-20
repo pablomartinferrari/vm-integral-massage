@@ -1,0 +1,76 @@
+---
+import { site, services } from '../lib/content';
+import { servicePath, tPath, type Locale } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const origin = Astro.site?.href.replace(/\/$/, '') ?? 'https://vmintegralmassage.com';
+
+const data = {
+  '@context': 'https://schema.org',
+  '@type': ['HealthAndBeautyBusiness', 'LocalBusiness'],
+  name: site.brandName,
+  legalName: site.legalName,
+  url: origin,
+  image: `${origin}/images/og.jpg`,
+  logo: `${origin}/images/brand/logo-on-black.jpg`,
+  telephone: site.phoneTel,
+  email: site.email,
+  founder: {
+    '@type': 'Person',
+    name: site.founder,
+  },
+  foundingDate: String(site.foundedYear),
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: site.address.street,
+    addressLocality: site.address.city,
+    addressRegion: site.address.region,
+    postalCode: site.address.postalCode,
+    addressCountry: site.address.country,
+  },
+  hasMap: site.mapsUrl,
+  sameAs: [site.social.facebook, site.social.instagram],
+  areaServed: ['Kissimmee', 'Orlando', 'Osceola County', 'Florida'],
+  openingHoursSpecification: site.hours.map((h) => ({
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: h.schemaDays,
+    opens: h.opens,
+    closes: h.closes,
+  })),
+  contactPoint: [
+    {
+      '@type': 'ContactPoint',
+      telephone: site.phoneTel,
+      contactType: 'reservations',
+      availableLanguage: ['English', 'Spanish'],
+    },
+  ],
+  makesOffer: services.map((s) => ({
+    '@type': 'Offer',
+    itemOffered: {
+      '@type': 'Service',
+      name: s.name[locale],
+      description: s.summary[locale],
+      url: `${origin}${servicePath(locale, s.slugs)}`,
+    },
+  })),
+  potentialAction: {
+    '@type': 'ReserveAction',
+    target: `https://wa.me/${site.whatsapp}`,
+  },
+};
+
+const crumbs = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: site.brandName, item: `${origin}${tPath(locale, 'home')}` },
+  ],
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(data)} />
+<script type="application/ld+json" set:html={JSON.stringify(crumbs)} />

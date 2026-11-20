@@ -1,0 +1,20 @@
+---
+import { copy, site } from '../lib/content';
+import { whatsappUrl, type Locale } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = copy(locale);
+---
+
+<div
+  class="fixed inset-x-0 bottom-0 z-30 grid grid-cols-3 border-t border-sand bg-cream/95 text-center text-[11px] tracking-wide uppercase backdrop-blur md:hidden"
+>
+  <a class="flex flex-col items-center gap-1 py-3" href={`tel:${site.phoneTel}`}>{t.cta.call}</a>
+  <a class="flex flex-col items-center gap-1 border-x border-sand py-3 font-medium text-gold-deep" href={whatsappUrl(site.whatsapp, t.cta.whatsappPrefill)}>
+    {t.cta.whatsapp}
+  </a>
+  <a class="flex flex-col items-center gap-1 py-3" href={`mailto:${site.email}`}>{t.cta.email}</a>
+</div>

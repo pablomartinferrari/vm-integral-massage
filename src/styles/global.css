@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, "Times New Roman", serif;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --color-ivory: #f4efe6;
+  --color-cream: #fbf7f0;
+  --color-sand: #e6d8c4;
+  --color-gold: #c4a574;
+  --color-gold-deep: #9a7848;
+  --color-ink: #1c1814;
+  --color-ink-soft: #5a534c;
+  --color-sage: #5e6f5c;
+  --color-night: #100e0c;
+  --color-night-2: #1a1714;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.font-serif {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 80;
+  background: var(--color-night);
+  color: white;
+  padding: 0.5rem 1rem;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+.gold-rule {
+  width: 3.5rem;
+  height: 1px;
+  background: var(--color-gold);
+}
+
+.todo-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7a4a16;
+  background: #f3e2c4;
+  border: 1px dashed #c4a574;
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+}

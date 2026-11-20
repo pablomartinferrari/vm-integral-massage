@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "siteTitle": "VM Integral Massage | Therapeutic Massage in Kissimmee, FL",
+    "homeTitle": "Therapeutic massage in Kissimmee",
+    "homeDescription": "VM Integral Massage offers relaxing, decontracting, post-operative, lymphatic, sports, and muscle-recovery massage in Kissimmee, Florida. Book by WhatsApp, phone, or email.",
+    "aboutTitle": "About Maria Victoria Malacre",
+    "aboutDescription": "VM Integral Massage Inc. was founded in 2021 by Maria Victoria Malacre in Kissimmee, Florida. More than 17 years of therapeutic massage experience.",
+    "servicesTitle": "Therapeutic massage services",
+    "servicesDescription": "Relaxing anti-stress massage, decontracting massage, post-operative massage, lymphatic drainage with pressotherapy, sports massage, and muscle recovery in Kissimmee, FL.",
+    "contactTitle": "Book an appointment",
+    "contactDescription": "Visit VM Integral Massage at 211 Broadway, Kissimmee, FL 34741. Call +1 407-388-4928, WhatsApp, or email info@vmintegralmassage.com.",
+    "journalTitle": "Journal",
+    "journalDescription": "Updates from VM Integral Massage in Kissimmee, Florida.",
+    "privacyTitle": "Privacy",
+    "privacyDescription": "How VM Integral Massage handles the information you share when you book by phone, WhatsApp, or email.",
+    "notFoundTitle": "Page not found",
+    "ogLocale": "en_US",
+    "ogLocaleAlt": "es_US"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "journal": "Journal",
+    "privacy": "Privacy",
+    "bookNow": "Book now",
+    "menu": "Menu",
+    "close": "Close menu",
+    "skip": "Skip to content",
+    "language": "Language",
+    "languageName": "English",
+    "otherLanguage": "Español"
+  },
+  "cta": {
+    "bookWhatsApp": "Book on WhatsApp",
+    "call": "Call",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "viewServices": "View services",
+    "getDirections": "Get directions",
+    "whatsappPrefill": "Hello, I would like to book a massage at VM Integral Massage."
+  },
+  "hero": {
+    "eyebrow": "Kissimmee, Florida",
+    "title": "Massage is not a luxury. It is a necessity.",
+    "lede": "Discover the power of massage with VM Integral Massage Inc. Therapeutic care for stress, recovery, and post-operative healing — in a calm studio on Broadway.",
+    "secondary": "Book by WhatsApp, phone, or email. We will confirm your appointment personally."
+  },
+  "attention": {
+    "eyebrow": "Therapeutic massage",
+    "title": "Pay attention to our services",
+    "intro": "Six focused treatments, described in the words of the studio. Prices and session lengths are not published yet — please ask when you book."
+  },
+  "aboutPreview": {
+    "eyebrow": "Who we are",
+    "title": "A studio built on the work Maria Victoria loves",
+    "body": "VM Integral Massage Inc. was founded in 2021 by Maria Victoria Malacre — proof that when you are passionate about your work, your clients’ satisfaction and loyalty are the reward.",
+    "link": "Read our story"
+  },
+  "aboutPage": {
+    "eyebrow": "Learn more",
+    "title": "Who we are",
+    "studio": "VM Integral Massage, INC",
+    "tagline": "A place where you can relax and enjoy.",
+    "experience": "At VM Integral Massage we have more than 17 years of experience in therapeutic massage for the treatment of many kinds of body pain. Our focus is to improve the health, physical wellbeing, and quality of life of our clients.",
+    "commitment": "Our commitment is to provide a high-quality service, putting the client first through integral massage, together with the respect, value, and care each person needs.",
+    "experts": "We are also experts in lymphatic drainage massage.",
+    "missionTitle": "Our mission",
+    "mission1": "Because we love our work, we are committed to our clients’ wellbeing. We take the time to understand each person’s individual needs and health, creating an atmosphere of trust and a personalized experience focused on physical and emotional health.",
+    "mission2": "We offer our clients relaxation therapy, post-operative lymphatic drainage massage, massage for injury therapy, and more. In every service, clients receive kind, professional, personalized, high-quality care.",
+    "mission3": "Client reviews of the massage therapy and services we provide have ‘5.0 stars’ on Google. That is testimony of satisfaction and proof of our experience, integrity, and excellent service.",
+    "galleryTitle": "Photo gallery",
+    "galleryIntro": "Treatment-room photographs from the studio, including lymphatic drainage with pressotherapy.",
+    "resultsTitle": "Post-operative results",
+    "resultsIntro": "Before-and-after photographs previously published on the About page of the live site. They show real post-operative recovery; some images include clinical nudity with the stickers already applied by the studio.",
+    "resultsNote": "These photos were copied from the public WordPress gallery. Additional gallery files remain in the previous media library if you want a larger set later."
+  },
+  "contactPage": {
+    "eyebrow": "Contact",
+    "title": "What are you waiting for?",
+    "lede": "Book your appointment. We will answer by WhatsApp, phone, or email.",
+    "locationTitle": "Our new location",
+    "hoursTitle": "Hours",
+    "contactTitle": "Contact",
+    "sundayTodo": "TODO: Sunday hours were not published on the previous website.",
+    "hoursConflict": "TODO: The previous Services page listed Monday–Friday as 8am–7pm. Home and Contact listed 7am–7pm. This site uses the Home/Contact hours until the studio confirms.",
+    "bookingNote": "There is no online checkout yet. Choose WhatsApp, a phone call, or email — the same ways clients reach the studio today."
+  },
+  "servicesPage": {
+    "eyebrow": "Our services",
+    "title": "VM Integral Massage",
+    "lede": "Therapeutic massages offered at the Kissimmee studio. Tap a service for the full description.",
+    "detailCta": "Full details",
+    "priceLabel": "Price",
+    "durationLabel": "Duration",
+    "priceTodo": "TODO: price not published on the previous site",
+    "durationTodo": "TODO: session length not published on the previous site",
+    "askToBook": "Ask when you book — we will confirm availability, length, and price with you.",
+    "back": "All services"
+  },
+  "journalPage": {
+    "eyebrow": "Journal",
+    "title": "Studio notes",
+    "empty": "There are no published articles yet. The previous WordPress site only contained the default “Hello world!” post, which was not studio content, so it is not republished here.",
+    "todo": "TODO: add a first journal post when you have a story, offer, or recovery tip to share."
+  },
+  "privacyPage": {
+    "eyebrow": "Privacy",
+    "title": "Privacy",
+    "intro": "VM Integral Massage Inc. is a local massage studio. This page describes how we handle the information you choose to send when you book.",
+    "body1": "Appointments are requested by WhatsApp, phone, or email. We use the name, phone number, and message you send only to answer you and to schedule care.",
+    "body2": "This website does not include an account system or a booking database. Choosing English or Spanish simply opens the matching pages.",
+    "body3": "TODO: have a Florida attorney review this page before treating it as a legal privacy policy. No payment forms or mailing-list tools are connected yet.",
+    "contact": "Questions: info@vmintegralmassage.com or +1 407-388-4928."
+  },
+  "reviews": {
+    "eyebrow": "From our clients",
+    "title": "Words left on the previous site",
+    "source": "Shown on the former homepage via a Google review widget, plus one quote from the About page. Names and wording are preserved; Spanish quotes are translated on this English page."
+  },
+  "footer": {
+    "blurb": "VM Integral Massage Inc. was founded in 2021 by Maria Victoria Malacre — proof that when you are passionate about your work, your clients’ satisfaction and loyalty are the reward.",
+    "services": "Services",
+    "contact": "Contact",
+    "copyright": "VM Integral Massage Inc.",
+    "rights": "Therapeutic massage in Kissimmee, Florida."
+  },
+  "todo": {
+    "label": "TODO"
+  },
+  "notFound": {
+    "title": "This page is not here",
+    "body": "The address may have changed in the move off WordPress. Try the menu, or book with us directly.",
+    "home": "Back to home"
+  },
+  "assistant": {
+    "label": "Studio assistant",
+    "placeholder": "A chat assistant for questions about services, prices, hours, and booking will live here later. It is not connected yet."
+  }
+}

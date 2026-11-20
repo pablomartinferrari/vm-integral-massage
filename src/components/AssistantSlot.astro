@@ -1,0 +1,20 @@
+---
+import { copy } from '../lib/content';
+import type { Locale } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = copy(locale);
+---
+
+<div
+  id="ai-assistant-root"
+  data-assistant-slot
+  data-locale={locale}
+  hidden
+  class="sr-only"
+>
+  <p>{t.assistant.placeholder}</p>
+</div>

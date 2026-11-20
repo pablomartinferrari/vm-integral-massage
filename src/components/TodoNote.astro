@@ -1,0 +1,12 @@
+---
+interface Props {
+  text: string;
+  label?: string;
+}
+const { text, label = 'TODO' } = Astro.props;
+---
+
+<p class="mt-3 flex flex-wrap items-start gap-2 text-sm text-ink-soft">
+  <span class="todo-chip">{label}</span>
+  <span>{text}</span>
+</p>
