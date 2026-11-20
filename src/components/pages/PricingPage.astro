@@ -1,0 +1,82 @@
+---
+import Base from '../../layouts/Base.astro';
+import CtaBand from '../CtaBand.astro';
+import SampleNote from '../SampleNote.astro';
+import { copy, pricing, services, formatUsd } from '../../lib/content';
+import { servicePath, tPath, type Locale } from '../../lib/i18n';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = copy(locale);
+const rows = pricing.services.map((entry) => {
+  const service = services.find((item) => item.id === entry.serviceId);
+  return { entry, service };
+});
+---
+
+<Base
+  locale={locale}
+  page="pricing"
+  title={t.meta.pricingTitle}
+  description={t.meta.pricingDescription}
+  canonicalPath={tPath(locale, 'pricing')}
+  alternatePath={tPath(locale === 'en' ? 'es' : 'en', 'pricing')}
+>
+  <section class="bg-night py-16 text-ivory md:py-24">
+    <div class="mx-auto max-w-4xl px-4 md:px-6">
+      <p class="text-xs tracking-[0.25em] uppercase text-gold">{t.pricing.eyebrow}</p>
+      <h1 class="mt-4 font-serif text-5xl md:text-6xl">{t.pricing.title}</h1>
+      <p class="mt-5 max-w-2xl text-ivory/75">{t.pricing.lede}</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-3xl px-4 py-16 md:px-6 md:py-24">
+    {
+      !pricing.showPrices ? (
+        <p class="font-serif text-3xl text-ink-soft">{t.pricing.contactForPricing}</p>
+      ) : (
+        <>
+          <SampleNote locale={locale} />
+          <div class="mt-10 space-y-12">
+            {rows.map(({ entry, service }) =>
+              service ? (
+                <article>
+                  <div class="flex items-end justify-between gap-4 border-b border-sand pb-3">
+                    <div>
+                      <p class="text-xs tracking-[0.2em] uppercase text-gold-deep">{service.number}</p>
+                      <h2 class="mt-1 font-serif text-3xl">
+                        <a class="hover:text-gold-deep" href={servicePath(locale, service.slugs)}>
+                          {service.shortName[locale]}
+                        </a>
+                      </h2>
+                    </div>
+                  </div>
+                  <ul class="mt-4 divide-y divide-sand/80">
+                    {entry.options.map((option) => (
+                      <li class="flex items-baseline justify-between gap-4 py-3">
+                        <span>
+                          {option.label[locale]}
+                          {option.mock && (
+                            <span class="ml-2 text-[0.65rem] tracking-[0.14em] uppercase text-gold-deep/80">
+                              {t.pricing.sampleBadge}
+                            </span>
+                          )}
+                        </span>
+                        <span class="font-serif text-2xl tabular-nums">{formatUsd(option.price)}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              ) : null,
+            )}
+          </div>
+          <p class="mt-12 max-w-2xl text-sm leading-relaxed text-ink-soft">{t.pricing.packageNote}</p>
+        </>
+      )
+    }
+  </section>
+
+  <CtaBand locale={locale} />
+</Base>

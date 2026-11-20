@@ -7,6 +7,8 @@
     "aboutDescription": "VM Integral Massage Inc. fue fundada en 2021 por Maria Victoria Malacre en Kissimmee, Florida. Más de 17 años de experiencia en masajes terapéuticos.",
     "servicesTitle": "Servicios de masaje terapéutico",
     "servicesDescription": "Masaje relajante anti-estrés, descontracturante, post operatorio, drenaje linfático con presoterapia, masaje deportivo y recuperación muscular en Kissimmee, FL.",
+    "pricingTitle": "Precios de muestra",
+    "pricingDescription": "Precios de muestra de VM Integral Massage en Kissimmee. La sesión terapéutica de 60 minutos es $100; las demás cifras son ejemplos para revisión de la dueña.",
     "contactTitle": "Haz tu cita",
     "contactDescription": "Visita VM Integral Massage en 211 Broadway, Kissimmee, FL 34741. Llama al +1 407-388-4928, WhatsApp, o escribe a info@vmintegralmassage.com.",
     "journalTitle": "Diario",
@@ -21,6 +23,7 @@
     "home": "Inicio",
     "about": "Nosotros",
     "services": "Servicios",
+    "pricing": "Precios",
     "contact": "Contacto",
     "journal": "Diario",
     "privacy": "Privacidad",
@@ -50,7 +53,7 @@
   "attention": {
     "eyebrow": "Masajes terapéuticos",
     "title": "Presta atención a nuestros servicios",
-    "intro": "Seis tratamientos, descritos con las palabras del estudio. Los precios y la duración de las sesiones aún no están publicados — consúltanos al reservar."
+    "intro": "Seis tratamientos, descritos con las palabras del estudio. Al reservar, pregunta si deseas un tiempo o un paquete que no esté en la lista."
   },
   "aboutPreview": {
     "eyebrow": "Quiénes somos",
@@ -96,6 +99,18 @@
     "durationTodo": "TODO: la duración de la sesión no estaba publicada en el sitio anterior",
     "askToBook": "Consúltanos al reservar — confirmamos disponibilidad, duración y precio contigo.",
     "back": "Todos los servicios"
+  },
+  "pricing": {
+    "eyebrow": "Inversión",
+    "title": "Precios",
+    "lede": "Un menú sereno para el estudio de Kissimmee. Una tarifa está confirmada; el resto son muestras para que la dueña decida qué publicar.",
+    "sampleNote": "Precios de muestra — solo para revisión, no es una lista publicada.",
+    "confirmedNote": "Confirmado: un masaje terapéutico de 60 minutos es aproximadamente $100.",
+    "contactForPricing": "Consúltanos por el precio.",
+    "sampleBadge": "Muestra",
+    "from": "desde",
+    "packageNote": "El estudio recomienda de 10 a 20 masajes de drenaje linfático después de una cirugía. Estos paquetes son ejemplos para ese curso de cuidado.",
+    "viewMenu": "Ver precios"
   },
   "journalPage": {
     "eyebrow": "Diario",

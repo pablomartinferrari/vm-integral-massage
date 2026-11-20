@@ -1,0 +1,35 @@
+---
+import { copy, pricing, pricesForService, formatUsd } from '../lib/content';
+import type { Locale } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+  serviceId: string;
+  compact?: boolean;
+}
+const { locale, serviceId, compact = false } = Astro.props;
+const t = copy(locale);
+const options = pricesForService(serviceId);
+---
+
+{
+  !pricing.showPrices ? (
+    <p class="mt-4 text-sm text-ink-soft">{t.pricing.contactForPricing}</p>
+  ) : (
+    <ul class:list={['mt-4', compact ? 'space-y-1 text-sm' : 'space-y-2']}>
+      {options.map((option) => (
+        <li class="flex items-baseline justify-between gap-4">
+          <span class="text-ink-soft">
+            {option.label[locale]}
+            {option.mock && (
+              <span class="ml-2 align-middle text-[0.65rem] tracking-[0.14em] uppercase text-gold-deep/80">
+                {t.pricing.sampleBadge}
+              </span>
+            )}
+          </span>
+          <span class="font-medium tabular-nums">{formatUsd(option.price)}</span>
+        </li>
+      ))}
+    </ul>
+  )
+}

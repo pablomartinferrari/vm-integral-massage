@@ -23,6 +23,7 @@ npm run preview -- --host 127.0.0.1 --port 4327
 | `/` | `/es` | `/` (`page_id=11`) |
 | `/about` | `/es/nosotros` | `/?page_id=239` |
 | `/services` | `/es/servicios` | `/?page_id=467` |
+| `/pricing` | `/es/precios` | *(new — sample menu for owner review; hide with `showPrices` in `src/content/pricing.json`)* |
 | `/services/relaxing-massage` (and five other service slugs) | `/es/servicios/masaje-relajante` (and Spanish slugs) | Homepage/service hash links such as `#drenajelinfatico` |
 | `/contact` | `/es/contacto` | `/?page_id=647` |
 | `/journal` | `/es/diario` | `/?p=1` (the old “Hello world!” post is not republished) |
@@ -35,6 +36,7 @@ Book-now actions open WhatsApp (`https://wa.me/14073884928`), `tel:+14073884928`
 Keep facts in JSON so a non-developer (or an assistant) can update text later:
 
 - `src/content/site.json` — address, phone, hours, social
+- `src/content/pricing.json` — session and package amounts, plus `showPrices`. Set that flag to `false` to hide every price and show “Contact us for pricing.” Only the $100 / 60-minute therapeutic rate is confirmed; other amounts are samples (`mock: true`).
 - `src/content/services.json` — services, bilingual descriptions, images
 - `src/content/testimonials.json` — reviews copied from the previous public pages
 - `src/content/copy/en.json` and `src/content/copy/es.json` — UI and page copy
@@ -69,11 +71,11 @@ Point DNS to Azure only after you have reviewed the preview. Leave the current W
 
 ## Planned AI chat assistant
 
-The markup includes `#ai-assistant-root` (`src/components/AssistantSlot.astro`) as a later mount point. A small client widget can read `src/content/services.json`, `src/content/site.json`, and the copy files to answer questions about services, prices (once published), hours, and booking, then hand off to WhatsApp. Nothing is connected now.
+The markup includes `#ai-assistant-root` (`src/components/AssistantSlot.astro`) as a later mount point. A small client widget can read `src/content/services.json`, `src/content/pricing.json`, `src/content/site.json`, and the copy files to answer questions about services, prices, hours, and booking, then hand off to WhatsApp. Nothing is connected now. Treat `mock: true` amounts as samples until the owner confirms them.
 
 ## Screenshots
 
-Desktop and mobile captures of Home, Services, and Contact in English and Spanish are in `screenshots/`.
+Desktop and mobile captures of Home, Services, Pricing, and Contact in English and Spanish are in `screenshots/`.
 
 ## Stack
 

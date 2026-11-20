@@ -1,0 +1,193 @@
+{
+  "showPrices": true,
+  "currency": "USD",
+  "note": "Set showPrices to false to hide every amount site-wide and show the contact-for-pricing fallback. mock:true means the figure is a sample for owner review. The only confirmed rate is relaxing-massage 60 minutes at $100.",
+  "services": [
+    {
+      "serviceId": "relaxing",
+      "options": [
+        {
+          "id": "relaxing-60",
+          "kind": "session",
+          "minutes": 60,
+          "sessions": null,
+          "price": 100,
+          "mock": false,
+          "label": {
+            "en": "60 minutes",
+            "es": "60 minutos"
+          }
+        },
+        {
+          "id": "relaxing-90",
+          "kind": "session",
+          "minutes": 90,
+          "sessions": null,
+          "price": 145,
+          "mock": true,
+          "label": {
+            "en": "90 minutes",
+            "es": "90 minutos"
+          }
+        }
+      ]
+    },
+    {
+      "serviceId": "decontracting",
+      "options": [
+        {
+          "id": "decontracting-60",
+          "kind": "session",
+          "minutes": 60,
+          "sessions": null,
+          "price": 110,
+          "mock": true,
+          "label": {
+            "en": "60 minutes",
+            "es": "60 minutos"
+          }
+        },
+        {
+          "id": "decontracting-90",
+          "kind": "session",
+          "minutes": 90,
+          "sessions": null,
+          "price": 155,
+          "mock": true,
+          "label": {
+            "en": "90 minutes",
+            "es": "90 minutos"
+          }
+        }
+      ]
+    },
+    {
+      "serviceId": "post-operative",
+      "options": [
+        {
+          "id": "postop-60",
+          "kind": "session",
+          "minutes": 60,
+          "sessions": null,
+          "price": 120,
+          "mock": true,
+          "label": {
+            "en": "60-minute session",
+            "es": "Sesión de 60 minutos"
+          }
+        },
+        {
+          "id": "postop-pack-10",
+          "kind": "package",
+          "minutes": null,
+          "sessions": 10,
+          "price": 1000,
+          "mock": true,
+          "label": {
+            "en": "10-session lymphatic recovery package",
+            "es": "Paquete de 10 sesiones de drenaje linfático"
+          }
+        },
+        {
+          "id": "postop-pack-20",
+          "kind": "package",
+          "minutes": null,
+          "sessions": 20,
+          "price": 1800,
+          "mock": true,
+          "label": {
+            "en": "20-session lymphatic recovery package",
+            "es": "Paquete de 20 sesiones de drenaje linfático"
+          }
+        }
+      ]
+    },
+    {
+      "serviceId": "lymphatic",
+      "options": [
+        {
+          "id": "lymphatic-60",
+          "kind": "session",
+          "minutes": 60,
+          "sessions": null,
+          "price": 120,
+          "mock": true,
+          "label": {
+            "en": "60 minutes, with pressotherapy",
+            "es": "60 minutos, con presoterapia"
+          }
+        },
+        {
+          "id": "lymphatic-90",
+          "kind": "session",
+          "minutes": 90,
+          "sessions": null,
+          "price": 165,
+          "mock": true,
+          "label": {
+            "en": "90 minutes, with pressotherapy",
+            "es": "90 minutos, con presoterapia"
+          }
+        }
+      ]
+    },
+    {
+      "serviceId": "sports",
+      "options": [
+        {
+          "id": "sports-60",
+          "kind": "session",
+          "minutes": 60,
+          "sessions": null,
+          "price": 110,
+          "mock": true,
+          "label": {
+            "en": "60 minutes",
+            "es": "60 minutos"
+          }
+        },
+        {
+          "id": "sports-90",
+          "kind": "session",
+          "minutes": 90,
+          "sessions": null,
+          "price": 155,
+          "mock": true,
+          "label": {
+            "en": "90 minutes",
+            "es": "90 minutos"
+          }
+        }
+      ]
+    },
+    {
+      "serviceId": "recovery",
+      "options": [
+        {
+          "id": "recovery-60",
+          "kind": "session",
+          "minutes": 60,
+          "sessions": null,
+          "price": 110,
+          "mock": true,
+          "label": {
+            "en": "60 minutes",
+            "es": "60 minutos"
+          }
+        },
+        {
+          "id": "recovery-90",
+          "kind": "session",
+          "minutes": 90,
+          "sessions": null,
+          "price": 155,
+          "mock": true,
+          "label": {
+            "en": "90 minutes",
+            "es": "90 minutos"
+          }
+        }
+      ]
+    }
+  ]
+}

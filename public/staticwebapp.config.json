@@ -55,6 +55,11 @@
       "route": "/privacy-policy",
       "redirect": "/privacy",
       "statusCode": 301
+    },
+    {
+      "route": "/precios",
+      "redirect": "/es/precios",
+      "statusCode": 301
     }
   ],
   "responseOverrides": {

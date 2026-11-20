@@ -1,5 +1,5 @@
 ---
-import { copy, site } from '../lib/content';
+import { copy, site, pricing } from '../lib/content';
 import { tPath, type Locale, type PageKey } from '../lib/i18n';
 import { whatsappUrl } from '../lib/i18n';
 
@@ -14,6 +14,7 @@ const links: { key: PageKey; href: string }[] = [
   { key: 'home', href: tPath(locale, 'home') },
   { key: 'about', href: tPath(locale, 'about') },
   { key: 'services', href: tPath(locale, 'services') },
+  ...(pricing.showPrices ? [{ key: 'pricing' as const, href: tPath(locale, 'pricing') }] : []),
   { key: 'contact', href: tPath(locale, 'contact') },
 ];
 const wa = whatsappUrl(site.whatsapp, t.cta.whatsappPrefill);

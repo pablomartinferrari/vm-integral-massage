@@ -7,6 +7,8 @@
     "aboutDescription": "VM Integral Massage Inc. was founded in 2021 by Maria Victoria Malacre in Kissimmee, Florida. More than 17 years of therapeutic massage experience.",
     "servicesTitle": "Therapeutic massage services",
     "servicesDescription": "Relaxing anti-stress massage, decontracting massage, post-operative massage, lymphatic drainage with pressotherapy, sports massage, and muscle recovery in Kissimmee, FL.",
+    "pricingTitle": "Sample pricing",
+    "pricingDescription": "Sample massage prices for VM Integral Massage in Kissimmee. The 60-minute therapeutic session is $100; other figures are examples for owner review.",
     "contactTitle": "Book an appointment",
     "contactDescription": "Visit VM Integral Massage at 211 Broadway, Kissimmee, FL 34741. Call +1 407-388-4928, WhatsApp, or email info@vmintegralmassage.com.",
     "journalTitle": "Journal",
@@ -21,6 +23,7 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "pricing": "Pricing",
     "contact": "Contact",
     "journal": "Journal",
     "privacy": "Privacy",
@@ -50,7 +53,7 @@
   "attention": {
     "eyebrow": "Therapeutic massage",
     "title": "Pay attention to our services",
-    "intro": "Six focused treatments, described in the words of the studio. Prices and session lengths are not published yet — please ask when you book."
+    "intro": "Six focused treatments, described in the words of the studio. Ask when you book if you would like a time or a package that is not listed."
   },
   "aboutPreview": {
     "eyebrow": "Who we are",
@@ -96,6 +99,18 @@
     "durationTodo": "TODO: session length not published on the previous site",
     "askToBook": "Ask when you book — we will confirm availability, length, and price with you.",
     "back": "All services"
+  },
+  "pricing": {
+    "eyebrow": "Investment",
+    "title": "Pricing",
+    "lede": "A quiet menu for the Kissimmee studio. One rate is confirmed; the rest are samples so the owner can decide what to publish.",
+    "sampleNote": "Sample pricing — for review only, not a published rate list.",
+    "confirmedNote": "Confirmed: a 60-minute therapeutic massage is about $100.",
+    "contactForPricing": "Contact us for pricing.",
+    "sampleBadge": "Sample",
+    "from": "from",
+    "packageNote": "The studio recommends at least 10 to 20 lymphatic drainage sessions after surgery. These packages are sample bundles for that course of care.",
+    "viewMenu": "View pricing"
   },
   "journalPage": {
     "eyebrow": "Journal",

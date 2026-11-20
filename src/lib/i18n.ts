@@ -6,6 +6,7 @@ export const paths = {
   home: { en: '/', es: '/es' },
   about: { en: '/about', es: '/es/nosotros' },
   services: { en: '/services', es: '/es/servicios' },
+  pricing: { en: '/pricing', es: '/es/precios' },
   contact: { en: '/contact', es: '/es/contacto' },
   journal: { en: '/journal', es: '/es/diario' },
   privacy: { en: '/privacy', es: '/es/privacidad' },

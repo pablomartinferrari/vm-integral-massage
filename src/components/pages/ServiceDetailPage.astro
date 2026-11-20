@@ -1,7 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import CtaBand from '../CtaBand.astro';
-import TodoNote from '../TodoNote.astro';
+import SampleNote from '../SampleNote.astro';
+import ServicePrices from '../ServicePrices.astro';
 import { copy, type Service } from '../../lib/content';
 import { servicePath, tPath, type Locale } from '../../lib/i18n';
 
@@ -32,23 +33,13 @@ const otherLocale: Locale = locale === 'en' ? 'es' : 'en';
 
   <article class="mx-auto max-w-3xl px-4 py-16 md:px-6">
     <p class="whitespace-pre-line text-lg leading-relaxed text-ink-soft">{service.body[locale]}</p>
-    <dl class="mt-10 grid gap-4 sm:grid-cols-2">
-      <div class="rounded-2xl border border-sand bg-ivory p-5">
-        <dt class="text-xs tracking-[0.2em] uppercase text-gold-deep">{t.servicesPage.priceLabel}</dt>
-        <dd class="mt-2">
-          <span class="todo-chip">{t.todo.label}</span>
-          <p class="mt-2 text-sm text-ink-soft">{t.servicesPage.priceTodo}</p>
-        </dd>
+    <div class="mt-10 rounded-2xl border border-sand bg-ivory p-6">
+      <p class="text-xs tracking-[0.2em] uppercase text-gold-deep">{t.nav.pricing}</p>
+      <ServicePrices locale={locale} serviceId={service.id} />
+      <div class="mt-4">
+        <SampleNote locale={locale} />
       </div>
-      <div class="rounded-2xl border border-sand bg-ivory p-5">
-        <dt class="text-xs tracking-[0.2em] uppercase text-gold-deep">{t.servicesPage.durationLabel}</dt>
-        <dd class="mt-2">
-          <span class="todo-chip">{t.todo.label}</span>
-          <p class="mt-2 text-sm text-ink-soft">{t.servicesPage.durationTodo}</p>
-        </dd>
-      </div>
-    </dl>
-    <TodoNote text={t.servicesPage.askToBook} />
+    </div>
     <p class="mt-8">
       <a class="text-sm tracking-[0.14em] uppercase text-gold-deep" href={tPath(locale, 'services')}>
         ← {t.servicesPage.back}
