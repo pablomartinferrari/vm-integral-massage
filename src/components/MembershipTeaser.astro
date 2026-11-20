@@ -1,0 +1,51 @@
+---
+import { copy, site, pricing, formatUsd } from '../lib/content';
+import { tPath, whatsappUrl, type Locale } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = copy(locale);
+const m = pricing.membership;
+const join = whatsappUrl(site.whatsapp, t.cta.membershipPrefill);
+---
+
+{
+  pricing.showPrices && m.enabled && (
+    <section class="mx-auto max-w-6xl px-4 pb-8 md:px-6 md:pb-12">
+      <article class="grid overflow-hidden rounded-3xl bg-night text-ivory md:grid-cols-2">
+        <img
+          src="/images/candles.jpg"
+          alt=""
+          class="h-64 w-full object-cover md:h-full"
+        />
+        <div class="flex flex-col justify-center p-8 md:p-12">
+          <p class="text-xs tracking-[0.25em] uppercase text-gold">{t.pricing.membershipEyebrow}</p>
+          <h2 class="mt-3 font-serif text-4xl">{m.name[locale]}</h2>
+          <p class="mt-3 font-serif text-xl italic text-gold">{m.tagline[locale]}</p>
+          <p class="mt-6 font-serif text-5xl tabular-nums">
+            {formatUsd(m.price)}
+            <span class="ml-2 align-middle font-sans text-sm tracking-[0.14em] uppercase text-ivory/60">
+              {m.period[locale]}
+            </span>
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              class="rounded-full bg-gold px-6 py-3 text-sm tracking-[0.12em] uppercase text-night hover:bg-gold-deep hover:text-cream"
+              href={join}
+            >
+              {m.cta[locale]}
+            </a>
+            <a
+              class="rounded-full border border-ivory/30 px-6 py-3 text-sm tracking-[0.12em] uppercase hover:border-gold hover:text-gold"
+              href={`${tPath(locale, 'pricing')}#membership`}
+            >
+              {m.learnMore[locale]}
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+  )
+}

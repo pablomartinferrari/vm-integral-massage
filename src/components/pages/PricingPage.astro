@@ -1,19 +1,16 @@
 ---
 import Base from '../../layouts/Base.astro';
 import CtaBand from '../CtaBand.astro';
-import SampleNote from '../SampleNote.astro';
-import { copy, pricing, services, formatUsd } from '../../lib/content';
-import { servicePath, tPath, type Locale } from '../../lib/i18n';
+import MembershipSection from '../MembershipSection.astro';
+import PaymentNote from '../PaymentNote.astro';
+import { copy, site, pricing, formatUsd } from '../../lib/content';
+import { tPath, whatsappUrl, type Locale } from '../../lib/i18n';
 
 interface Props {
   locale: Locale;
 }
 const { locale } = Astro.props;
 const t = copy(locale);
-const rows = pricing.services.map((entry) => {
-  const service = services.find((item) => item.id === entry.serviceId);
-  return { entry, service };
-});
 ---
 
 <Base
@@ -37,46 +34,79 @@ const rows = pricing.services.map((entry) => {
       !pricing.showPrices ? (
         <p class="font-serif text-3xl text-ink-soft">{t.pricing.contactForPricing}</p>
       ) : (
-        <>
-          <SampleNote locale={locale} />
-          <div class="mt-10 space-y-12">
-            {rows.map(({ entry, service }) =>
-              service ? (
-                <article>
-                  <div class="flex items-end justify-between gap-4 border-b border-sand pb-3">
-                    <div>
-                      <p class="text-xs tracking-[0.2em] uppercase text-gold-deep">{service.number}</p>
-                      <h2 class="mt-1 font-serif text-3xl">
-                        <a class="hover:text-gold-deep" href={servicePath(locale, service.slugs)}>
-                          {service.shortName[locale]}
-                        </a>
-                      </h2>
-                    </div>
-                  </div>
-                  <ul class="mt-4 divide-y divide-sand/80">
-                    {entry.options.map((option) => (
-                      <li class="flex items-baseline justify-between gap-4 py-3">
-                        <span>
-                          {option.label[locale]}
-                          {option.mock && (
-                            <span class="ml-2 text-[0.65rem] tracking-[0.14em] uppercase text-gold-deep/80">
-                              {t.pricing.sampleBadge}
-                            </span>
-                          )}
-                        </span>
-                        <span class="font-serif text-2xl tabular-nums">{formatUsd(option.price)}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </article>
-              ) : null,
-            )}
+        <div class="space-y-14">
+          <div>
+            <p class="text-xs tracking-[0.2em] uppercase text-gold-deep">{t.pricing.sessionsEyebrow}</p>
+            <h2 class="mt-2 font-serif text-3xl">{t.pricing.sessionsTitle}</h2>
+            <p class="mt-3 text-sm text-ink-soft">{t.pricing.sessionsNote}</p>
+            <ul class="mt-6 divide-y divide-sand/80 border-y border-sand">
+              {pricing.sessions.map((option) => (
+                <li class="flex items-baseline justify-between gap-4 py-4">
+                  <span>{option.label[locale]}</span>
+                  <span class="font-serif text-2xl tabular-nums">{formatUsd(option.price)}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-          <p class="mt-12 max-w-2xl text-sm leading-relaxed text-ink-soft">{t.pricing.packageNote}</p>
-        </>
+
+          <div class="rounded-3xl border border-sand bg-ivory px-6 py-7 md:px-8">
+            <p class="text-xs tracking-[0.2em] uppercase text-gold-deep">{t.pricing.offerEyebrow}</p>
+            <h2 class="mt-2 font-serif text-3xl">{t.pricing.offerTitle}</h2>
+            <p class="mt-6 flex items-baseline justify-between gap-4">
+              <span>{pricing.introOffer.label[locale]}</span>
+              <span class="font-serif text-2xl tabular-nums">{formatUsd(pricing.introOffer.price)}</span>
+            </p>
+            <p class="mt-3 text-sm text-ink-soft">{pricing.introOffer.detail[locale]}</p>
+          </div>
+
+          <div>
+            <p class="text-xs tracking-[0.2em] uppercase text-gold-deep">{t.pricing.moreEyebrow}</p>
+            <ul class="mt-4 divide-y divide-sand/80 border-y border-sand">
+              <li class="flex items-baseline justify-between gap-4 py-4">
+                <span>{pricing.couples.label[locale]}</span>
+                <span class="font-serif text-2xl tabular-nums">{formatUsd(pricing.couples.price)}</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-xs tracking-[0.2em] uppercase text-gold-deep">{t.pricing.packagesEyebrow}</p>
+            <h2 class="mt-2 font-serif text-3xl">{t.pricing.packagesTitle}</h2>
+            <ul class="mt-6 divide-y divide-sand/80 border-y border-sand">
+              {pricing.packages.map((option) => (
+                <li class="flex items-baseline justify-between gap-4 py-4">
+                  <span>{option.label[locale]}</span>
+                  <span class="font-serif text-2xl tabular-nums">{formatUsd(option.price)}</span>
+                </li>
+              ))}
+            </ul>
+            <p class="mt-4 text-sm leading-relaxed text-ink-soft">{t.pricing.packageNote}</p>
+          </div>
+        </div>
       )
     }
+
+    {
+      pricing.giftCards.enabled && (
+        <div id="gift-cards" class="mt-14 scroll-mt-24">
+          <p class="text-xs tracking-[0.2em] uppercase text-gold-deep">{t.pricing.giftCardsEyebrow}</p>
+          <h2 class="mt-2 font-serif text-3xl">{t.pricing.giftCardsTitle}</h2>
+          <p class="mt-4 leading-relaxed text-ink-soft">{t.pricing.giftCardsBody}</p>
+          <a
+            class="mt-6 inline-block rounded-full bg-gold px-6 py-3 text-sm tracking-[0.12em] uppercase text-night hover:bg-gold-deep hover:text-cream"
+            href={whatsappUrl(site.whatsapp, t.cta.giftCardPrefill)}
+          >
+            {t.pricing.giftCardsCta}
+          </a>
+        </div>
+      )
+    }
+
+    <div class="mt-14">
+      <PaymentNote locale={locale} />
+    </div>
   </section>
 
+  <MembershipSection locale={locale} />
   <CtaBand locale={locale} />
 </Base>

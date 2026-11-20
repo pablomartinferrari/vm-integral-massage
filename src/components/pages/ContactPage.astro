@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import PaymentNote from '../PaymentNote.astro';
 import { copy, site } from '../../lib/content';
 import { tPath, whatsappUrl, type Locale } from '../../lib/i18n';
 
@@ -57,6 +58,9 @@ const t = copy(locale);
           <a class="text-lg hover:text-gold-deep" href={`mailto:${site.email}`}>{site.email}</a>
         </p>
         <p class="mt-6 text-sm text-ink-soft">{t.contactPage.bookingNote}</p>
+        <div class="mt-8">
+          <PaymentNote locale={locale} />
+        </div>
         <div class="mt-6 flex flex-wrap gap-3">
           <a
             class="rounded-full bg-gold px-5 py-3 text-sm tracking-[0.12em] uppercase text-night"

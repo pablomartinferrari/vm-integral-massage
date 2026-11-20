@@ -1,0 +1,25 @@
+---
+import { copy, pricing, formatUsd } from '../lib/content';
+import { tPath, type Locale } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = copy(locale);
+---
+
+{
+  !pricing.showPrices ? (
+    <p class="mt-4 text-sm text-ink-soft">{t.pricing.contactForPricing}</p>
+  ) : (
+    <p class="mt-4 flex flex-wrap items-baseline justify-between gap-3">
+      <span class="font-serif text-2xl tabular-nums">
+        {t.pricing.from} {formatUsd(pricing.fromPrice)}
+      </span>
+      <a class="text-sm tracking-[0.14em] uppercase text-gold-deep" href={tPath(locale, 'pricing')}>
+        {t.pricing.viewMenu} →
+      </a>
+    </p>
+  )
+}

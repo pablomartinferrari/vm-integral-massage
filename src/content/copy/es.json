@@ -7,8 +7,8 @@
     "aboutDescription": "VM Integral Massage Inc. fue fundada en 2021 por Maria Victoria Malacre en Kissimmee, Florida. Más de 17 años de experiencia en masajes terapéuticos.",
     "servicesTitle": "Servicios de masaje terapéutico",
     "servicesDescription": "Masaje relajante anti-estrés, descontracturante, post operatorio, drenaje linfático con presoterapia, masaje deportivo y recuperación muscular en Kissimmee, FL.",
-    "pricingTitle": "Precios de muestra",
-    "pricingDescription": "Precios de muestra de VM Integral Massage en Kissimmee. La sesión terapéutica de 60 minutos es $100; las demás cifras son ejemplos para revisión de la dueña.",
+    "pricingTitle": "Precios",
+    "pricingDescription": "Precios de masaje en VM Integral Massage, Kissimmee. Sesiones desde $110, oferta de primera visita a $95, masaje para parejas, paquetes post operatorios y Membresía Premium a $99 al mes.",
     "contactTitle": "Haz tu cita",
     "contactDescription": "Visita VM Integral Massage en 211 Broadway, Kissimmee, FL 34741. Llama al +1 407-388-4928, WhatsApp, o escribe a info@vmintegralmassage.com.",
     "journalTitle": "Diario",
@@ -42,7 +42,9 @@
     "whatsapp": "WhatsApp",
     "viewServices": "Ver servicios",
     "getDirections": "Cómo llegar",
-    "whatsappPrefill": "Hola, me gustaría reservar un masaje en VM Integral Massage."
+    "whatsappPrefill": "Hola, me gustaría reservar un masaje en VM Integral Massage.",
+    "membershipPrefill": "Hola, me gustaría unirme a la Membresía Premium de VM Integral Massage.",
+    "giftCardPrefill": "Hola, me gustaría comprar una tarjeta de regalo en VM Integral Massage."
   },
   "hero": {
     "eyebrow": "Kissimmee, Florida",
@@ -86,7 +88,9 @@
     "locationTitle": "Nuestra nueva ubicación",
     "hoursTitle": "Horario",
     "contactTitle": "Contacto",
-    "bookingNote": "Aún no hay reserva en línea. Elige WhatsApp, una llamada o el correo — las mismas vías con las que los clientes se comunican hoy."
+    "bookingNote": "Aún no hay reserva en línea. Elige WhatsApp, una llamada o el correo — las mismas vías con las que los clientes se comunican hoy.",
+    "paymentTitle": "Pago y propinas",
+    "paymentBody": "Aceptamos Zelle, tarjeta de crédito o débito, y efectivo. Las propinas son bienvenidas."
   },
   "servicesPage": {
     "eyebrow": "Nuestros servicios",
@@ -103,14 +107,27 @@
   "pricing": {
     "eyebrow": "Inversión",
     "title": "Precios",
-    "lede": "Un menú sereno para el estudio de Kissimmee. Una tarifa está confirmada; el resto son muestras para que la dueña decida qué publicar.",
-    "sampleNote": "Precios de muestra — solo para revisión, no es una lista publicada.",
-    "confirmedNote": "Confirmado: un masaje terapéutico de 60 minutos es aproximadamente $100.",
+    "lede": "Un menú claro para el estudio de Kissimmee. Los tiempos de sesión son los mismos para cada masaje que ofrecemos.",
     "contactForPricing": "Consúltanos por el precio.",
-    "sampleBadge": "Muestra",
     "from": "desde",
-    "packageNote": "El estudio recomienda de 10 a 20 masajes de drenaje linfático después de una cirugía. Estos paquetes son ejemplos para ese curso de cuidado.",
-    "viewMenu": "Ver precios"
+    "viewMenu": "Ver precios",
+    "sessionsEyebrow": "Sesiones",
+    "sessionsTitle": "Por duración",
+    "sessionsNote": "Estos tiempos aplican al masaje relajante, descontracturante, deportivo, de recuperación muscular, drenaje linfático y post operatorio.",
+    "offerEyebrow": "Clientes nuevos",
+    "offerTitle": "Primera visita",
+    "moreEyebrow": "También ofrecemos",
+    "packagesEyebrow": "Recuperación",
+    "packagesTitle": "Paquetes post operatorios",
+    "packageNote": "Al reservar, pregunta qué paquete conviene a tu recuperación. Las sesiones post operatorias individuales usan los tiempos de arriba.",
+    "membershipEyebrow": "Membresía",
+    "giftCardsEyebrow": "Regalos",
+    "giftCardsTitle": "Tarjetas de regalo",
+    "giftCardsBody": "Disponibles en formato digital y físico, a los mismos precios de nuestros servicios. Deben usarse dentro de los 60 días posteriores a la compra.",
+    "giftCardsCta": "Comprar una tarjeta de regalo",
+    "giftCardsHome": "Las tarjetas de regalo están disponibles en formato digital o físico, a los mismos precios de los servicios, y deben usarse dentro de 60 días.",
+    "paymentEyebrow": "Pago y propinas",
+    "paymentBody": "Aceptamos Zelle, tarjeta de crédito o débito, y efectivo. Las propinas son bienvenidas."
   },
   "journalPage": {
     "eyebrow": "Diario",

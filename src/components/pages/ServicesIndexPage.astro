@@ -1,8 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import CtaBand from '../CtaBand.astro';
-import SampleNote from '../SampleNote.astro';
-import ServicePrices from '../ServicePrices.astro';
+import FromPrice from '../FromPrice.astro';
 import { copy, pricing, services } from '../../lib/content';
 import { servicePath, tPath, type Locale } from '../../lib/i18n';
 
@@ -30,7 +29,6 @@ const t = copy(locale);
   </section>
 
   <section class="mx-auto max-w-6xl space-y-16 px-4 py-16 md:px-6 md:py-24">
-    <SampleNote locale={locale} />
     {
       services.map((s, index) => (
         <div class="space-y-0">
@@ -46,7 +44,7 @@ const t = copy(locale);
             <p class="text-xs tracking-[0.2em] text-gold-deep">{s.number}</p>
             <h2 class="mt-2 font-serif text-4xl">{s.name[locale]}</h2>
             <p class="mt-4 whitespace-pre-line leading-relaxed text-ink-soft">{s.body[locale]}</p>
-            <ServicePrices locale={locale} serviceId={s.id} compact />
+            <FromPrice locale={locale} />
             <a
               class="mt-6 inline-block text-sm tracking-[0.14em] uppercase text-gold-deep"
               href={servicePath(locale, s.slugs)}

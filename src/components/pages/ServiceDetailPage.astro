@@ -1,8 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import CtaBand from '../CtaBand.astro';
-import SampleNote from '../SampleNote.astro';
-import ServicePrices from '../ServicePrices.astro';
+import FromPrice from '../FromPrice.astro';
 import { copy, type Service } from '../../lib/content';
 import { servicePath, tPath, type Locale } from '../../lib/i18n';
 
@@ -35,10 +34,7 @@ const otherLocale: Locale = locale === 'en' ? 'es' : 'en';
     <p class="whitespace-pre-line text-lg leading-relaxed text-ink-soft">{service.body[locale]}</p>
     <div class="mt-10 rounded-2xl border border-sand bg-ivory p-6">
       <p class="text-xs tracking-[0.2em] uppercase text-gold-deep">{t.nav.pricing}</p>
-      <ServicePrices locale={locale} serviceId={service.id} />
-      <div class="mt-4">
-        <SampleNote locale={locale} />
-      </div>
+      <FromPrice locale={locale} />
     </div>
     <p class="mt-8">
       <a class="text-sm tracking-[0.14em] uppercase text-gold-deep" href={tPath(locale, 'services')}>

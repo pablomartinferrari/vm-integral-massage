@@ -11,12 +11,6 @@ export const services = servicesJson;
 export const testimonials = testimonialsJson;
 export const pricing = pricingJson;
 
-export type PriceOption = (typeof pricing.services)[number]['options'][number];
-
-export function pricesForService(serviceId: string): PriceOption[] {
-  return pricing.services.find((entry) => entry.serviceId === serviceId)?.options ?? [];
-}
-
 export function formatUsd(amount: number): string {
   return new Intl.NumberFormat('en-US', {
     style: 'currency',

@@ -1,193 +1,238 @@
 {
   "showPrices": true,
   "currency": "USD",
-  "note": "Set showPrices to false to hide every amount site-wide and show the contact-for-pricing fallback. mock:true means the figure is a sample for owner review. The only confirmed rate is relaxing-massage 60 minutes at $100.",
-  "services": [
-    {
-      "serviceId": "relaxing",
-      "options": [
-        {
-          "id": "relaxing-60",
-          "kind": "session",
-          "minutes": 60,
-          "sessions": null,
-          "price": 100,
-          "mock": false,
-          "label": {
-            "en": "60 minutes",
-            "es": "60 minutos"
-          }
-        },
-        {
-          "id": "relaxing-90",
-          "kind": "session",
-          "minutes": 90,
-          "sessions": null,
-          "price": 145,
-          "mock": true,
-          "label": {
-            "en": "90 minutes",
-            "es": "90 minutos"
-          }
-        }
-      ]
-    },
-    {
-      "serviceId": "decontracting",
-      "options": [
-        {
-          "id": "decontracting-60",
-          "kind": "session",
-          "minutes": 60,
-          "sessions": null,
-          "price": 110,
-          "mock": true,
-          "label": {
-            "en": "60 minutes",
-            "es": "60 minutos"
-          }
-        },
-        {
-          "id": "decontracting-90",
-          "kind": "session",
-          "minutes": 90,
-          "sessions": null,
-          "price": 155,
-          "mock": true,
-          "label": {
-            "en": "90 minutes",
-            "es": "90 minutos"
-          }
-        }
-      ]
-    },
-    {
-      "serviceId": "post-operative",
-      "options": [
-        {
-          "id": "postop-60",
-          "kind": "session",
-          "minutes": 60,
-          "sessions": null,
-          "price": 120,
-          "mock": true,
-          "label": {
-            "en": "60-minute session",
-            "es": "Sesión de 60 minutos"
-          }
-        },
-        {
-          "id": "postop-pack-10",
-          "kind": "package",
-          "minutes": null,
-          "sessions": 10,
-          "price": 1000,
-          "mock": true,
-          "label": {
-            "en": "10-session lymphatic recovery package",
-            "es": "Paquete de 10 sesiones de drenaje linfático"
-          }
-        },
-        {
-          "id": "postop-pack-20",
-          "kind": "package",
-          "minutes": null,
-          "sessions": 20,
-          "price": 1800,
-          "mock": true,
-          "label": {
-            "en": "20-session lymphatic recovery package",
-            "es": "Paquete de 20 sesiones de drenaje linfático"
-          }
-        }
-      ]
-    },
-    {
-      "serviceId": "lymphatic",
-      "options": [
-        {
-          "id": "lymphatic-60",
-          "kind": "session",
-          "minutes": 60,
-          "sessions": null,
-          "price": 120,
-          "mock": true,
-          "label": {
-            "en": "60 minutes, with pressotherapy",
-            "es": "60 minutos, con presoterapia"
-          }
-        },
-        {
-          "id": "lymphatic-90",
-          "kind": "session",
-          "minutes": 90,
-          "sessions": null,
-          "price": 165,
-          "mock": true,
-          "label": {
-            "en": "90 minutes, with pressotherapy",
-            "es": "90 minutos, con presoterapia"
-          }
-        }
-      ]
-    },
-    {
-      "serviceId": "sports",
-      "options": [
-        {
-          "id": "sports-60",
-          "kind": "session",
-          "minutes": 60,
-          "sessions": null,
-          "price": 110,
-          "mock": true,
-          "label": {
-            "en": "60 minutes",
-            "es": "60 minutos"
-          }
-        },
-        {
-          "id": "sports-90",
-          "kind": "session",
-          "minutes": 90,
-          "sessions": null,
-          "price": 155,
-          "mock": true,
-          "label": {
-            "en": "90 minutes",
-            "es": "90 minutos"
-          }
-        }
-      ]
-    },
-    {
-      "serviceId": "recovery",
-      "options": [
-        {
-          "id": "recovery-60",
-          "kind": "session",
-          "minutes": 60,
-          "sessions": null,
-          "price": 110,
-          "mock": true,
-          "label": {
-            "en": "60 minutes",
-            "es": "60 minutos"
-          }
-        },
-        {
-          "id": "recovery-90",
-          "kind": "session",
-          "minutes": 90,
-          "sessions": null,
-          "price": 155,
-          "mock": true,
-          "label": {
-            "en": "90 minutes",
-            "es": "90 minutos"
-          }
-        }
-      ]
+  "fromPrice": 110,
+  "note": "Set showPrices to false to hide every amount site-wide and show the contact-for-pricing fallback. Session rates apply to relaxing, decontracting, sports, muscle-recovery, lymphatic, and post-operative single sessions.",
+  "giftCards": {
+    "enabled": true,
+    "validityDays": 60,
+    "forms": {
+      "en": "digital and physical",
+      "es": "digital y física"
     }
-  ]
+  },
+  "payment": {
+    "methods": {
+      "en": "Zelle, credit or debit card, and cash",
+      "es": "Zelle, tarjeta de crédito o débito, y efectivo"
+    },
+    "tipsWelcome": true
+  },
+  "sessions": [
+    {
+      "id": "session-60",
+      "minutes": 60,
+      "price": 110,
+      "label": {
+        "en": "60 minutes",
+        "es": "60 minutos"
+      }
+    },
+    {
+      "id": "session-90",
+      "minutes": 90,
+      "price": 155,
+      "label": {
+        "en": "90 minutes",
+        "es": "90 minutos"
+      }
+    },
+    {
+      "id": "session-120",
+      "minutes": 120,
+      "price": 200,
+      "label": {
+        "en": "120 minutes",
+        "es": "120 minutos"
+      }
+    }
+  ],
+  "introOffer": {
+    "id": "first-visit",
+    "minutes": 60,
+    "price": 95,
+    "label": {
+      "en": "First appointment, 60 minutes",
+      "es": "Primera cita, 60 minutos"
+    },
+    "detail": {
+      "en": "New clients only, for the first visit.",
+      "es": "Solo para clientes nuevos, en la primera visita."
+    }
+  },
+  "couples": {
+    "id": "couples",
+    "price": 200,
+    "label": {
+      "en": "Couples massage",
+      "es": "Masaje para parejas"
+    }
+  },
+  "packages": [
+    {
+      "id": "postop-5",
+      "sessions": 5,
+      "price": 500,
+      "label": {
+        "en": "5 post-operative sessions",
+        "es": "5 sesiones post operatorias"
+      }
+    },
+    {
+      "id": "postop-10",
+      "sessions": 10,
+      "price": 900,
+      "label": {
+        "en": "10 post-operative sessions",
+        "es": "10 sesiones post operatorias"
+      }
+    }
+  ],
+  "membership": {
+    "enabled": true,
+    "price": 99,
+    "period": {
+      "en": "per month",
+      "es": "al mes"
+    },
+    "name": {
+      "en": "Premium Membership",
+      "es": "Membresía Premium"
+    },
+    "tagline": {
+      "en": "Ongoing wellness, exclusive benefits",
+      "es": "Bienestar constante, beneficios exclusivos"
+    },
+    "cta": {
+      "en": "Join today",
+      "es": "¡Reserva tu membresía hoy!"
+    },
+    "learnMore": {
+      "en": "See all benefits",
+      "es": "Ver todos los beneficios"
+    },
+    "benefits": [
+      {
+        "id": "monthly-massage",
+        "title": {
+          "en": "Monthly massage",
+          "es": "Masaje mensual"
+        },
+        "body": {
+          "en": "One 60-minute therapeutic massage per month. Additional 60-minute therapeutic massages that month are $95.",
+          "es": "Un masaje terapéutico de 60 minutos por mes. Precio preferencial de $95 para masajes terapéuticos adicionales de 60 minutos durante el mismo mes."
+        }
+      },
+      {
+        "id": "promotions",
+        "title": {
+          "en": "Special promotions",
+          "es": "Acceso a promociones especiales"
+        },
+        "body": {
+          "en": "An extra 10% off promotions, packages, and special events during the year.",
+          "es": "10% de descuento adicional sobre promociones, paquetes y eventos especiales realizados por VM Integral Massage durante el año."
+        }
+      },
+      {
+        "id": "complementary",
+        "title": {
+          "en": "Complementary services",
+          "es": "Servicios complementarios incluidos"
+        },
+        "body": {
+          "en": "Included at no extra cost with each session:",
+          "es": "Durante cada sesión, sin costo adicional:"
+        },
+        "items": [
+          {
+            "en": "Aromatherapy",
+            "es": "Aromaterapia"
+          },
+          {
+            "en": "Hot stones",
+            "es": "Piedras calientes"
+          },
+          {
+            "en": "Cupping therapy (ventosas)",
+            "es": "Cupping therapy (terapia de ventosas)"
+          },
+          {
+            "en": "Muscle recovery tools",
+            "es": "Herramientas de recuperación muscular"
+          },
+          {
+            "en": "Other complementary therapies, as the therapist recommends",
+            "es": "Otras terapias complementarias, según recomendación del terapeuta"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": {
+          "en": "Booking priority",
+          "es": "Prioridad en reservaciones"
+        },
+        "body": {
+          "en": "Preferred access to available times, and priority on the waitlist and when rescheduling.",
+          "es": "Acceso preferencial a los horarios disponibles, y prioridad en lista de espera y reprogramaciones."
+        }
+      },
+      {
+        "id": "rollover",
+        "title": {
+          "en": "Rollover sessions",
+          "es": "Sesiones acumulables"
+        },
+        "body": {
+          "en": "Unused sessions roll over for up to 90 days, then expire.",
+          "es": "Las sesiones no utilizadas se acumulan hasta por 90 días y vencen automáticamente después de ese período."
+        }
+      },
+      {
+        "id": "gift-cards",
+        "title": {
+          "en": "Gift card discount",
+          "es": "Descuento en gift cards"
+        },
+        "body": {
+          "en": "10% off gift cards, with a maximum of three discounted cards per month.",
+          "es": "10% de descuento en tarjetas de regalo, máximo tres gift cards con descuento por mes."
+        }
+      },
+      {
+        "id": "family",
+        "title": {
+          "en": "Family benefits",
+          "es": "Beneficios para familiares"
+        },
+        "body": {
+          "en": "Immediate family receive 10% off their first massage. Aesthetic services are excluded.",
+          "es": "Los familiares directos reciben 10% de descuento en su primer masaje. Los servicios estéticos están excluidos."
+        }
+      },
+      {
+        "id": "referral",
+        "title": {
+          "en": "Referral program",
+          "es": "Programa de referidos"
+        },
+        "body": {
+          "en": "$10 credit for each new referred client who completes a service. Credits are not stackable, must be used within 30 days, are not redeemable for cash, and are not transferable.",
+          "es": "Crédito de $10 por cada nuevo cliente referido que complete un servicio. Los créditos no son acumulables, deben usarse dentro de 30 días, no se canjean por efectivo y no son transferibles."
+        }
+      },
+      {
+        "id": "birthday",
+        "title": {
+          "en": "Birthday gift",
+          "es": "Regalo de cumpleaños"
+        },
+        "body": {
+          "en": "In your birthday month, a free upgrade on one session, including 30 extra minutes of massage.",
+          "es": "Durante el mes de cumpleaños, una mejora gratuita en una sesión, incluyendo 30 minutos adicionales de masaje."
+        }
+      }
+    ]
+  }
 }

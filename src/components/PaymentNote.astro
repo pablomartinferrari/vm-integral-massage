@@ -1,0 +1,15 @@
+---
+import { copy } from '../lib/content';
+import type { Locale } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = copy(locale);
+---
+
+<div>
+  <p class="text-xs tracking-[0.2em] uppercase text-gold-deep">{t.contactPage.paymentTitle}</p>
+  <p class="mt-3 text-sm leading-relaxed text-ink-soft">{t.contactPage.paymentBody}</p>
+</div>

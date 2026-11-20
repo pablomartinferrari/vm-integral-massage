@@ -7,8 +7,8 @@
     "aboutDescription": "VM Integral Massage Inc. was founded in 2021 by Maria Victoria Malacre in Kissimmee, Florida. More than 17 years of therapeutic massage experience.",
     "servicesTitle": "Therapeutic massage services",
     "servicesDescription": "Relaxing anti-stress massage, decontracting massage, post-operative massage, lymphatic drainage with pressotherapy, sports massage, and muscle recovery in Kissimmee, FL.",
-    "pricingTitle": "Sample pricing",
-    "pricingDescription": "Sample massage prices for VM Integral Massage in Kissimmee. The 60-minute therapeutic session is $100; other figures are examples for owner review.",
+    "pricingTitle": "Pricing",
+    "pricingDescription": "Massage prices at VM Integral Massage in Kissimmee. Sessions from $110, a $95 first-visit offer, couples massage, post-operative packages, and Premium Membership at $99 a month.",
     "contactTitle": "Book an appointment",
     "contactDescription": "Visit VM Integral Massage at 211 Broadway, Kissimmee, FL 34741. Call +1 407-388-4928, WhatsApp, or email info@vmintegralmassage.com.",
     "journalTitle": "Journal",
@@ -42,7 +42,9 @@
     "whatsapp": "WhatsApp",
     "viewServices": "View services",
     "getDirections": "Get directions",
-    "whatsappPrefill": "Hello, I would like to book a massage at VM Integral Massage."
+    "whatsappPrefill": "Hello, I would like to book a massage at VM Integral Massage.",
+    "membershipPrefill": "Hello, I would like to join the Premium Membership at VM Integral Massage.",
+    "giftCardPrefill": "Hello, I would like to buy a gift card at VM Integral Massage."
   },
   "hero": {
     "eyebrow": "Kissimmee, Florida",
@@ -86,7 +88,9 @@
     "locationTitle": "Our new location",
     "hoursTitle": "Hours",
     "contactTitle": "Contact",
-    "bookingNote": "There is no online checkout yet. Choose WhatsApp, a phone call, or email — the same ways clients reach the studio today."
+    "bookingNote": "There is no online checkout yet. Choose WhatsApp, a phone call, or email — the same ways clients reach the studio today.",
+    "paymentTitle": "Payment & tips",
+    "paymentBody": "We accept Zelle, credit or debit card, and cash. Tips are welcome."
   },
   "servicesPage": {
     "eyebrow": "Our services",
@@ -103,14 +107,27 @@
   "pricing": {
     "eyebrow": "Investment",
     "title": "Pricing",
-    "lede": "A quiet menu for the Kissimmee studio. One rate is confirmed; the rest are samples so the owner can decide what to publish.",
-    "sampleNote": "Sample pricing — for review only, not a published rate list.",
-    "confirmedNote": "Confirmed: a 60-minute therapeutic massage is about $100.",
+    "lede": "A clear menu for the Kissimmee studio. Session times are the same for every massage we offer.",
     "contactForPricing": "Contact us for pricing.",
-    "sampleBadge": "Sample",
     "from": "from",
-    "packageNote": "The studio recommends at least 10 to 20 lymphatic drainage sessions after surgery. These packages are sample bundles for that course of care.",
-    "viewMenu": "View pricing"
+    "viewMenu": "View pricing",
+    "sessionsEyebrow": "Sessions",
+    "sessionsTitle": "By length",
+    "sessionsNote": "These times apply to relaxing, decontracting, sports, muscle-recovery, lymphatic, and post-operative massage.",
+    "offerEyebrow": "New clients",
+    "offerTitle": "First visit",
+    "moreEyebrow": "Also offered",
+    "packagesEyebrow": "Recovery",
+    "packagesTitle": "Post-operative packages",
+    "packageNote": "Ask when you book which package fits your recovery. Single post-operative sessions use the times above.",
+    "membershipEyebrow": "Membership",
+    "giftCardsEyebrow": "Gifts",
+    "giftCardsTitle": "Gift cards",
+    "giftCardsBody": "Available in digital and physical form, at the same prices as our services. Gift cards must be used within 60 days of purchase.",
+    "giftCardsCta": "Buy a gift card",
+    "giftCardsHome": "Gift cards are available in digital or physical form, at the same prices as our services, and must be used within 60 days.",
+    "paymentEyebrow": "Payment & tips",
+    "paymentBody": "We accept Zelle, credit or debit card, and cash. Tips are welcome."
   },
   "journalPage": {
     "eyebrow": "Journal",
