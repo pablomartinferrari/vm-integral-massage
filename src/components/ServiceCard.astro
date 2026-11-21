@@ -1,0 +1,44 @@
+---
+import { copy, type Service } from '../lib/content';
+import { servicePath, type Locale } from '../lib/i18n';
+import FromPrice from './FromPrice.astro';
+
+interface Props {
+  locale: Locale;
+  service: Service;
+  compact?: boolean;
+}
+const { locale, service, compact = false } = Astro.props;
+const t = copy(locale);
+---
+
+<article class="card card-hover group overflow-hidden">
+  <a href={servicePath(locale, service.slugs)} class="block overflow-hidden">
+    <img
+      src={service.image}
+      alt={service.name[locale]}
+      width="800"
+      height="520"
+      loading="lazy"
+      decoding="async"
+      class:list={['img-zoom w-full object-cover', compact ? 'h-48' : 'h-56 md:h-64']}
+    />
+  </a>
+  <div class:list={['p-5 md:p-6', !compact && 'md:p-8']}>
+    <p class="eyebrow">{service.number}</p>
+    <h3 class:list={['mt-2 font-serif', compact ? 'text-2xl' : 'text-[1.85rem] md:text-3xl']}>
+      <a class="text-ink transition-colors hover:text-gold-ink" href={servicePath(locale, service.slugs)}>
+        {service.name[locale]}
+      </a>
+    </h3>
+    <p class:list={['mt-3 text-ink-soft', compact ? 'text-base leading-relaxed' : 'leading-relaxed']}>
+      {service.summary[locale]}
+    </p>
+    <FromPrice locale={locale} />
+    <p class="mt-5">
+      <a class="text-sm font-medium tracking-[0.12em] uppercase text-gold-ink hover:text-gold-deep" href={servicePath(locale, service.slugs)}>
+        {t.servicesPage.detailCta} →
+      </a>
+    </p>
+  </div>
+</article>

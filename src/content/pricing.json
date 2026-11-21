@@ -91,6 +91,7 @@
   "membership": {
     "enabled": true,
     "price": 99,
+    "additionalSessionPrice": 95,
     "period": {
       "en": "per month",
       "es": "al mes"

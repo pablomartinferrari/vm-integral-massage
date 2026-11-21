@@ -10,7 +10,7 @@ const t = copy(locale);
 const year = new Date().getFullYear();
 ---
 
-<footer class="bg-night pb-24 pt-16 text-ivory/80 md:pb-12">
+<footer class="bg-night pb-[7.5rem] pt-16 text-ivory/85 md:pb-12">
   <div class="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-3 md:px-6">
     <div>
       <img
@@ -21,11 +21,11 @@ const year = new Date().getFullYear();
         class="mb-4 h-20 w-20 rounded-full object-cover ring-1 ring-gold/30"
       />
       <p class="font-serif text-2xl text-ivory">{site.brandName}</p>
-      <p class="mt-4 max-w-sm text-sm leading-relaxed text-ivory/70">{t.footer.blurb}</p>
+      <p class="mt-4 max-w-sm text-base leading-relaxed text-ivory/80">{t.footer.blurb}</p>
     </div>
     <div>
-      <p class="text-xs tracking-[0.2em] uppercase text-gold">{t.footer.services}</p>
-      <ul class="mt-4 space-y-2 text-sm">
+      <p class="eyebrow eyebrow-on-dark">{t.footer.services}</p>
+      <ul class="mt-4 space-y-2 text-base">
         {
           services.map((s) => (
             <li>
@@ -38,8 +38,8 @@ const year = new Date().getFullYear();
       </ul>
     </div>
     <div>
-      <p class="text-xs tracking-[0.2em] uppercase text-gold">{t.footer.contact}</p>
-      <address class="mt-4 space-y-2 text-sm not-italic">
+      <p class="eyebrow eyebrow-on-dark">{t.footer.contact}</p>
+      <address class="mt-4 space-y-2 text-base not-italic">
         <p>{site.address.full}</p>
         <p>
           <a class="hover:text-gold" href={`tel:${site.phoneTel}`}>{site.phoneDisplay}</a>
@@ -47,7 +47,7 @@ const year = new Date().getFullYear();
         <p>
           <a class="hover:text-gold" href={`mailto:${site.email}`}>{site.email}</a>
         </p>
-        <ul class="space-y-1 pt-2 text-ivory/70">
+        <ul class="space-y-1 pt-2 text-ivory/75">
           {
             site.hours.map((h) => (
               <li>
@@ -63,7 +63,7 @@ const year = new Date().getFullYear();
       </address>
     </div>
   </div>
-  <div class="mx-auto mt-12 flex max-w-6xl flex-wrap items-center justify-between gap-3 border-t border-white/10 px-4 pt-6 text-xs text-ivory/50 md:px-6">
+  <div class="mx-auto mt-12 flex max-w-6xl flex-wrap items-center justify-between gap-3 border-t border-white/10 px-4 pt-6 text-sm text-ivory/65 md:px-6">
     <p>© {year} {t.footer.copyright} · {t.footer.rights}</p>
     <div class="flex gap-4">
       {pricing.showPrices && (

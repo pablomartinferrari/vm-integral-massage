@@ -49,13 +49,19 @@
   "hero": {
     "eyebrow": "Kissimmee, Florida",
     "title": "Massage is not a luxury. It is a necessity.",
-    "lede": "Discover the power of massage with VM Integral Massage Inc. Therapeutic care for stress, recovery, and post-operative healing — in a calm studio on Broadway.",
+    "lede": "Therapeutic care for stress, recovery, and post-operative healing — in a calm studio on Broadway.",
     "secondary": "Book by WhatsApp, phone, or email. We will confirm your appointment personally."
   },
   "attention": {
     "eyebrow": "Therapeutic massage",
-    "title": "Pay attention to our services",
+    "title": "Treatments for stress, recovery, and healing",
     "intro": "Six focused treatments, described in the words of the studio. Ask when you book if you would like a time or a package that is not listed."
+  },
+  "homeFacts": {
+    "studio": "The studio",
+    "hours": "Hours",
+    "from": "Sessions from",
+    "offer": "First visit"
   },
   "aboutPreview": {
     "eyebrow": "Who we are",
@@ -83,8 +89,8 @@
   },
   "contactPage": {
     "eyebrow": "Contact",
-    "title": "What are you waiting for?",
-    "lede": "Book your appointment. We will answer by WhatsApp, phone, or email.",
+    "title": "Book your appointment",
+    "lede": "We will answer by WhatsApp, phone, or email, and confirm your visit personally.",
     "locationTitle": "Our new location",
     "hoursTitle": "Hours",
     "contactTitle": "Contact",
@@ -97,6 +103,7 @@
     "title": "VM Integral Massage",
     "lede": "Therapeutic massages offered at the Kissimmee studio. Tap a service for the full description.",
     "detailCta": "Full details",
+    "bookThis": "Book this service",
     "priceLabel": "Price",
     "durationLabel": "Duration",
     "priceTodo": "TODO: price not published on the previous site",
@@ -109,17 +116,27 @@
     "title": "Pricing",
     "lede": "A clear menu for the Kissimmee studio. Session times are the same for every massage we offer.",
     "contactForPricing": "Contact us for pricing.",
-    "from": "from",
+    "from": "From",
     "viewMenu": "View pricing",
     "sessionsEyebrow": "Sessions",
     "sessionsTitle": "By length",
     "sessionsNote": "These times apply to relaxing, decontracting, sports, muscle-recovery, lymphatic, and post-operative massage.",
+    "perSession": "That’s {amount} per session",
     "offerEyebrow": "New clients",
     "offerTitle": "First visit",
+    "offerBadge": "First visit",
     "moreEyebrow": "Also offered",
     "packagesEyebrow": "Recovery",
     "packagesTitle": "Post-operative packages",
     "packageNote": "Ask when you book which package fits your recovery. Single post-operative sessions use the times above.",
+    "compareEyebrow": "Members",
+    "compareTitle": "Regular rate and member rate",
+    "compareCol": "Session",
+    "compareGuest": "Regular",
+    "compareMember": "Premium member",
+    "compareSession": "60-minute therapeutic massage",
+    "compareIncluded": "Included once a month",
+    "compareExtra": "Additional 60-minute massage that month",
     "membershipEyebrow": "Membership",
     "giftCardsEyebrow": "Gifts",
     "giftCardsTitle": "Gift cards",
@@ -146,7 +163,7 @@
   },
   "reviews": {
     "eyebrow": "From our clients",
-    "title": "Words left on the previous site",
+    "title": "What clients have told us",
     "source": "Shown on the former homepage via a Google review widget, plus one quote from the About page. Names and wording are preserved; Spanish quotes are translated on this English page."
   },
   "footer": {

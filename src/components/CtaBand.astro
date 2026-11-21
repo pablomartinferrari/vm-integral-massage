@@ -14,21 +14,22 @@ const t = copy(locale);
   <img
     src="/images/candles.jpg"
     alt=""
+    width="1600"
+    height="900"
+    loading="lazy"
+    decoding="async"
     class="absolute inset-0 h-full w-full object-cover opacity-25"
   />
   <div class="relative mx-auto max-w-4xl px-4 py-16 text-center md:py-20">
-    <p class="text-xs tracking-[0.25em] uppercase text-gold">{t.contactPage.eyebrow}</p>
-    <h2 class="mt-4 font-serif text-4xl md:text-5xl">{heading ?? t.contactPage.title}</h2>
-    <p class="mx-auto mt-4 max-w-xl text-ivory/75">{t.hero.secondary}</p>
+    <p class="eyebrow eyebrow-on-dark">{t.contactPage.eyebrow}</p>
+    <h2 class="mt-4 font-serif text-4xl md:text-5xl" style="color: var(--color-ivory)">{heading ?? t.contactPage.title}</h2>
+    <p class="mx-auto mt-4 max-w-xl text-ivory/88">{t.hero.secondary}</p>
     <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-      <a
-        class="rounded-full bg-gold px-6 py-3 text-sm tracking-[0.12em] uppercase text-night hover:bg-gold-deep hover:text-cream"
-        href={whatsappUrl(site.whatsapp, t.cta.whatsappPrefill)}>{t.cta.bookWhatsApp}</a
-      >
-      <a class="rounded-full border border-ivory/30 px-6 py-3 text-sm tracking-[0.12em] uppercase hover:border-gold hover:text-gold" href={`tel:${site.phoneTel}`}>
+      <a class="btn btn-primary" href={whatsappUrl(site.whatsapp, t.cta.whatsappPrefill)}>{t.cta.bookWhatsApp}</a>
+      <a class="btn btn-secondary" href={`tel:${site.phoneTel}`}>
         {t.cta.call} {site.phoneDisplay}
       </a>
-      <a class="rounded-full border border-ivory/30 px-6 py-3 text-sm tracking-[0.12em] uppercase hover:border-gold hover:text-gold" href={`mailto:${site.email}`}>
+      <a class="btn btn-secondary" href={`mailto:${site.email}`}>
         {t.cta.email}
       </a>
     </div>

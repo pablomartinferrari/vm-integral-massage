@@ -48,14 +48,20 @@
   },
   "hero": {
     "eyebrow": "Kissimmee, Florida",
-    "title": "El masaje no es un lujo, es una necesidad en los tiempos que vivimos.",
-    "lede": "Descubre el poder del masaje con VM Integral Massage Inc. Cuidado terapéutico para el estrés, la recuperación y el post operatorio — en un estudio calmado en Broadway.",
+    "title": "El masaje no es un lujo. Es una necesidad.",
+    "lede": "Cuidado terapéutico para el estrés, la recuperación y el post operatorio — en un estudio calmado en Broadway.",
     "secondary": "Reserva por WhatsApp, teléfono o correo. Confirmamos tu cita en persona."
   },
   "attention": {
     "eyebrow": "Masajes terapéuticos",
-    "title": "Presta atención a nuestros servicios",
+    "title": "Tratamientos para el estrés, la recuperación y el post operatorio",
     "intro": "Seis tratamientos, descritos con las palabras del estudio. Al reservar, pregunta si deseas un tiempo o un paquete que no esté en la lista."
+  },
+  "homeFacts": {
+    "studio": "El estudio",
+    "hours": "Horario",
+    "from": "Sesiones desde",
+    "offer": "Primera visita"
   },
   "aboutPreview": {
     "eyebrow": "Quiénes somos",
@@ -83,8 +89,8 @@
   },
   "contactPage": {
     "eyebrow": "Contáctanos",
-    "title": "Qué estás esperando...",
-    "lede": "Haz tu cita. Respondemos por WhatsApp, teléfono o correo.",
+    "title": "Haz tu cita",
+    "lede": "Respondemos por WhatsApp, teléfono o correo, y confirmamos tu visita en persona.",
     "locationTitle": "Nuestra nueva ubicación",
     "hoursTitle": "Horario",
     "contactTitle": "Contacto",
@@ -97,6 +103,7 @@
     "title": "VM Integral Massage",
     "lede": "Masajes terapéuticos en el estudio de Kissimmee. Entra a cada servicio para leer la descripción completa.",
     "detailCta": "Ver detalle",
+    "bookThis": "Reservar este servicio",
     "priceLabel": "Precio",
     "durationLabel": "Duración",
     "priceTodo": "TODO: el precio no estaba publicado en el sitio anterior",
@@ -109,17 +116,27 @@
     "title": "Precios",
     "lede": "Un menú claro para el estudio de Kissimmee. Los tiempos de sesión son los mismos para cada masaje que ofrecemos.",
     "contactForPricing": "Consúltanos por el precio.",
-    "from": "desde",
+    "from": "Desde",
     "viewMenu": "Ver precios",
     "sessionsEyebrow": "Sesiones",
     "sessionsTitle": "Por duración",
     "sessionsNote": "Estos tiempos aplican al masaje relajante, descontracturante, deportivo, de recuperación muscular, drenaje linfático y post operatorio.",
+    "perSession": "Equivale a {amount} por sesión",
     "offerEyebrow": "Clientes nuevos",
     "offerTitle": "Primera visita",
+    "offerBadge": "Primera visita",
     "moreEyebrow": "También ofrecemos",
     "packagesEyebrow": "Recuperación",
     "packagesTitle": "Paquetes post operatorios",
     "packageNote": "Al reservar, pregunta qué paquete conviene a tu recuperación. Las sesiones post operatorias individuales usan los tiempos de arriba.",
+    "compareEyebrow": "Miembros",
+    "compareTitle": "Tarifa regular y tarifa de miembro",
+    "compareCol": "Sesión",
+    "compareGuest": "Regular",
+    "compareMember": "Miembro Premium",
+    "compareSession": "Masaje terapéutico de 60 minutos",
+    "compareIncluded": "Incluida una vez al mes",
+    "compareExtra": "Masaje adicional de 60 minutos ese mes",
     "membershipEyebrow": "Membresía",
     "giftCardsEyebrow": "Regalos",
     "giftCardsTitle": "Tarjetas de regalo",
@@ -146,7 +163,7 @@
   },
   "reviews": {
     "eyebrow": "De nuestros clientes",
-    "title": "Palabras que ya estaban en el sitio",
+    "title": "Lo que nos han dicho los clientes",
     "source": "Mostradas en la portada anterior mediante un widget de reseñas de Google, más una cita de la página Nosotros. Se conservan nombres y wording; las citas en inglés se traducen en esta página."
   },
   "footer": {

@@ -22,7 +22,7 @@ const wa = whatsappUrl(site.whatsapp, t.cta.whatsappPrefill);
 
 <header class="sticky top-0 z-40 border-b border-white/10 bg-night/95 text-ivory backdrop-blur">
   <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 md:px-6">
-    <a href={tPath(locale, 'home')} class="flex min-w-0 items-center gap-3">
+    <a href={tPath(locale, 'home')} class="flex min-w-0 items-center gap-3 rounded-full">
       <img
         src="/images/brand/logo-on-black.jpg"
         alt={site.brandName}
@@ -30,23 +30,26 @@ const wa = whatsappUrl(site.whatsapp, t.cta.whatsappPrefill);
         height="56"
         class="h-12 w-12 rounded-full object-cover ring-1 ring-gold/40 md:h-14 md:w-14"
       />
-      <span class="truncate font-serif text-lg tracking-wide text-ivory md:text-xl">
+      <span class="hidden truncate font-serif text-lg tracking-wide text-ivory sm:inline md:text-xl">
         {site.brandName}
       </span>
     </a>
 
-    <nav class="hidden items-center gap-7 text-sm tracking-wide text-ivory/80 lg:flex" aria-label="Primary">
+    <nav class="hidden items-center gap-8 text-[0.9375rem] tracking-wide text-ivory/85 lg:flex" aria-label="Primary">
       {
         links.map((item) => (
           <a
             href={item.href}
             class:list={[
-              'hover:text-gold transition-colors',
+              'relative py-1 transition-colors hover:text-gold',
               page === item.key && 'text-gold',
             ]}
             aria-current={page === item.key ? 'page' : undefined}
           >
             {t.nav[item.key]}
+            {page === item.key && (
+              <span class="absolute inset-x-0 -bottom-1 h-px bg-gold" aria-hidden="true"></span>
+            )}
           </a>
         ))
       }
@@ -55,21 +58,18 @@ const wa = whatsappUrl(site.whatsapp, t.cta.whatsappPrefill);
     <div class="flex items-center gap-2 sm:gap-3">
       <a
         href={alternatePath}
-        class="rounded-full border border-white/15 px-3 py-1.5 text-xs tracking-[0.14em] uppercase text-ivory/80 hover:border-gold hover:text-gold"
+        class="inline-flex min-h-10 items-center rounded-full border border-white/15 px-3 py-2 text-xs tracking-[0.14em] uppercase text-ivory/85 hover:border-gold hover:text-gold"
         lang={locale === 'en' ? 'es' : 'en'}
         hreflang={locale === 'en' ? 'es-US' : 'en-US'}
       >
         {t.nav.otherLanguage}
       </a>
-      <a
-        href={wa}
-        class="hidden rounded-full bg-gold px-4 py-2 text-xs font-medium tracking-[0.12em] uppercase text-night hover:bg-gold-deep hover:text-cream sm:inline-flex"
-      >
+      <a href={wa} class="btn btn-primary hidden !min-h-10 !px-4 !py-2 sm:inline-flex">
         {t.nav.bookNow}
       </a>
       <button
         type="button"
-        class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 lg:hidden"
+        class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 lg:hidden"
         data-menu-toggle
         aria-expanded="false"
         aria-controls="mobile-nav"
@@ -85,16 +85,16 @@ const wa = whatsappUrl(site.whatsapp, t.cta.whatsappPrefill);
   </div>
 
   <div id="mobile-nav" hidden class="border-t border-white/10 px-4 py-4 lg:hidden">
-    <nav class="flex flex-col gap-3 text-base" aria-label="Mobile">
+    <nav class="flex flex-col gap-1 text-base" aria-label="Mobile">
       {
         links.map((item) => (
-          <a href={item.href} class="py-1 text-ivory/90">
+          <a href={item.href} class="min-h-11 py-2 text-ivory/90">
             {t.nav[item.key]}
           </a>
         ))
       }
-      <a href={tPath(locale, 'journal')} class="py-1 text-ivory/90">{t.nav.journal}</a>
-      <a href={wa} class="mt-2 rounded-full bg-gold px-4 py-3 text-center text-sm tracking-wide text-night">
+      <a href={tPath(locale, 'journal')} class="min-h-11 py-2 text-ivory/90">{t.nav.journal}</a>
+      <a href={wa} class="btn btn-primary mt-2">
         {t.nav.bookNow}
       </a>
     </nav>
