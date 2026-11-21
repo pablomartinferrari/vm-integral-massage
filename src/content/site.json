@@ -27,11 +27,11 @@
       "daysEn": "Monday–Friday",
       "daysEs": "Lunes a viernes",
       "opens": "08:00",
-      "closes": "19:00",
-      "displayEn": "8:00am–7:00pm",
-      "displayEs": "8:00 a.m.–7:00 p.m.",
+      "closes": "18:00",
+      "displayEn": "8:00am–6:00pm",
+      "displayEs": "8:00 a.m.–6:00 p.m.",
       "schemaDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "schemaHours": "Mo-Fr 08:00-19:00"
+      "schemaHours": "Mo-Fr 08:00-18:00"
     },
     {
       "daysEn": "Saturday",
@@ -54,7 +54,7 @@
       "schemaHours": null
     }
   ],
-  "hoursSource": "Confirmed by the owner: Monday–Friday 8:00am–7:00pm, Saturday 8:00am–2:00pm, Sunday closed.",
+  "hoursSource": "Confirmed by the owner: Monday–Friday 8:00am–6:00pm, Saturday 8:00am–2:00pm, Sunday closed.",
   "googleRatingClaim": "5.0",
   "experienceYearsClaim": 17,
   "oldWordPressPages": {
