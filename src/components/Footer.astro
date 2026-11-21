@@ -40,7 +40,7 @@ const year = new Date().getFullYear();
     <div>
       <p class="eyebrow eyebrow-on-dark">{t.footer.contact}</p>
       <address class="mt-4 space-y-2 text-base not-italic">
-        <p>{site.address.full}</p>
+        <p><a class="hover:text-gold" data-map-link href={site.mapsUrl} rel="noopener noreferrer">{site.address.full}</a></p>
         <p>
           <a class="hover:text-gold" href={`tel:${site.phoneTel}`}>{site.phoneDisplay}</a>
         </p>
