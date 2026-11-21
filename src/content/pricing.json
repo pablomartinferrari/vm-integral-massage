@@ -56,8 +56,8 @@
       "es": "Primera cita, 60 minutos"
     },
     "detail": {
-      "en": "New clients only, for the first visit.",
-      "es": "Solo para clientes nuevos, en la primera visita."
+      "en": "For new clients, on the first visit.",
+      "es": "Para clientes nuevos, en la primera visita."
     }
   },
   "couples": {
@@ -101,12 +101,12 @@
       "es": "Membresía Premium"
     },
     "tagline": {
-      "en": "Ongoing wellness, exclusive benefits",
-      "es": "Bienestar constante, beneficios exclusivos"
+      "en": "A monthly hour of care, with member extras",
+      "es": "Tu hora de cuidado, cada mes, con extras de miembro"
     },
     "cta": {
-      "en": "Join today",
-      "es": "¡Reserva tu membresía hoy!"
+      "en": "Join the membership",
+      "es": "Quiero la membresía"
     },
     "learnMore": {
       "en": "See all benefits",
@@ -120,30 +120,30 @@
           "es": "Masaje mensual"
         },
         "body": {
-          "en": "One 60-minute therapeutic massage per month. Additional 60-minute therapeutic massages that month are $95.",
-          "es": "Un masaje terapéutico de 60 minutos por mes. Precio preferencial de $95 para masajes terapéuticos adicionales de 60 minutos durante el mismo mes."
+          "en": "One 60-minute therapeutic massage each month. Extra 60-minute therapeutic massages that month are $95.",
+          "es": "Un masaje terapéutico de 60 minutos cada mes. Los masajes terapéuticos adicionales de 60 minutos ese mes cuestan $95."
         }
       },
       {
         "id": "promotions",
         "title": {
           "en": "Special promotions",
-          "es": "Acceso a promociones especiales"
+          "es": "Promociones especiales"
         },
         "body": {
           "en": "An extra 10% off promotions, packages, and special events during the year.",
-          "es": "10% de descuento adicional sobre promociones, paquetes y eventos especiales realizados por VM Integral Massage durante el año."
+          "es": "10% extra de descuento en promociones, paquetes y eventos especiales de VM Integral Massage durante el año."
         }
       },
       {
         "id": "complementary",
         "title": {
           "en": "Complementary services",
-          "es": "Servicios complementarios incluidos"
+          "es": "Complementos incluidos"
         },
         "body": {
           "en": "Included at no extra cost with each session:",
-          "es": "Durante cada sesión, sin costo adicional:"
+          "es": "En cada sesión, sin costo extra:"
         },
         "items": [
           {
@@ -155,8 +155,8 @@
             "es": "Piedras calientes"
           },
           {
-            "en": "Cupping therapy (ventosas)",
-            "es": "Cupping therapy (terapia de ventosas)"
+            "en": "Cupping (ventosas)",
+            "es": "Ventosas"
           },
           {
             "en": "Muscle recovery tools",
@@ -175,8 +175,8 @@
           "es": "Prioridad en reservaciones"
         },
         "body": {
-          "en": "Preferred access to available times, and priority on the waitlist and when rescheduling.",
-          "es": "Acceso preferencial a los horarios disponibles, y prioridad en lista de espera y reprogramaciones."
+          "en": "Preferred access to available times, plus priority on the waitlist and when you need to reschedule.",
+          "es": "Acceso preferente a los horarios disponibles, y prioridad en la lista de espera y al reprogramar."
         }
       },
       {
@@ -186,19 +186,19 @@
           "es": "Sesiones acumulables"
         },
         "body": {
-          "en": "Unused sessions roll over for up to 90 days, then expire.",
-          "es": "Las sesiones no utilizadas se acumulan hasta por 90 días y vencen automáticamente después de ese período."
+          "en": "Unused sessions roll over for up to 90 days, then they expire.",
+          "es": "Las sesiones no usadas se acumulan hasta por 90 días y después vencen."
         }
       },
       {
         "id": "gift-cards",
         "title": {
           "en": "Gift card discount",
-          "es": "Descuento en gift cards"
+          "es": "Descuento en tarjetas de regalo"
         },
         "body": {
           "en": "10% off gift cards, with a maximum of three discounted cards per month.",
-          "es": "10% de descuento en tarjetas de regalo, máximo tres gift cards con descuento por mes."
+          "es": "10% de descuento en tarjetas de regalo, máximo tres tarjetas con descuento por mes."
         }
       },
       {
@@ -209,7 +209,7 @@
         },
         "body": {
           "en": "Immediate family receive 10% off their first massage. Aesthetic services are excluded.",
-          "es": "Los familiares directos reciben 10% de descuento en su primer masaje. Los servicios estéticos están excluidos."
+          "es": "Los familiares directos reciben 10% de descuento en su primer masaje. No aplica a servicios estéticos."
         }
       },
       {
@@ -220,7 +220,7 @@
         },
         "body": {
           "en": "$10 credit for each new referred client who completes a service. Credits are not stackable, must be used within 30 days, are not redeemable for cash, and are not transferable.",
-          "es": "Crédito de $10 por cada nuevo cliente referido que complete un servicio. Los créditos no son acumulables, deben usarse dentro de 30 días, no se canjean por efectivo y no son transferibles."
+          "es": "$10 de crédito por cada cliente nuevo que refieras y complete un servicio. Los créditos no se acumulan, hay que usarlos en 30 días, no se canjean por efectivo y no se transfieren."
         }
       },
       {
@@ -231,7 +231,7 @@
         },
         "body": {
           "en": "In your birthday month, a free upgrade on one session, including 30 extra minutes of massage.",
-          "es": "Durante el mes de cumpleaños, una mejora gratuita en una sesión, incluyendo 30 minutos adicionales de masaje."
+          "es": "En tu mes de cumpleaños, una mejora gratis en una sesión, con 30 minutos extra de masaje."
         }
       }
     ]

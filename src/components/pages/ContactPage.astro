@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import FaqSection from '../FaqSection.astro';
 import PageHero from '../PageHero.astro';
 import PaymentNote from '../PaymentNote.astro';
 import { copy, site } from '../../lib/content';
@@ -76,4 +77,6 @@ const t = copy(locale);
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
+
+  <FaqSection locale={locale} />
 </Base>

@@ -2,19 +2,19 @@
   "meta": {
     "siteTitle": "VM Integral Massage | Therapeutic Massage in Kissimmee, FL",
     "homeTitle": "Therapeutic massage in Kissimmee",
-    "homeDescription": "VM Integral Massage offers relaxing, decontracting, post-operative, lymphatic, sports, and muscle-recovery massage in Kissimmee, Florida. Book by WhatsApp, phone, or email.",
-    "aboutTitle": "About Maria Victoria Malacre",
-    "aboutDescription": "VM Integral Massage Inc. was founded in 2021 by Maria Victoria Malacre in Kissimmee, Florida. More than 17 years of therapeutic massage experience.",
-    "servicesTitle": "Therapeutic massage services",
+    "homeDescription": "Relaxing, decontracting, post-operative, lymphatic, sports, and muscle-recovery massage in Kissimmee, Florida. Book by WhatsApp, phone, or email.",
+    "aboutTitle": "About Victoria | VM Integral Massage",
+    "aboutDescription": "Victoria founded VM Integral Massage Inc. in 2021 in Kissimmee, Florida. More than 17 years of therapeutic massage experience.",
+    "servicesTitle": "Massage services in Kissimmee",
     "servicesDescription": "Relaxing anti-stress massage, decontracting massage, post-operative massage, lymphatic drainage with pressotherapy, sports massage, and muscle recovery in Kissimmee, FL.",
-    "pricingTitle": "Pricing",
-    "pricingDescription": "Massage prices at VM Integral Massage in Kissimmee. Sessions from $110, a $95 first-visit offer, couples massage, post-operative packages, and Premium Membership at $99 a month.",
-    "contactTitle": "Book an appointment",
+    "pricingTitle": "Massage prices in Kissimmee",
+    "pricingDescription": "Sessions from $110, a $95 first visit, couples massage, post-operative packages, and Premium Membership at $99 a month at VM Integral Massage in Kissimmee.",
+    "contactTitle": "Book a massage in Kissimmee",
     "contactDescription": "Visit VM Integral Massage at 211 Broadway, Kissimmee, FL 34741. Call +1 407-388-4928, WhatsApp, or email info@vmintegralmassage.com.",
-    "journalTitle": "Journal",
-    "journalDescription": "Updates from VM Integral Massage in Kissimmee, Florida.",
+    "journalTitle": "Studio notes",
+    "journalDescription": "Notes from VM Integral Massage in Kissimmee, Florida.",
     "privacyTitle": "Privacy",
-    "privacyDescription": "How VM Integral Massage handles the information you share when you book by phone, WhatsApp, or email.",
+    "privacyDescription": "How VM Integral Massage uses the information you share when you book by phone, WhatsApp, or email.",
     "notFoundTitle": "Page not found",
     "ogLocale": "en_US",
     "ogLocaleAlt": "es_US"
@@ -40,22 +40,22 @@
     "call": "Call",
     "email": "Email",
     "whatsapp": "WhatsApp",
-    "viewServices": "View services",
+    "viewServices": "See massages",
     "getDirections": "Get directions",
-    "whatsappPrefill": "Hello, I would like to book a massage at VM Integral Massage.",
-    "membershipPrefill": "Hello, I would like to join the Premium Membership at VM Integral Massage.",
-    "giftCardPrefill": "Hello, I would like to buy a gift card at VM Integral Massage."
+    "whatsappPrefill": "Hi, I’d like to book a massage at VM Integral Massage.",
+    "membershipPrefill": "Hi, I’d like to join the Premium Membership at VM Integral Massage.",
+    "giftCardPrefill": "Hi, I’d like to buy a gift card at VM Integral Massage."
   },
   "hero": {
     "eyebrow": "Kissimmee, Florida",
-    "title": "Massage is not a luxury. It is a necessity.",
-    "lede": "Therapeutic care for stress, recovery, and post-operative healing — in a calm studio on Broadway.",
-    "secondary": "Book by WhatsApp, phone, or email. We will confirm your appointment personally."
+    "title": "Feel like yourself again.",
+    "lede": "Therapeutic massage for stress, sore muscles, and post-operative care — in a calm studio on Broadway.",
+    "secondary": "Book by WhatsApp, phone, or email. We’ll confirm your appointment ourselves."
   },
   "attention": {
-    "eyebrow": "Therapeutic massage",
-    "title": "Treatments for stress, recovery, and healing",
-    "intro": "Six focused treatments, described in the words of the studio. Ask when you book if you would like a time or a package that is not listed."
+    "eyebrow": "Our massages",
+    "title": "Find the right massage for you",
+    "intro": "Six treatments, each with a clear purpose. When you book, tell us what you need — including a time or package that isn’t listed."
   },
   "homeFacts": {
     "studio": "The studio",
@@ -63,72 +63,80 @@
     "from": "Sessions from",
     "offer": "First visit"
   },
+  "alts": {
+    "hero": "Back massage in a calm treatment room",
+    "clinicLymphatic": "Lymphatic drainage with pressotherapy in the studio",
+    "shoulder": "Shoulder massage in the treatment room",
+    "couples": "Couples massage on two treatment tables",
+    "portrait": "Guest in a robe relaxing with a warm drink",
+    "result": "Post-operative result"
+  },
   "aboutPreview": {
-    "eyebrow": "Who we are",
-    "title": "A studio built on the work Maria Victoria loves",
-    "body": "VM Integral Massage Inc. was founded in 2021 by Maria Victoria Malacre — proof that when you are passionate about your work, your clients’ satisfaction and loyalty are the reward.",
+    "eyebrow": "The studio",
+    "title": "A small practice, built with care",
+    "body": "Victoria founded VM Integral Massage Inc. in 2021 — a Kissimmee studio for people who want skilled hands, a quiet room, and someone who listens.",
     "link": "Read our story"
   },
   "aboutPage": {
-    "eyebrow": "Learn more",
-    "title": "Who we are",
+    "eyebrow": "About",
+    "title": "Meet Victoria",
     "studio": "VM Integral Massage, INC",
-    "tagline": "A place where you can relax and enjoy.",
-    "experience": "At VM Integral Massage we have more than 17 years of experience in therapeutic massage for the treatment of many kinds of body pain. Our focus is to improve the health, physical wellbeing, and quality of life of our clients.",
-    "commitment": "Our commitment is to provide a high-quality service, putting the client first through integral massage, together with the respect, value, and care each person needs.",
+    "tagline": "A quiet room on Broadway, and care that takes its time.",
+    "experience": "Victoria founded VM Integral Massage Inc. in 2021. We have more than 17 years of experience in therapeutic massage for many kinds of body pain. Our focus is your health, physical wellbeing, and quality of life.",
+    "commitment": "We put you first: unhurried, integral massage, with the respect and care each person needs.",
     "experts": "We are also experts in lymphatic drainage massage.",
-    "missionTitle": "Our mission",
-    "mission1": "Because we love our work, we are committed to our clients’ wellbeing. We take the time to understand each person’s individual needs and health, creating an atmosphere of trust and a personalized experience focused on physical and emotional health.",
-    "mission2": "We offer our clients relaxation therapy, post-operative lymphatic drainage massage, massage for injury therapy, and more. In every service, clients receive kind, professional, personalized, high-quality care.",
-    "mission3": "Client reviews of the massage therapy and services we provide have ‘5.0 stars’ on Google. That is testimony of satisfaction and proof of our experience, integrity, and excellent service.",
-    "galleryTitle": "Photo gallery",
-    "galleryIntro": "Treatment-room photographs from the studio, including lymphatic drainage with pressotherapy.",
+    "missionTitle": "How we work",
+    "mission1": "We love this work, so we take time with it. We learn what your body needs, build trust, and shape each visit around your physical and emotional wellbeing.",
+    "mission2": "That includes relaxation therapy, post-operative lymphatic drainage (with your surgeon’s approval), massage for injury recovery, and more. In every service, you can expect kind, professional, personal care.",
+    "mission3": "Guests have given our massage therapy 5.0 stars on Google — a reflection of the care we try to give every visit.",
+    "galleryTitle": "Inside the studio",
+    "galleryIntro": "Photographs from the treatment room, including lymphatic drainage with pressotherapy.",
     "resultsTitle": "Post-operative results",
-    "resultsIntro": "Before-and-after photographs previously published on the About page of the live site. They show real post-operative recovery; some images include clinical nudity with the stickers already applied by the studio.",
-    "resultsNote": "These photos were copied from the public WordPress gallery. Additional gallery files remain in the previous media library if you want a larger set later."
+    "resultsIntro": "Before-and-after photographs of real post-operative recovery. Some images include clinical nudity, with the studio’s stickers already in place.",
+    "resultsNote": "These photos come from the studio’s public gallery."
   },
   "contactPage": {
-    "eyebrow": "Contact",
-    "title": "Book your appointment",
-    "lede": "We will answer by WhatsApp, phone, or email, and confirm your visit personally.",
-    "locationTitle": "Our new location",
+    "eyebrow": "Visit us",
+    "title": "Book a visit",
+    "lede": "WhatsApp, a phone call, or email — we’ll confirm your appointment ourselves.",
+    "locationTitle": "The studio",
     "hoursTitle": "Hours",
-    "contactTitle": "Contact",
-    "bookingNote": "There is no online checkout yet. Choose WhatsApp, a phone call, or email — the same ways clients reach the studio today.",
+    "contactTitle": "Reach us",
+    "bookingNote": "There’s no online checkout yet. WhatsApp, a phone call, or email — the same ways clients reach us today.",
     "paymentTitle": "Payment & tips",
     "paymentBody": "We accept Zelle, credit or debit card, and cash. Tips are welcome."
   },
   "servicesPage": {
-    "eyebrow": "Our services",
-    "title": "VM Integral Massage",
-    "lede": "Therapeutic massages offered at the Kissimmee studio. Tap a service for the full description.",
-    "detailCta": "Full details",
-    "bookThis": "Book this service",
+    "eyebrow": "Treatments",
+    "title": "Our massages",
+    "lede": "Choose a treatment to read the full description. Sessions start at $110.",
+    "detailCta": "Read more",
+    "bookThis": "Book this massage",
     "priceLabel": "Price",
     "durationLabel": "Duration",
     "priceTodo": "TODO: price not published on the previous site",
     "durationTodo": "TODO: session length not published on the previous site",
-    "askToBook": "Ask when you book — we will confirm availability, length, and price with you.",
-    "back": "All services"
+    "askToBook": "Ask when you book — we’ll confirm availability, length, and price with you.",
+    "back": "All massages"
   },
   "pricing": {
-    "eyebrow": "Investment",
+    "eyebrow": "The menu",
     "title": "Pricing",
-    "lede": "A clear menu for the Kissimmee studio. Session times are the same for every massage we offer.",
-    "contactForPricing": "Contact us for pricing.",
+    "lede": "The same session times for every massage we offer, from relaxing care to post-operative recovery.",
+    "contactForPricing": "Ask us for pricing when you book.",
     "from": "From",
-    "viewMenu": "View pricing",
+    "viewMenu": "See pricing",
     "sessionsEyebrow": "Sessions",
-    "sessionsTitle": "By length",
+    "sessionsTitle": "Session times",
     "sessionsNote": "These times apply to relaxing, decontracting, sports, muscle-recovery, lymphatic, and post-operative massage.",
     "perSession": "That’s {amount} per session",
     "offerEyebrow": "New clients",
     "offerTitle": "First visit",
     "offerBadge": "First visit",
-    "moreEyebrow": "Also offered",
+    "moreEyebrow": "Together",
     "packagesEyebrow": "Recovery",
     "packagesTitle": "Post-operative packages",
-    "packageNote": "Ask when you book which package fits your recovery. Single post-operative sessions use the times above.",
+    "packageNote": "Ask which package fits your recovery, and come with your surgeon’s approval. Single post-operative sessions use the times above.",
     "compareEyebrow": "Members",
     "compareTitle": "Regular rate and member rate",
     "compareCol": "Session",
@@ -140,34 +148,68 @@
     "membershipEyebrow": "Membership",
     "giftCardsEyebrow": "Gifts",
     "giftCardsTitle": "Gift cards",
-    "giftCardsBody": "Available in digital and physical form, at the same prices as our services. Gift cards must be used within 60 days of purchase.",
+    "giftCardsBody": "Digital or physical, at the same prices as our services. Use your card within 60 days of purchase.",
     "giftCardsCta": "Buy a gift card",
-    "giftCardsHome": "Gift cards are available in digital or physical form, at the same prices as our services, and must be used within 60 days.",
+    "giftCardsHome": "Gift cards come in digital or physical form, at the same prices as our services, and must be used within 60 days.",
     "paymentEyebrow": "Payment & tips",
     "paymentBody": "We accept Zelle, credit or debit card, and cash. Tips are welcome."
+  },
+  "faq": {
+    "eyebrow": "Questions",
+    "title": "Good to know",
+    "items": [
+      {
+        "q": "How do I book?",
+        "a": "Message us on WhatsApp, call +1 407-388-4928, or email info@vmintegralmassage.com. We’ll confirm your appointment ourselves. There’s no online checkout yet."
+      },
+      {
+        "q": "Where are you?",
+        "a": "211 Broadway, Kissimmee, FL 34741. Monday–Friday 8:00am–7:00pm, Saturday 8:00am–2:00pm, Sunday closed."
+      },
+      {
+        "q": "How much is a session?",
+        "a": "Sessions start at $110 for 60 minutes, $155 for 90 minutes, and $200 for 120 minutes. New clients pay $95 for the first 60-minute visit."
+      },
+      {
+        "q": "Do you offer post-operative massage?",
+        "a": "Yes — with your surgeon’s approval. We also offer packages of 5 sessions for $500 ($100 each) and 10 sessions for $900 ($90 each)."
+      },
+      {
+        "q": "What is Premium Membership?",
+        "a": "$99 a month includes one 60-minute therapeutic massage. Additional 60-minute sessions that month are $95. Unused sessions roll over for up to 90 days."
+      },
+      {
+        "q": "Can I buy a gift card?",
+        "a": "Yes. Digital and physical gift cards are available at the same prices as our services, and must be used within 60 days of purchase."
+      },
+      {
+        "q": "How do you take payment?",
+        "a": "We accept Zelle, credit or debit card, and cash. Tips are welcome."
+      }
+    ]
   },
   "journalPage": {
     "eyebrow": "Journal",
     "title": "Studio notes",
-    "empty": "There are no published articles yet. The previous WordPress site only contained the default “Hello world!” post, which was not studio content, so it is not republished here.",
+    "empty": "We’ll share stories, offers, and recovery tips here when we have them.",
     "todo": "TODO: add a first journal post when you have a story, offer, or recovery tip to share."
   },
   "privacyPage": {
     "eyebrow": "Privacy",
     "title": "Privacy",
-    "intro": "VM Integral Massage Inc. is a local massage studio. This page describes how we handle the information you choose to send when you book.",
-    "body1": "Appointments are requested by WhatsApp, phone, or email. We use the name, phone number, and message you send only to answer you and to schedule care.",
-    "body2": "This website does not include an account system or a booking database. Choosing English or Spanish simply opens the matching pages.",
+    "intro": "VM Integral Massage Inc. is a local massage studio. This page explains how we handle the information you send when you book.",
+    "body1": "Appointments are requested by WhatsApp, phone, or email. We use the name, phone number, and message you send only to answer you and to schedule your visit.",
+    "body2": "This website has no accounts and no booking database. Choosing English or Spanish simply opens the matching pages.",
     "body3": "TODO: have a Florida attorney review this page before treating it as a legal privacy policy. No payment forms or mailing-list tools are connected yet.",
     "contact": "Questions: info@vmintegralmassage.com or +1 407-388-4928."
   },
   "reviews": {
-    "eyebrow": "From our clients",
-    "title": "What clients have told us",
-    "source": "Shown on the former homepage via a Google review widget, plus one quote from the About page. Names and wording are preserved; Spanish quotes are translated on this English page."
+    "eyebrow": "Kind words",
+    "title": "From people who’ve been here",
+    "source": "Notes guests left for the studio. Names and wording are theirs."
   },
   "footer": {
-    "blurb": "VM Integral Massage Inc. was founded in 2021 by Maria Victoria Malacre — proof that when you are passionate about your work, your clients’ satisfaction and loyalty are the reward.",
+    "blurb": "Victoria founded VM Integral Massage Inc. in 2021 — a Kissimmee studio for skilled, unhurried therapeutic massage.",
     "services": "Services",
     "contact": "Contact",
     "copyright": "VM Integral Massage Inc.",
@@ -177,12 +219,12 @@
     "label": "TODO"
   },
   "notFound": {
-    "title": "This page is not here",
-    "body": "The address may have changed in the move off WordPress. Try the menu, or book with us directly.",
+    "title": "We can’t find that page",
+    "body": "It may have moved. Try the menu, or message us to book.",
     "home": "Back to home"
   },
   "assistant": {
     "label": "Studio assistant",
-    "placeholder": "A chat assistant for questions about services, prices, hours, and booking will live here later. It is not connected yet."
+    "placeholder": "A chat for questions about services, prices, hours, and booking will live here later. It isn’t connected yet."
   }
 }

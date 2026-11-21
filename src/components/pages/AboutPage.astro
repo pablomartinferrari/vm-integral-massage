@@ -12,22 +12,10 @@ const { locale } = Astro.props;
 const t = copy(locale);
 const aboutQuote = testimonials.find((item) => item.id === 'alvert-escobar');
 const clinic = [
-  { src: '/images/gallery/clinic-lymphatic-01.jpg', alt: t.aboutPage.galleryIntro },
-  { src: '/images/gallery/clinic-lymphatic-02.jpg', alt: t.aboutPage.galleryIntro },
-  {
-    src: '/images/shoulder-massage.jpg',
-    alt:
-      locale === 'es'
-        ? 'Masaje de hombros en la sala de tratamiento'
-        : 'Shoulder massage in the treatment room',
-  },
-  {
-    src: '/images/couples-massage.jpg',
-    alt:
-      locale === 'es'
-        ? 'Masaje para parejas en dos camillas'
-        : 'Couples massage on two treatment tables',
-  },
+  { src: '/images/gallery/clinic-lymphatic-01.jpg', alt: t.alts.clinicLymphatic },
+  { src: '/images/gallery/clinic-lymphatic-02.jpg', alt: t.alts.clinicLymphatic },
+  { src: '/images/shoulder-massage.jpg', alt: t.alts.shoulder },
+  { src: '/images/couples-massage.jpg', alt: t.alts.couples },
 ];
 const results = [
   '/images/results/result-01.jpg',
@@ -61,11 +49,7 @@ const results = [
     <div class="space-y-6">
       <img
         src="/images/wellness-portrait.jpg"
-        alt={
-          locale === 'es'
-            ? 'Invitada en bata relajándose con una bebida caliente'
-            : 'Guest in a robe relaxing with a warm drink'
-        }
+        alt={t.alts.portrait}
         width="900"
         height="700"
         loading="lazy"
@@ -129,11 +113,7 @@ const results = [
         results.map((src, i) => (
           <img
             src={src}
-            alt={
-              locale === 'es'
-                ? `Resultado post operatorio ${i + 1}`
-                : `Post-operative result ${i + 1}`
-            }
+            alt={`${t.alts.result} ${i + 1}`}
             width="700"
             height="700"
             loading="lazy"

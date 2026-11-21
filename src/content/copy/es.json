@@ -2,19 +2,19 @@
   "meta": {
     "siteTitle": "VM Integral Massage | Masajes terapéuticos en Kissimmee, FL",
     "homeTitle": "Masajes terapéuticos en Kissimmee",
-    "homeDescription": "VM Integral Massage ofrece masaje relajante, descontracturante, post operatorio, drenaje linfático, masaje deportivo y recuperación muscular en Kissimmee, Florida. Reserva por WhatsApp, teléfono o correo.",
-    "aboutTitle": "Quiénes somos — Maria Victoria Malacre",
-    "aboutDescription": "VM Integral Massage Inc. fue fundada en 2021 por Maria Victoria Malacre en Kissimmee, Florida. Más de 17 años de experiencia en masajes terapéuticos.",
-    "servicesTitle": "Servicios de masaje terapéutico",
+    "homeDescription": "Masaje relajante, descontracturante, post operatorio, drenaje linfático, masaje deportivo y recuperación muscular en Kissimmee, Florida. Reserva por WhatsApp, teléfono o correo.",
+    "aboutTitle": "Conoce a Victoria | VM Integral Massage",
+    "aboutDescription": "Victoria fundó VM Integral Massage Inc. en 2021 en Kissimmee, Florida. Más de 17 años de experiencia en masajes terapéuticos.",
+    "servicesTitle": "Servicios de masaje en Kissimmee",
     "servicesDescription": "Masaje relajante anti-estrés, descontracturante, post operatorio, drenaje linfático con presoterapia, masaje deportivo y recuperación muscular en Kissimmee, FL.",
-    "pricingTitle": "Precios",
-    "pricingDescription": "Precios de masaje en VM Integral Massage, Kissimmee. Sesiones desde $110, oferta de primera visita a $95, masaje para parejas, paquetes post operatorios y Membresía Premium a $99 al mes.",
-    "contactTitle": "Haz tu cita",
+    "pricingTitle": "Precios de masaje en Kissimmee",
+    "pricingDescription": "Sesiones desde $110, primera visita a $95, masaje para parejas, paquetes post operatorios y Membresía Premium a $99 al mes en VM Integral Massage, Kissimmee.",
+    "contactTitle": "Reserva tu masaje en Kissimmee",
     "contactDescription": "Visita VM Integral Massage en 211 Broadway, Kissimmee, FL 34741. Llama al +1 407-388-4928, WhatsApp, o escribe a info@vmintegralmassage.com.",
-    "journalTitle": "Diario",
+    "journalTitle": "Notas del estudio",
     "journalDescription": "Notas de VM Integral Massage en Kissimmee, Florida.",
     "privacyTitle": "Privacidad",
-    "privacyDescription": "Cómo VM Integral Massage trata la información que compartes al reservar por teléfono, WhatsApp o correo.",
+    "privacyDescription": "Cómo VM Integral Massage usa la información que compartes al reservar por teléfono, WhatsApp o correo.",
     "notFoundTitle": "Página no encontrada",
     "ogLocale": "es_US",
     "ogLocaleAlt": "en_US"
@@ -27,7 +27,7 @@
     "contact": "Contacto",
     "journal": "Diario",
     "privacy": "Privacidad",
-    "bookNow": "Haz tu cita",
+    "bookNow": "Reserva ahora",
     "menu": "Menú",
     "close": "Cerrar menú",
     "skip": "Saltar al contenido",
@@ -40,22 +40,22 @@
     "call": "Llamar",
     "email": "Correo",
     "whatsapp": "WhatsApp",
-    "viewServices": "Ver servicios",
+    "viewServices": "Ver masajes",
     "getDirections": "Cómo llegar",
-    "whatsappPrefill": "Hola, me gustaría reservar un masaje en VM Integral Massage.",
-    "membershipPrefill": "Hola, me gustaría unirme a la Membresía Premium de VM Integral Massage.",
-    "giftCardPrefill": "Hola, me gustaría comprar una tarjeta de regalo en VM Integral Massage."
+    "whatsappPrefill": "Hola, quiero reservar un masaje en VM Integral Massage.",
+    "membershipPrefill": "Hola, quiero unirme a la Membresía Premium de VM Integral Massage.",
+    "giftCardPrefill": "Hola, quiero comprar una tarjeta de regalo en VM Integral Massage."
   },
   "hero": {
     "eyebrow": "Kissimmee, Florida",
-    "title": "El masaje no es un lujo. Es una necesidad.",
-    "lede": "Cuidado terapéutico para el estrés, la recuperación y el post operatorio — en un estudio calmado en Broadway.",
+    "title": "Vuelve a sentirte tú.",
+    "lede": "Masaje terapéutico para el estrés, los músculos cansados y el cuidado post operatorio, en un estudio tranquilo en Broadway.",
     "secondary": "Reserva por WhatsApp, teléfono o correo. Confirmamos tu cita en persona."
   },
   "attention": {
-    "eyebrow": "Masajes terapéuticos",
-    "title": "Tratamientos para el estrés, la recuperación y el post operatorio",
-    "intro": "Seis tratamientos, descritos con las palabras del estudio. Al reservar, pregunta si deseas un tiempo o un paquete que no esté en la lista."
+    "eyebrow": "Nuestros masajes",
+    "title": "Encuentra el masaje ideal para ti",
+    "intro": "Seis tratamientos, cada uno con un propósito claro. Cuando reserves, cuéntanos qué necesitas — incluso si buscas un tiempo o un paquete que no esté en la lista."
   },
   "homeFacts": {
     "studio": "El estudio",
@@ -63,72 +63,80 @@
     "from": "Sesiones desde",
     "offer": "Primera visita"
   },
+  "alts": {
+    "hero": "Masaje de espalda en una sala de tratamiento serena",
+    "clinicLymphatic": "Drenaje linfático con presoterapia en el estudio",
+    "shoulder": "Masaje de hombros en la sala de tratamiento",
+    "couples": "Masaje para parejas en dos camillas",
+    "portrait": "Invitada en bata relajándose con una bebida caliente",
+    "result": "Resultado post operatorio"
+  },
   "aboutPreview": {
-    "eyebrow": "Quiénes somos",
-    "title": "Un estudio nacido del trabajo que Maria Victoria ama",
-    "body": "VM Integral Massage Inc. fue fundada en el año 2021 por Maria Victoria Malacre, siendo prueba de que cuando tu trabajo te apasiona, la satisfacción y la lealtad de tus clientes es tu recompensa.",
+    "eyebrow": "El estudio",
+    "title": "Un espacio pequeño, cuidado de verdad",
+    "body": "Victoria fundó VM Integral Massage Inc. en 2021: un estudio en Kissimmee para quien busca manos expertas, un cuarto en calma y a alguien que escucha.",
     "link": "Conoce nuestra historia"
   },
   "aboutPage": {
-    "eyebrow": "Sepa más sobre",
-    "title": "Quiénes somos",
+    "eyebrow": "Nosotros",
+    "title": "Conoce a Victoria",
     "studio": "VM Integral Massage, INC",
-    "tagline": "Donde puedes relajarte y disfrutar.",
-    "experience": "En VM Integral Massage, contamos con más de 17 años de experiencia en masajes terapéuticos para el tratamiento de diversos dolores corporales. Nuestro enfoque es mejorar la salud, el bienestar físico y la calidad de vida de nuestros clientes.",
-    "commitment": "Nuestro compromiso es brindar un servicio de alta calidad, priorizando al cliente mediante el masaje integral, acompañado del respeto, valor y cuidado que el cliente necesita.",
-    "experts": "Somos también expertos en masajes de drenaje linfático.",
-    "missionTitle": "Nuestra misión",
-    "mission1": "Porque amamos nuestro trabajo, estamos comprometidos con el bienestar de nuestros clientes. Nos tomamos el tiempo para conocer las necesidades individuales y el estado de salud de cada cliente, creando un clima de confianza y una experiencia personalizada enfocada en su salud física y emocional.",
-    "mission2": "Ofrecemos a nuestros clientes terapia de relajación, masajes de drenaje linfático postoperatorio, masajes para terapia de lesiones, etc. En cada servicio, nuestros clientes reciben una atención amable, profesional, personalizada, y de alta calidad.",
-    "mission3": "Las reseñas de nuestros clientes sobre la terapia de masaje y los servicios que brindamos tienen ‘5.0 estrellas’ en Google. Esto es testimonio de satisfacción y prueba de nuestra experiencia, integridad y excelente servicio.",
-    "galleryTitle": "Galería de fotos",
-    "galleryIntro": "Fotografías de la sala de tratamiento, incluido el drenaje linfático con presoterapia.",
+    "tagline": "Un cuarto en calma en Broadway, y un cuidado que no tiene prisa.",
+    "experience": "Victoria fundó VM Integral Massage Inc. en 2021. Tenemos más de 17 años de experiencia en masajes terapéuticos para muchos tipos de dolor corporal. Nuestro enfoque es tu salud, tu bienestar físico y tu calidad de vida.",
+    "commitment": "Tú eres primero: un masaje integral, sin prisa, con el respeto y el cuidado que cada persona necesita.",
+    "experts": "También somos expertas en drenaje linfático.",
+    "missionTitle": "Cómo trabajamos",
+    "mission1": "Amamos este trabajo, por eso le damos tiempo. Conocemos lo que tu cuerpo necesita, creamos confianza y armamos cada visita en torno a tu bienestar físico y emocional.",
+    "mission2": "Eso incluye terapia de relajación, drenaje linfático post operatorio (con la aprobación de tu cirujano), masaje para la recuperación de lesiones y más. En cada servicio te espera una atención amable, profesional y personal.",
+    "mission3": "Quienes nos visitan han dado 5.0 estrellas en Google a nuestra terapia de masaje: un reflejo del cuidado que buscamos dar en cada cita.",
+    "galleryTitle": "El estudio por dentro",
+    "galleryIntro": "Fotos de la sala de tratamiento, incluido el drenaje linfático con presoterapia.",
     "resultsTitle": "Resultados post operatorios",
-    "resultsIntro": "Fotografías de antes y después publicadas en la página Nosotros del sitio anterior. Muestran recuperación post operatoria real; algunas incluyen desnudez clínica con las flores que ya había colocado el estudio.",
-    "resultsNote": "Estas fotos se copiaron de la galería pública de WordPress. En la biblioteca de medios anterior quedan más archivos si más adelante se desea un conjunto mayor."
+    "resultsIntro": "Fotos de antes y después de recuperaciones post operatorias reales. Algunas incluyen desnudez clínica, con las flores que ya había colocado el estudio.",
+    "resultsNote": "Estas fotos provienen de la galería pública del estudio."
   },
   "contactPage": {
-    "eyebrow": "Contáctanos",
-    "title": "Haz tu cita",
-    "lede": "Respondemos por WhatsApp, teléfono o correo, y confirmamos tu visita en persona.",
-    "locationTitle": "Nuestra nueva ubicación",
+    "eyebrow": "Visítanos",
+    "title": "Reserva tu visita",
+    "lede": "WhatsApp, una llamada o un correo: confirmamos tu cita en persona.",
+    "locationTitle": "El estudio",
     "hoursTitle": "Horario",
-    "contactTitle": "Contacto",
-    "bookingNote": "Aún no hay reserva en línea. Elige WhatsApp, una llamada o el correo — las mismas vías con las que los clientes se comunican hoy.",
+    "contactTitle": "Escríbenos",
+    "bookingNote": "Todavía no hay reserva en línea. WhatsApp, una llamada o el correo: las mismas vías con las que los clientes se comunican hoy.",
     "paymentTitle": "Pago y propinas",
     "paymentBody": "Aceptamos Zelle, tarjeta de crédito o débito, y efectivo. Las propinas son bienvenidas."
   },
   "servicesPage": {
-    "eyebrow": "Nuestros servicios",
-    "title": "VM Integral Massage",
-    "lede": "Masajes terapéuticos en el estudio de Kissimmee. Entra a cada servicio para leer la descripción completa.",
-    "detailCta": "Ver detalle",
-    "bookThis": "Reservar este servicio",
+    "eyebrow": "Tratamientos",
+    "title": "Nuestros masajes",
+    "lede": "Entra a cada tratamiento para leer la descripción completa. Las sesiones empiezan en $110.",
+    "detailCta": "Leer más",
+    "bookThis": "Reservar este masaje",
     "priceLabel": "Precio",
     "durationLabel": "Duración",
     "priceTodo": "TODO: el precio no estaba publicado en el sitio anterior",
     "durationTodo": "TODO: la duración de la sesión no estaba publicada en el sitio anterior",
-    "askToBook": "Consúltanos al reservar — confirmamos disponibilidad, duración y precio contigo.",
-    "back": "Todos los servicios"
+    "askToBook": "Consúltanos al reservar: confirmamos disponibilidad, duración y precio contigo.",
+    "back": "Todos los masajes"
   },
   "pricing": {
-    "eyebrow": "Inversión",
+    "eyebrow": "El menú",
     "title": "Precios",
-    "lede": "Un menú claro para el estudio de Kissimmee. Los tiempos de sesión son los mismos para cada masaje que ofrecemos.",
-    "contactForPricing": "Consúltanos por el precio.",
+    "lede": "Los mismos tiempos de sesión para cada masaje que ofrecemos, del relajante al post operatorio.",
+    "contactForPricing": "Pregúntanos el precio al reservar.",
     "from": "Desde",
     "viewMenu": "Ver precios",
     "sessionsEyebrow": "Sesiones",
-    "sessionsTitle": "Por duración",
+    "sessionsTitle": "Tiempos de sesión",
     "sessionsNote": "Estos tiempos aplican al masaje relajante, descontracturante, deportivo, de recuperación muscular, drenaje linfático y post operatorio.",
     "perSession": "Equivale a {amount} por sesión",
     "offerEyebrow": "Clientes nuevos",
     "offerTitle": "Primera visita",
     "offerBadge": "Primera visita",
-    "moreEyebrow": "También ofrecemos",
+    "moreEyebrow": "En pareja",
     "packagesEyebrow": "Recuperación",
     "packagesTitle": "Paquetes post operatorios",
-    "packageNote": "Al reservar, pregunta qué paquete conviene a tu recuperación. Las sesiones post operatorias individuales usan los tiempos de arriba.",
+    "packageNote": "Al reservar, pregunta qué paquete conviene a tu recuperación, y ven con la aprobación de tu cirujano. Las sesiones post operatorias individuales usan los tiempos de arriba.",
     "compareEyebrow": "Miembros",
     "compareTitle": "Tarifa regular y tarifa de miembro",
     "compareCol": "Sesión",
@@ -140,34 +148,68 @@
     "membershipEyebrow": "Membresía",
     "giftCardsEyebrow": "Regalos",
     "giftCardsTitle": "Tarjetas de regalo",
-    "giftCardsBody": "Disponibles en formato digital y físico, a los mismos precios de nuestros servicios. Deben usarse dentro de los 60 días posteriores a la compra.",
+    "giftCardsBody": "Digitales o físicas, a los mismos precios de nuestros servicios. Úsalas dentro de los 60 días posteriores a la compra.",
     "giftCardsCta": "Comprar una tarjeta de regalo",
-    "giftCardsHome": "Las tarjetas de regalo están disponibles en formato digital o físico, a los mismos precios de los servicios, y deben usarse dentro de 60 días.",
+    "giftCardsHome": "Las tarjetas de regalo son digitales o físicas, a los mismos precios de los servicios, y deben usarse dentro de 60 días.",
     "paymentEyebrow": "Pago y propinas",
     "paymentBody": "Aceptamos Zelle, tarjeta de crédito o débito, y efectivo. Las propinas son bienvenidas."
+  },
+  "faq": {
+    "eyebrow": "Preguntas",
+    "title": "Para que sepas",
+    "items": [
+      {
+        "q": "¿Cómo reservo?",
+        "a": "Escríbenos por WhatsApp, llama al +1 407-388-4928 o envía un correo a info@vmintegralmassage.com. Confirmamos tu cita en persona. Todavía no hay reserva en línea."
+      },
+      {
+        "q": "¿Dónde están?",
+        "a": "211 Broadway, Kissimmee, FL 34741. Lunes a viernes, 8:00 a.m. a 7:00 p.m.; sábado, 8:00 a.m. a 2:00 p.m.; domingo cerrado."
+      },
+      {
+        "q": "¿Cuánto cuesta una sesión?",
+        "a": "Las sesiones empiezan en $110 por 60 minutos, $155 por 90 minutos y $200 por 120 minutos. Los clientes nuevos pagan $95 en la primera visita de 60 minutos."
+      },
+      {
+        "q": "¿Hacen masaje post operatorio?",
+        "a": "Sí, con la aprobación de tu cirujano. También hay paquetes de 5 sesiones por $500 ($100 cada una) y de 10 sesiones por $900 ($90 cada una)."
+      },
+      {
+        "q": "¿Qué incluye la Membresía Premium?",
+        "a": "Por $99 al mes incluye un masaje terapéutico de 60 minutos. Las sesiones adicionales de 60 minutos ese mes cuestan $95. Las sesiones no usadas se acumulan hasta por 90 días."
+      },
+      {
+        "q": "¿Puedo comprar una tarjeta de regalo?",
+        "a": "Sí. Hay tarjetas digitales y físicas, a los mismos precios de nuestros servicios, y deben usarse dentro de los 60 días posteriores a la compra."
+      },
+      {
+        "q": "¿Cómo puedo pagar?",
+        "a": "Aceptamos Zelle, tarjeta de crédito o débito, y efectivo. Las propinas son bienvenidas."
+      }
+    ]
   },
   "journalPage": {
     "eyebrow": "Diario",
     "title": "Notas del estudio",
-    "empty": "Todavía no hay artículos publicados. El sitio de WordPress solo tenía la entrada predeterminada “Hello world!”, que no era contenido del estudio, así que no se republica aquí.",
+    "empty": "Aquí vamos a compartir historias, ofertas y consejos de recuperación cuando los tengamos.",
     "todo": "TODO: añade la primera nota del diario cuando tengas una historia, una oferta o un consejo de recuperación para compartir."
   },
   "privacyPage": {
     "eyebrow": "Privacidad",
     "title": "Privacidad",
-    "intro": "VM Integral Massage Inc. es un estudio local de masajes. Esta página describe cómo tratamos la información que eliges enviar al reservar.",
-    "body1": "Las citas se solicitan por WhatsApp, teléfono o correo. Usamos el nombre, teléfono y mensaje que envías solo para responderte y agendar tu atención.",
-    "body2": "Este sitio no incluye cuentas ni una base de datos de reservas. Elegir inglés o español simplemente abre las páginas correspondientes.",
+    "intro": "VM Integral Massage Inc. es un estudio local de masajes. Esta página explica cómo tratamos la información que envías al reservar.",
+    "body1": "Las citas se piden por WhatsApp, teléfono o correo. Usamos el nombre, el teléfono y el mensaje que envías solo para responderte y agendar tu visita.",
+    "body2": "Este sitio no tiene cuentas ni una base de datos de reservas. Elegir inglés o español simplemente abre las páginas correspondientes.",
     "body3": "TODO: pide a un abogado de Florida que revise esta página antes de tratarla como aviso de privacidad legal. Aún no hay formularios de pago ni listas de correo conectados.",
     "contact": "Preguntas: info@vmintegralmassage.com o +1 407-388-4928."
   },
   "reviews": {
-    "eyebrow": "De nuestros clientes",
-    "title": "Lo que nos han dicho los clientes",
-    "source": "Mostradas en la portada anterior mediante un widget de reseñas de Google, más una cita de la página Nosotros. Se conservan nombres y wording; las citas en inglés se traducen en esta página."
+    "eyebrow": "Clientes",
+    "title": "Quienes ya nos visitaron",
+    "source": "Palabras que nos dejaron quienes visitaron el estudio. Los nombres y el texto son de ellas y ellos."
   },
   "footer": {
-    "blurb": "VM Integral Massage Inc. fue fundada en el año 2021 por Maria Victoria Malacre, siendo prueba de que cuando tu trabajo te apasiona, la satisfacción y la lealtad de tus clientes es tu recompensa.",
+    "blurb": "Victoria fundó VM Integral Massage Inc. en 2021: un estudio en Kissimmee para un masaje terapéutico experto, sin prisa.",
     "services": "Servicios",
     "contact": "Contacto",
     "copyright": "VM Integral Massage Inc.",
@@ -177,12 +219,12 @@
     "label": "TODO"
   },
   "notFound": {
-    "title": "Esta página no está aquí",
-    "body": "La dirección puede haber cambiado al salir de WordPress. Prueba el menú, o reserva con nosotros directamente.",
+    "title": "No encontramos esa página",
+    "body": "Puede que se haya movido. Prueba el menú, o escríbenos para reservar.",
     "home": "Volver al inicio"
   },
   "assistant": {
     "label": "Asistente del estudio",
-    "placeholder": "Más adelante vivirá aquí un chat para preguntas sobre servicios, precios, horario y reservas. Todavía no está conectado."
+    "placeholder": "Más adelante habrá un chat para preguntas sobre servicios, precios, horario y reservas. Todavía no está conectado."
   }
 }
