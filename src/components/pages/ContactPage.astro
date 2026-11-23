@@ -58,7 +58,8 @@ const t = copy(locale);
           <PaymentNote locale={locale} />
         </div>
         <div class="mt-6 flex flex-wrap gap-3">
-          <a class="btn btn-primary" href={whatsappUrl(site.whatsapp, t.cta.whatsappPrefill)}>{t.cta.bookWhatsApp}</a>
+          <a class="btn btn-primary" href={site.bookingUrl} target="_blank" rel="noopener noreferrer">{t.cta.bookOnline}</a>
+          <a class="btn btn-ghost" href={whatsappUrl(site.whatsapp, t.cta.whatsappPrefill)}>{t.cta.bookWhatsApp}</a>
           <a class="btn btn-ghost" href={`tel:${site.phoneTel}`}>
             {t.cta.call}
           </a>

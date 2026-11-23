@@ -45,7 +45,7 @@ const saturday = site.hours[1];
       </h1>
       <p class="lede mt-6 max-w-xl text-pretty text-ivory/90">{t.hero.lede}</p>
       <div class="mt-8 flex flex-wrap gap-3">
-        <a class="btn btn-primary" href={whatsappUrl(site.whatsapp, t.cta.whatsappPrefill)}>{t.cta.bookWhatsApp}</a>
+        <a class="btn btn-primary" href={site.bookingUrl} target="_blank" rel="noopener noreferrer">{t.cta.bookOnline}</a>
         <a class="btn btn-secondary" href={tPath(locale, 'services')}>{t.cta.viewServices}</a>
       </div>
     </div>

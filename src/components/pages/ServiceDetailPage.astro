@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import CtaBand from '../CtaBand.astro';
 import FromPrice from '../FromPrice.astro';
 import { copy, site, type Service } from '../../lib/content';
-import { servicePath, tPath, whatsappUrl, type Locale } from '../../lib/i18n';
+import { servicePath, tPath, type Locale } from '../../lib/i18n';
 
 interface Props {
   locale: Locale;
@@ -12,7 +12,7 @@ interface Props {
 const { locale, service } = Astro.props;
 const t = copy(locale);
 const otherLocale: Locale = locale === 'en' ? 'es' : 'en';
-const book = whatsappUrl(site.whatsapp, t.cta.whatsappPrefill);
+const book = site.bookingUrl;
 ---
 
 <Base
@@ -43,7 +43,7 @@ const book = whatsappUrl(site.whatsapp, t.cta.whatsappPrefill);
     <div class="card mt-10 p-6 md:p-8">
       <p class="eyebrow">{t.nav.pricing}</p>
       <FromPrice locale={locale} />
-      <a class="btn btn-primary mt-6" href={book}>
+      <a class="btn btn-primary mt-6" href={book} target="_blank" rel="noopener noreferrer">
         {t.servicesPage.bookThis}
       </a>
     </div>
