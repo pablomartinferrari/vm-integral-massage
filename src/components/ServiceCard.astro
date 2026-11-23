@@ -7,8 +7,9 @@ interface Props {
   locale: Locale;
   service: Service;
   compact?: boolean;
+  showPrice?: boolean;
 }
-const { locale, service, compact = false } = Astro.props;
+const { locale, service, compact = false, showPrice = true } = Astro.props;
 const t = copy(locale);
 ---
 
@@ -34,7 +35,7 @@ const t = copy(locale);
     <p class:list={['mt-3 text-ink-soft', compact ? 'text-base leading-relaxed' : 'leading-relaxed']}>
       {service.summary[locale]}
     </p>
-    <FromPrice locale={locale} />
+    {showPrice && <FromPrice locale={locale} />}
     <p class="mt-5">
       <a class="text-sm font-medium tracking-[0.12em] uppercase text-gold-ink hover:text-gold-deep" href={servicePath(locale, service.slugs)}>
         {t.servicesPage.detailCta} →

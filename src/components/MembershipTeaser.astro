@@ -1,6 +1,6 @@
 ---
 import { copy, site, pricing, formatUsd } from '../lib/content';
-import { tPath, whatsappUrl, type Locale } from '../lib/i18n';
+import { servicesHash, whatsappUrl, type Locale } from '../lib/i18n';
 
 interface Props {
   locale: Locale;
@@ -47,7 +47,7 @@ const highlights = m.benefits.slice(0, 3);
             <a class="btn btn-primary" href={join}>
               {m.cta[locale]}
             </a>
-            <a class="btn btn-secondary" href={`${tPath(locale, 'pricing')}#membership`}>
+            <a class="btn btn-secondary" href={servicesHash(locale, 'membership')}>
               {m.learnMore[locale]}
             </a>
           </div>

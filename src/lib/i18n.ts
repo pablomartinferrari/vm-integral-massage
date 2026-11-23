@@ -6,16 +6,21 @@ export const paths = {
   home: { en: '/', es: '/es' },
   about: { en: '/about', es: '/es/nosotros' },
   services: { en: '/services', es: '/es/servicios' },
-  pricing: { en: '/pricing', es: '/es/precios' },
   contact: { en: '/contact', es: '/es/contacto' },
   journal: { en: '/journal', es: '/es/diario' },
   privacy: { en: '/privacy', es: '/es/privacidad' },
 } as const;
 
 export type PageKey = keyof typeof paths;
+export type ServicesHash = 'pricing' | 'membership' | 'gift-cards';
 
 export function tPath(locale: Locale, page: PageKey): string {
   return paths[page][locale];
+}
+
+/** Anchors on the merged services & pricing page. Old /pricing and /es/precios URLs 301 here via staticwebapp.config.json. */
+export function servicesHash(locale: Locale, hash: ServicesHash): string {
+  return `${tPath(locale, 'services')}#${hash}`;
 }
 
 export function servicePath(locale: Locale, slugs: { en: string; es: string }): string {

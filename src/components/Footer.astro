@@ -1,5 +1,5 @@
 ---
-import { copy, site, services, pricing } from '../lib/content';
+import { copy, site, services } from '../lib/content';
 import { servicePath, tPath, type Locale } from '../lib/i18n';
 
 interface Props {
@@ -66,9 +66,7 @@ const year = new Date().getFullYear();
   <div class="mx-auto mt-12 flex max-w-6xl flex-wrap items-center justify-between gap-3 border-t border-white/10 px-4 pt-6 text-sm text-ivory/65 md:px-6">
     <p>© {year} {t.footer.copyright} · {t.footer.rights}</p>
     <div class="flex gap-4">
-      {pricing.showPrices && (
-        <a class="hover:text-gold" href={tPath(locale, 'pricing')}>{t.nav.pricing}</a>
-      )}
+      <a class="hover:text-gold" href={tPath(locale, 'services')}>{t.nav.services}</a>
       <a class="hover:text-gold" href={tPath(locale, 'journal')}>{t.nav.journal}</a>
       <a class="hover:text-gold" href={tPath(locale, 'privacy')}>{t.nav.privacy}</a>
     </div>

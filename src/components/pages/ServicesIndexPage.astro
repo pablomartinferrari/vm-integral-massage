@@ -1,9 +1,11 @@
 ---
 import Base from '../../layouts/Base.astro';
 import CtaBand from '../CtaBand.astro';
+import MembershipSection from '../MembershipSection.astro';
 import PageHero from '../PageHero.astro';
+import PricingSection from '../PricingSection.astro';
 import ServiceCard from '../ServiceCard.astro';
-import { copy, pricing, services } from '../../lib/content';
+import { copy, services } from '../../lib/content';
 import { tPath, type Locale } from '../../lib/i18n';
 
 interface Props {
@@ -31,23 +33,14 @@ const t = copy(locale);
             {s.anchors.map((anchor) => (
               <div id={anchor} class="scroll-mt-28" />
             ))}
-            <ServiceCard locale={locale} service={s} />
+            <ServiceCard locale={locale} service={s} showPrice={false} />
           </div>
         ))
       }
     </div>
-    {
-      pricing.showPrices ? (
-        <p class="mt-12">
-          <a class="btn btn-ghost" href={tPath(locale, 'pricing')}>
-            {t.pricing.viewMenu}
-          </a>
-        </p>
-      ) : (
-        <p class="mt-12 text-base text-ink-soft">{t.pricing.contactForPricing}</p>
-      )
-    }
   </section>
 
+  <PricingSection locale={locale} />
+  <MembershipSection locale={locale} />
   <CtaBand locale={locale} />
 </Base>
