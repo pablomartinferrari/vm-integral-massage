@@ -2,7 +2,7 @@
   "meta": {
     "siteTitle": "VM Integral Massage | Therapeutic Massage in Kissimmee, FL",
     "homeTitle": "Therapeutic massage in Kissimmee",
-    "homeDescription": "Relaxing, decontracting, post-operative, lymphatic, sports, and muscle-recovery massage in Kissimmee, Florida. Book by WhatsApp, phone, or email.",
+    "homeDescription": "Relaxing, decontracting, post-operative, lymphatic, sports, and muscle-recovery massage in Kissimmee, Florida. Book online through Booksy, or by WhatsApp, phone, or email.",
     "aboutTitle": "About Victoria | VM Integral Massage",
     "aboutDescription": "Victoria founded VM Integral Massage Inc. in 2021 in Kissimmee, Florida. More than 17 years of therapeutic massage experience.",
     "servicesTitle": "Massage services & pricing in Kissimmee",
@@ -10,11 +10,11 @@
     "pricingTitle": "Massage services & pricing in Kissimmee",
     "pricingDescription": "Relaxing anti-stress massage, decontracting massage, post-operative massage, lymphatic drainage with pressotherapy, sports massage, and muscle recovery in Kissimmee, FL. Sessions from $110, a $95 first visit, couples massage, post-operative packages, and Premium Membership at $99 a month.",
     "contactTitle": "Book a massage in Kissimmee",
-    "contactDescription": "Visit VM Integral Massage at 211 Broadway, Kissimmee, FL 34741. Call +1 407-388-4928, WhatsApp, or email info@vmintegralmassage.com.",
+    "contactDescription": "Visit VM Integral Massage at 211 Broadway, Kissimmee, FL 34741. Book online through Booksy, call +1 407-388-4928, WhatsApp, or email info@vmintegralmassage.com.",
     "journalTitle": "Studio notes",
     "journalDescription": "Notes from VM Integral Massage in Kissimmee, Florida.",
     "privacyTitle": "Privacy",
-    "privacyDescription": "How VM Integral Massage uses the information you share when you book by phone, WhatsApp, or email.",
+    "privacyDescription": "How VM Integral Massage uses the information you share when you book online through Booksy, or by phone, WhatsApp, or email.",
     "notFoundTitle": "Page not found",
     "ogLocale": "en_US",
     "ogLocaleAlt": "es_US"
@@ -27,7 +27,7 @@
     "contact": "Contact",
     "journal": "Journal",
     "privacy": "Privacy",
-    "bookNow": "Book now",
+    "bookNow": "Book online",
     "menu": "Menu",
     "close": "Close menu",
     "skip": "Skip to content",
@@ -36,6 +36,7 @@
     "otherLanguage": "Español"
   },
   "cta": {
+    "bookOnline": "Book online",
     "bookWhatsApp": "Book on WhatsApp",
     "call": "Call",
     "email": "Email",
@@ -50,7 +51,7 @@
     "eyebrow": "Kissimmee, Florida",
     "title": "Feel like yourself again.",
     "lede": "Therapeutic massage for stress, sore muscles, and post-operative care — in a calm studio in Kissimmee.",
-    "secondary": "Book by WhatsApp, phone, or email. We’ll confirm your appointment ourselves."
+    "secondary": "Book online through Booksy, or by WhatsApp, phone, or email."
   },
   "attention": {
     "eyebrow": "Our massages",
@@ -98,11 +99,11 @@
   "contactPage": {
     "eyebrow": "Visit us",
     "title": "Book a visit",
-    "lede": "WhatsApp, a phone call, or email — we’ll confirm your appointment ourselves.",
+    "lede": "Book online through Booksy, or by WhatsApp, phone, or email.",
     "locationTitle": "The studio",
     "hoursTitle": "Hours",
     "contactTitle": "Reach us",
-    "bookingNote": "There’s no online checkout yet. WhatsApp, a phone call, or email — the same ways clients reach us today.",
+    "bookingNote": "You can book online through Booksy, or by WhatsApp, phone, or email.",
     "paymentTitle": "Payment & tips",
     "paymentBody": "We accept Zelle, credit or debit card, and cash. Tips are welcome."
   },
@@ -160,7 +161,7 @@
     "items": [
       {
         "q": "How do I book?",
-        "a": "Message us on WhatsApp, call +1 407-388-4928, or email info@vmintegralmassage.com. We’ll confirm your appointment ourselves. There’s no online checkout yet."
+        "a": "You can book online through Booksy, or message us on WhatsApp, call +1 407-388-4928, or email info@vmintegralmassage.com."
       },
       {
         "q": "Where are you?",
@@ -198,7 +199,7 @@
     "eyebrow": "Privacy",
     "title": "Privacy",
     "intro": "VM Integral Massage Inc. is a local massage studio. This page explains how we handle the information you send when you book.",
-    "body1": "Appointments are requested by WhatsApp, phone, or email. We use the name, phone number, and message you send only to answer you and to schedule your visit.",
+    "body1": "You can book online through Booksy, or request an appointment by WhatsApp, phone, or email. We use the name, phone number, and message you send only to answer you and to schedule your visit.",
     "body2": "This website has no accounts and no booking database. Choosing English or Spanish simply opens the matching pages.",
     "body3": "TODO: have a Florida attorney review this page before treating it as a legal privacy policy. No payment forms or mailing-list tools are connected yet.",
     "contact": "Questions: info@vmintegralmassage.com or +1 407-388-4928."

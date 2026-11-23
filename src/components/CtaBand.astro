@@ -25,7 +25,8 @@ const t = copy(locale);
     <h2 class="mt-4 font-serif text-4xl md:text-5xl" style="color: var(--color-ivory)">{heading ?? t.contactPage.title}</h2>
     <p class="mx-auto mt-4 max-w-xl text-ivory/88">{t.hero.secondary}</p>
     <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-      <a class="btn btn-primary" href={whatsappUrl(site.whatsapp, t.cta.whatsappPrefill)}>{t.cta.bookWhatsApp}</a>
+      <a class="btn btn-primary" href={site.bookingUrl} target="_blank" rel="noopener noreferrer">{t.cta.bookOnline}</a>
+      <a class="btn btn-secondary" href={whatsappUrl(site.whatsapp, t.cta.whatsappPrefill)}>{t.cta.bookWhatsApp}</a>
       <a class="btn btn-secondary" href={`tel:${site.phoneTel}`}>
         {t.cta.call} {site.phoneDisplay}
       </a>

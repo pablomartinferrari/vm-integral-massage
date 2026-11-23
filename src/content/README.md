@@ -4,7 +4,7 @@ Non-developers can update copy without touching page layouts.
 
 | File | What it holds |
 | --- | --- |
-| `site.json` | Phone, WhatsApp, email, address, hours, social links |
+| `site.json` | Phone, WhatsApp, email, Booksy booking URL, address, hours, social links |
 | `pricing.json` | `showPrices` flag, session/package amounts, first-visit offer, couples, gift cards, payment methods, and Premium Membership (`price`, `additionalSessionPrice` of $95 for extra 60-minute sessions, benefits). Set `showPrices` to `false` to hide every price. |
 | `services.json` | Service names, descriptions, images, slugs (English and Spanish) |
 | `testimonials.json` | Reviews copied from the previous public website |

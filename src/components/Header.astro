@@ -1,7 +1,6 @@
 ---
 import { copy, site } from '../lib/content';
 import { tPath, type Locale, type PageKey } from '../lib/i18n';
-import { whatsappUrl } from '../lib/i18n';
 
 interface Props {
   locale: Locale;
@@ -16,7 +15,6 @@ const links: { key: PageKey; href: string }[] = [
   { key: 'services', href: tPath(locale, 'services') },
   { key: 'contact', href: tPath(locale, 'contact') },
 ];
-const wa = whatsappUrl(site.whatsapp, t.cta.whatsappPrefill);
 ---
 
 <header class="sticky top-0 z-40 border-b border-white/10 bg-night/95 text-ivory backdrop-blur">
@@ -63,7 +61,12 @@ const wa = whatsappUrl(site.whatsapp, t.cta.whatsappPrefill);
       >
         {t.nav.otherLanguage}
       </a>
-      <a href={wa} class="btn btn-primary hidden !min-h-10 !px-4 !py-2 sm:inline-flex">
+      <a
+        href={site.bookingUrl}
+        class="btn btn-primary hidden !min-h-10 !px-4 !py-2 sm:inline-flex"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {t.nav.bookNow}
       </a>
       <button
@@ -93,7 +96,12 @@ const wa = whatsappUrl(site.whatsapp, t.cta.whatsappPrefill);
         ))
       }
       <a href={tPath(locale, 'journal')} class="min-h-11 py-2 text-ivory/90">{t.nav.journal}</a>
-      <a href={wa} class="btn btn-primary mt-2">
+      <a
+        href={site.bookingUrl}
+        class="btn btn-primary mt-2"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {t.nav.bookNow}
       </a>
     </nav>

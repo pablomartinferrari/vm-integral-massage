@@ -28,13 +28,13 @@ npm run preview -- --host 127.0.0.1 --port 4327
 | `/journal` | `/es/diario` | `/?p=1` (the old “Hello world!” post is not republished) |
 | `/privacy` | `/es/privacidad` | *(new — the previous site had no privacy page)* |
 
-Book-now actions open WhatsApp (`https://wa.me/14073884928`), `tel:+14073884928`, or `mailto:info@vmintegralmassage.com`. The old number **407-388-3128 is not used**.
+Primary book-now actions open the studio’s public Booksy page (`https://booksy.com/en-us/1687378_vm-integral-massage-inc_massage_134766_kissimmee`) in a new tab. WhatsApp (`https://wa.me/14073884928`), `tel:+14073884928`, and `mailto:info@vmintegralmassage.com` remain available as secondary options. The old number **407-388-3128 is not used**.
 
 ## Edit content
 
 Keep facts in JSON so a non-developer (or an assistant) can update text later:
 
-- `src/content/site.json` — address, phone, hours, social
+- `src/content/site.json` — address, phone, hours, Booksy booking URL, social
 - `src/content/pricing.json` — session and package amounts, first-visit offer, couples massage, gift cards, payment methods, Premium Membership, plus `showPrices`. Set that flag to `false` to hide every price and show “Contact us for pricing.”
 - `src/content/services.json` — services, bilingual descriptions, images
 - `src/content/testimonials.json` — reviews copied from the previous public pages

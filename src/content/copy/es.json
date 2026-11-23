@@ -2,7 +2,7 @@
   "meta": {
     "siteTitle": "VM Integral Massage | Masajes terapéuticos en Kissimmee, FL",
     "homeTitle": "Masajes terapéuticos en Kissimmee",
-    "homeDescription": "Masaje relajante, descontracturante, post operatorio, drenaje linfático, masaje deportivo y recuperación muscular en Kissimmee, Florida. Reserva por WhatsApp, teléfono o correo.",
+    "homeDescription": "Masaje relajante, descontracturante, post operatorio, drenaje linfático, masaje deportivo y recuperación muscular en Kissimmee, Florida. Reserva en línea por Booksy, o por WhatsApp, teléfono o correo.",
     "aboutTitle": "Conoce a Victoria | VM Integral Massage",
     "aboutDescription": "Victoria fundó VM Integral Massage Inc. en 2021 en Kissimmee, Florida. Más de 17 años de experiencia en masajes terapéuticos.",
     "servicesTitle": "Servicios y precios de masaje en Kissimmee",
@@ -10,11 +10,11 @@
     "pricingTitle": "Servicios y precios de masaje en Kissimmee",
     "pricingDescription": "Masaje relajante anti-estrés, descontracturante, post operatorio, drenaje linfático con presoterapia, masaje deportivo y recuperación muscular en Kissimmee, FL. Sesiones desde $110, primera visita a $95, masaje para parejas, paquetes post operatorios y Membresía Premium a $99 al mes.",
     "contactTitle": "Reserva tu masaje en Kissimmee",
-    "contactDescription": "Visita VM Integral Massage en 211 Broadway, Kissimmee, FL 34741. Llama al +1 407-388-4928, WhatsApp, o escribe a info@vmintegralmassage.com.",
+    "contactDescription": "Visita VM Integral Massage en 211 Broadway, Kissimmee, FL 34741. Reserva en línea por Booksy, llama al +1 407-388-4928, WhatsApp, o escribe a info@vmintegralmassage.com.",
     "journalTitle": "Notas del estudio",
     "journalDescription": "Notas de VM Integral Massage en Kissimmee, Florida.",
     "privacyTitle": "Privacidad",
-    "privacyDescription": "Cómo VM Integral Massage usa la información que compartes al reservar por teléfono, WhatsApp o correo.",
+    "privacyDescription": "Cómo VM Integral Massage usa la información que compartes al reservar en línea por Booksy, o por teléfono, WhatsApp o correo.",
     "notFoundTitle": "Página no encontrada",
     "ogLocale": "es_US",
     "ogLocaleAlt": "en_US"
@@ -27,7 +27,7 @@
     "contact": "Contacto",
     "journal": "Diario",
     "privacy": "Privacidad",
-    "bookNow": "Reserva ahora",
+    "bookNow": "Reservar en línea",
     "menu": "Menú",
     "close": "Cerrar menú",
     "skip": "Saltar al contenido",
@@ -36,6 +36,7 @@
     "otherLanguage": "English"
   },
   "cta": {
+    "bookOnline": "Reservar en línea",
     "bookWhatsApp": "Reservar por WhatsApp",
     "call": "Llamar",
     "email": "Correo",
@@ -50,7 +51,7 @@
     "eyebrow": "Kissimmee, Florida",
     "title": "Vuelve a sentirte tú.",
     "lede": "Masaje terapéutico para el estrés, los músculos cansados y el cuidado post operatorio, en un estudio tranquilo en Kissimmee.",
-    "secondary": "Reserva por WhatsApp, teléfono o correo. Confirmamos tu cita en persona."
+    "secondary": "Reserva en línea por Booksy, o por WhatsApp, teléfono o correo."
   },
   "attention": {
     "eyebrow": "Nuestros masajes",
@@ -98,11 +99,11 @@
   "contactPage": {
     "eyebrow": "Visítanos",
     "title": "Reserva tu visita",
-    "lede": "WhatsApp, una llamada o un correo: confirmamos tu cita en persona.",
+    "lede": "Reserva en línea por Booksy, o por WhatsApp, teléfono o correo.",
     "locationTitle": "El estudio",
     "hoursTitle": "Horario",
     "contactTitle": "Escríbenos",
-    "bookingNote": "Todavía no hay reserva en línea. WhatsApp, una llamada o el correo: las mismas vías con las que los clientes se comunican hoy.",
+    "bookingNote": "Puedes reservar en línea por Booksy, o por WhatsApp, teléfono o correo.",
     "paymentTitle": "Pago y propinas",
     "paymentBody": "Aceptamos Zelle, tarjeta de crédito o débito, y efectivo. Las propinas son bienvenidas."
   },
@@ -160,7 +161,7 @@
     "items": [
       {
         "q": "¿Cómo reservo?",
-        "a": "Escríbenos por WhatsApp, llama al +1 407-388-4928 o envía un correo a info@vmintegralmassage.com. Confirmamos tu cita en persona. Todavía no hay reserva en línea."
+        "a": "Puedes reservar en línea por Booksy, o escribirnos por WhatsApp, llamar al +1 407-388-4928 o enviar un correo a info@vmintegralmassage.com."
       },
       {
         "q": "¿Dónde están?",
@@ -198,7 +199,7 @@
     "eyebrow": "Privacidad",
     "title": "Privacidad",
     "intro": "VM Integral Massage Inc. es un estudio local de masajes. Esta página explica cómo tratamos la información que envías al reservar.",
-    "body1": "Las citas se piden por WhatsApp, teléfono o correo. Usamos el nombre, el teléfono y el mensaje que envías solo para responderte y agendar tu visita.",
+    "body1": "Puedes reservar en línea por Booksy, o pedir una cita por WhatsApp, teléfono o correo. Usamos el nombre, el teléfono y el mensaje que envías solo para responderte y agendar tu visita.",
     "body2": "Este sitio no tiene cuentas ni una base de datos de reservas. Elegir inglés o español simplemente abre las páginas correspondientes.",
     "body3": "TODO: pide a un abogado de Florida que revise esta página antes de tratarla como aviso de privacidad legal. Aún no hay formularios de pago ni listas de correo conectados.",
     "contact": "Preguntas: info@vmintegralmassage.com o +1 407-388-4928."
