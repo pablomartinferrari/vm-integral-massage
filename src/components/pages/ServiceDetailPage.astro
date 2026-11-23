@@ -2,8 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import CtaBand from '../CtaBand.astro';
 import FromPrice from '../FromPrice.astro';
-import { copy, type Service } from '../../lib/content';
-import { servicePath, tPath, type Locale } from '../../lib/i18n';
+import { copy, site, type Service } from '../../lib/content';
+import { servicePath, tPath, whatsappUrl, type Locale } from '../../lib/i18n';
 
 interface Props {
   locale: Locale;
@@ -12,6 +12,7 @@ interface Props {
 const { locale, service } = Astro.props;
 const t = copy(locale);
 const otherLocale: Locale = locale === 'en' ? 'es' : 'en';
+const book = whatsappUrl(site.whatsapp, t.cta.whatsappPrefill);
 ---
 
 <Base
@@ -23,21 +24,31 @@ const otherLocale: Locale = locale === 'en' ? 'es' : 'en';
   alternatePath={servicePath(otherLocale, service.slugs)}
 >
   <section class="relative overflow-hidden bg-night text-ivory">
-    <img src={service.image} alt={service.name[locale]} class="absolute inset-0 h-full w-full object-cover opacity-40" />
-    <div class="relative mx-auto max-w-4xl px-4 py-20 md:px-6 md:py-28">
-      <p class="text-xs tracking-[0.25em] uppercase text-gold">{service.number} · {t.nav.services}</p>
-      <h1 class="mt-4 font-serif text-5xl md:text-6xl">{service.name[locale]}</h1>
+    <img
+      src={service.image}
+      alt={service.name[locale]}
+      width="1600"
+      height="900"
+      class="absolute inset-0 h-full w-full object-cover opacity-40"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-night via-night/55 to-night/30"></div>
+    <div class="relative mx-auto max-w-4xl px-4 py-20 md:px-6 md:py-24">
+      <p class="eyebrow eyebrow-on-dark">{service.number} · {t.nav.services}</p>
+      <h1 class="mt-4 font-serif text-4xl leading-[1.12] text-ivory md:text-6xl">{service.name[locale]}</h1>
     </div>
   </section>
 
   <article class="mx-auto max-w-3xl px-4 py-16 md:px-6">
-    <p class="whitespace-pre-line text-lg leading-relaxed text-ink-soft">{service.body[locale]}</p>
-    <div class="mt-10 rounded-2xl border border-sand bg-ivory p-6">
-      <p class="text-xs tracking-[0.2em] uppercase text-gold-deep">{t.nav.pricing}</p>
+    <p class="whitespace-pre-line text-lg leading-relaxed text-ink">{service.body[locale]}</p>
+    <div class="card mt-10 p-6 md:p-8">
+      <p class="eyebrow">{t.nav.pricing}</p>
       <FromPrice locale={locale} />
+      <a class="btn btn-primary mt-6" href={book}>
+        {t.servicesPage.bookThis}
+      </a>
     </div>
     <p class="mt-8">
-      <a class="text-sm tracking-[0.14em] uppercase text-gold-deep" href={tPath(locale, 'services')}>
+      <a class="text-sm font-medium tracking-[0.12em] uppercase text-gold-ink hover:text-gold-deep" href={tPath(locale, 'services')}>
         ← {t.servicesPage.back}
       </a>
     </p>

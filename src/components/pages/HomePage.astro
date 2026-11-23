@@ -1,10 +1,11 @@
 ---
 import Base from '../../layouts/Base.astro';
 import CtaBand from '../CtaBand.astro';
-import FromPrice from '../FromPrice.astro';
+import FaqSection from '../FaqSection.astro';
 import MembershipTeaser from '../MembershipTeaser.astro';
-import { copy, site, services, testimonials, pricing } from '../../lib/content';
-import { servicePath, tPath, whatsappUrl, type Locale } from '../../lib/i18n';
+import ServiceCard from '../ServiceCard.astro';
+import { copy, site, services, testimonials, pricing, formatUsd } from '../../lib/content';
+import { tPath, whatsappUrl, type Locale } from '../../lib/i18n';
 
 interface Props {
   locale: Locale;
@@ -12,6 +13,8 @@ interface Props {
 const { locale } = Astro.props;
 const t = copy(locale);
 const featured = testimonials.slice(0, 4);
+const weekday = site.hours[0];
+const saturday = site.hours[1];
 ---
 
 <Base
@@ -22,114 +25,141 @@ const featured = testimonials.slice(0, 4);
   canonicalPath={tPath(locale, 'home')}
   alternatePath={tPath(locale === 'en' ? 'es' : 'en', 'home')}
 >
-  <section class="relative min-h-[88vh] overflow-hidden bg-night text-ivory">
+  <section class="relative min-h-[70vh] overflow-hidden bg-night text-ivory md:min-h-[75vh] lg:min-h-[80vh]">
     <img
       src="/images/hero.jpg"
-      alt={locale === 'es' ? 'Masaje de espalda en una sala de tratamiento serena' : 'Back massage in a calm treatment room'}
+      alt={t.alts.hero}
+      width="1920"
+      height="1280"
       class="absolute inset-0 h-full w-full object-cover object-center"
       fetchpriority="high"
+      decoding="async"
     />
-    <div class="absolute inset-0 bg-gradient-to-r from-night/85 via-night/55 to-night/25"></div>
-    <div class="relative mx-auto flex min-h-[88vh] max-w-6xl flex-col justify-end px-4 pb-16 pt-28 md:px-6 md:pb-24">
-      <p class="text-xs tracking-[0.28em] uppercase text-gold">{t.hero.eyebrow}</p>
-      <h1 class="mt-4 max-w-3xl font-serif text-4xl leading-tight md:text-6xl">{t.hero.title}</h1>
-      <p class="mt-6 max-w-xl text-base text-ivory/80 md:text-lg">{t.hero.lede}</p>
+    <div class="absolute inset-0 bg-gradient-to-r from-night/88 via-night/58 to-night/28"></div>
+    <div
+      class="relative mx-auto flex min-h-[70vh] max-w-6xl flex-col justify-center px-4 py-24 md:min-h-[75vh] md:px-6 lg:min-h-[80vh]"
+    >
+      <p class="eyebrow eyebrow-on-dark">{t.hero.eyebrow}</p>
+      <h1 class="hero-title mt-5 max-w-3xl font-serif text-[2.6rem] leading-[1.12] md:text-6xl lg:text-[4.15rem]">
+        {t.hero.title}
+      </h1>
+      <p class="lede mt-6 max-w-xl text-pretty text-ivory/90">{t.hero.lede}</p>
       <div class="mt-8 flex flex-wrap gap-3">
-        <a
-          class="rounded-full bg-gold px-6 py-3 text-sm tracking-[0.14em] uppercase text-night hover:bg-gold-deep hover:text-cream"
-          href={whatsappUrl(site.whatsapp, t.cta.whatsappPrefill)}>{t.cta.bookWhatsApp}</a
-        >
-        <a
-          class="rounded-full border border-ivory/40 px-6 py-3 text-sm tracking-[0.14em] uppercase hover:border-gold hover:text-gold"
-          href={tPath(locale, 'services')}>{t.cta.viewServices}</a
-        >
+        <a class="btn btn-primary" href={whatsappUrl(site.whatsapp, t.cta.whatsappPrefill)}>{t.cta.bookWhatsApp}</a>
+        <a class="btn btn-secondary" href={tPath(locale, 'services')}>{t.cta.viewServices}</a>
       </div>
     </div>
   </section>
 
-  <section class="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-    <p class="text-xs tracking-[0.25em] uppercase text-gold-deep">{t.attention.eyebrow}</p>
-    <div class="gold-rule mt-4"></div>
-    <h2 class="mt-5 max-w-2xl font-serif text-4xl md:text-5xl">{t.attention.title}</h2>
-    <p class="mt-4 max-w-2xl text-ink-soft">{t.attention.intro}</p>
-    <div class="mt-12 grid gap-8 md:grid-cols-2">
+  <section class="border-b border-sand/80 bg-ivory">
+    <div class="mx-auto grid max-w-6xl gap-6 px-4 py-8 pr-20 sm:grid-cols-2 md:px-6 lg:grid-cols-4 lg:pr-24">
+      <div>
+        <p class="eyebrow">{t.homeFacts.studio}</p>
+        <p class="mt-2 font-serif text-xl text-ink"><a class="underline decoration-sand underline-offset-4 hover:text-gold-deep" data-map-link href={site.mapsUrl} rel="noopener noreferrer">{site.address.full}</a></p>
+      </div>
+      <div>
+        <p class="eyebrow">{t.homeFacts.hours}</p>
+        <p class="mt-2 text-base leading-relaxed text-ink-soft">
+          {locale === 'es' ? weekday.daysEs : weekday.daysEn}
+          {' '}
+          {locale === 'es' ? weekday.displayEs : weekday.displayEn}
+          <br />
+          {locale === 'es' ? saturday.daysEs : saturday.daysEn}
+          {' '}
+          {locale === 'es' ? saturday.displayEs : saturday.displayEn}
+        </p>
+      </div>
+      {
+        pricing.showPrices && (
+          <>
+            <div>
+              <p class="eyebrow">{t.homeFacts.from}</p>
+              <p class="mt-2 font-serif text-3xl tabular-nums text-ink">{formatUsd(pricing.fromPrice)}</p>
+            </div>
+            <div>
+              <p class="eyebrow">{t.homeFacts.offer}</p>
+              <p class="mt-2 font-serif text-3xl tabular-nums text-ink">{formatUsd(pricing.introOffer.price)}</p>
+              <p class="mt-1 text-sm text-ink-soft">{pricing.introOffer.detail[locale]}</p>
+            </div>
+          </>
+        )
+      }
+    </div>
+  </section>
+
+  <section class="section mx-auto max-w-6xl px-4 md:px-6">
+    <div class="grid items-end gap-6 md:grid-cols-[1.1fr_0.9fr]">
+      <div>
+        <p class="eyebrow">{t.attention.eyebrow}</p>
+        <div class="gold-rule mt-4"></div>
+        <h2 class="mt-5 max-w-xl font-serif text-4xl md:text-5xl">{t.attention.title}</h2>
+      </div>
+      <p class="measure text-ink-soft">{t.attention.intro}</p>
+    </div>
+    <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {
         services.map((s) => (
-          <article id={s.anchors[0]} class="group overflow-hidden rounded-3xl border border-sand bg-ivory">
-            <a href={servicePath(locale, s.slugs)} class="block">
-              <img src={s.image} alt={s.name[locale]} class="h-56 w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
-            </a>
-            <div class="p-6 md:p-8">
-              <p class="text-xs tracking-[0.2em] text-gold-deep">{s.number}</p>
-              <h3 class="mt-2 font-serif text-3xl">
-                <a href={servicePath(locale, s.slugs)} class="hover:text-gold-deep">
-                  {s.name[locale]}
-                </a>
-              </h3>
-              <p class="mt-3 text-sm leading-relaxed text-ink-soft">{s.summary[locale]}</p>
-              <FromPrice locale={locale} />
-              <p class="mt-5">
-                <a class="text-sm tracking-[0.12em] uppercase text-gold-deep" href={servicePath(locale, s.slugs)}>
-                  {t.servicesPage.detailCta} →
-                </a>
-              </p>
+          <div class:list={[s.id === 'post-operative' && 'sm:col-span-2 lg:col-span-2']}>
+            <div id={s.anchors[0]} class="scroll-mt-28">
+              <ServiceCard locale={locale} service={s} compact={s.id !== 'post-operative'} />
             </div>
-          </article>
+          </div>
         ))
       }
     </div>
     {
       pricing.showPrices && (
-        <div class="mt-10 max-w-xl space-y-3">
-          <p>
-            <a class="text-sm tracking-[0.14em] uppercase text-gold-deep" href={tPath(locale, 'pricing')}>
-              {t.pricing.viewMenu} →
-            </a>
-          </p>
-          {
-            pricing.giftCards.enabled && (
-              <p class="text-sm leading-relaxed text-ink-soft">
-                {t.pricing.giftCardsHome}{' '}
-                <a class="text-gold-deep" href={whatsappUrl(site.whatsapp, t.cta.giftCardPrefill)}>
-                  {t.pricing.giftCardsCta} →
-                </a>
-              </p>
-            )
-          }
+        <div class="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3">
+          <a class="btn btn-ghost" href={tPath(locale, 'pricing')}>
+            {t.pricing.viewMenu}
+          </a>
+          {pricing.giftCards.enabled && (
+            <p class="max-w-xl text-base leading-relaxed text-ink-soft">
+              {t.pricing.giftCardsHome}{' '}
+              <a class="font-medium text-gold-ink underline decoration-gold/60 underline-offset-4 hover:text-gold-deep" href={whatsappUrl(site.whatsapp, t.cta.giftCardPrefill)}>
+                {t.pricing.giftCardsCta}
+              </a>
+            </p>
+          )}
         </div>
       )
     }
   </section>
 
-  <MembershipTeaser locale={locale} />
-
   <section class="bg-ivory">
-    <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-2 md:px-6 md:py-24">
+    <div class="section mx-auto grid max-w-6xl items-center gap-10 px-4 md:grid-cols-2 md:px-6">
       <img
         src="/images/gallery/clinic-lymphatic-01.jpg"
-        alt={locale === 'es' ? 'Drenaje linfático con presoterapia en el estudio' : 'Lymphatic drainage with pressotherapy in the studio'}
-        class="h-[420px] w-full rounded-3xl object-cover"
+        alt={t.alts.clinicLymphatic}
+        width="900"
+        height="700"
+        loading="lazy"
+        decoding="async"
+        class="h-[380px] w-full rounded-[var(--radius-card)] object-cover shadow-card md:h-[460px]"
       />
       <div>
-        <p class="text-xs tracking-[0.25em] uppercase text-gold-deep">{t.aboutPreview.eyebrow}</p>
-        <h2 class="mt-4 font-serif text-4xl">{t.aboutPreview.title}</h2>
-        <p class="mt-5 leading-relaxed text-ink-soft">{t.aboutPreview.body}</p>
-        <a class="mt-6 inline-block text-sm tracking-[0.14em] uppercase text-gold-deep" href={tPath(locale, 'about')}>
+        <p class="eyebrow">{t.aboutPreview.eyebrow}</p>
+        <div class="gold-rule mt-4"></div>
+        <h2 class="mt-5 font-serif text-4xl md:text-[2.75rem]">{t.aboutPreview.title}</h2>
+        <p class="mt-5 max-w-xl leading-relaxed text-ink-soft">{t.aboutPreview.body}</p>
+        <a class="mt-6 inline-flex text-sm font-medium tracking-[0.12em] uppercase text-gold-ink hover:text-gold-deep" href={tPath(locale, 'about')}>
           {t.aboutPreview.link} →
         </a>
       </div>
     </div>
   </section>
 
-  <section class="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-    <p class="text-xs tracking-[0.25em] uppercase text-gold-deep">{t.reviews.eyebrow}</p>
-    <h2 class="mt-4 font-serif text-4xl">{t.reviews.title}</h2>
-    <p class="mt-3 max-w-2xl text-sm text-ink-soft">{t.reviews.source}</p>
-    <div class="mt-10 grid gap-6 md:grid-cols-2">
+  <MembershipTeaser locale={locale} />
+
+  <section class="section mx-auto max-w-6xl px-4 md:px-6">
+    <p class="eyebrow">{t.reviews.eyebrow}</p>
+    <h2 class="mt-4 max-w-2xl font-serif text-4xl md:text-5xl">{t.reviews.title}</h2>
+    <p class="mt-3 max-w-2xl text-base text-ink-soft">{t.reviews.source}</p>
+    <div class="mt-10 grid gap-5 md:grid-cols-2">
       {
         featured.map((review) => (
-          <blockquote class="rounded-3xl border border-sand bg-cream p-6 md:p-8">
-            <p class="font-serif text-xl leading-relaxed">
+          <blockquote class="card p-6 md:p-8">
+            <p class="font-serif text-xl leading-relaxed text-ink md:text-[1.45rem]">
               “{locale === 'es' ? review.quoteEs : review.quoteEn}”
             </p>
             <footer class="mt-5 text-sm text-ink-soft">
@@ -141,6 +171,8 @@ const featured = testimonials.slice(0, 4);
       }
     </div>
   </section>
+
+  <FaqSection locale={locale} />
 
   <CtaBand locale={locale} heading={t.nav.bookNow} />
 </Base>

@@ -1,9 +1,10 @@
 ---
 import Base from '../../layouts/Base.astro';
 import CtaBand from '../CtaBand.astro';
-import FromPrice from '../FromPrice.astro';
+import PageHero from '../PageHero.astro';
+import ServiceCard from '../ServiceCard.astro';
 import { copy, pricing, services } from '../../lib/content';
-import { servicePath, tPath, type Locale } from '../../lib/i18n';
+import { tPath, type Locale } from '../../lib/i18n';
 
 interface Props {
   locale: Locale;
@@ -20,51 +21,30 @@ const t = copy(locale);
   canonicalPath={tPath(locale, 'services')}
   alternatePath={tPath(locale === 'en' ? 'es' : 'en', 'services')}
 >
-  <section class="bg-night py-16 text-ivory md:py-24">
-    <div class="mx-auto max-w-4xl px-4 md:px-6">
-      <p class="text-xs tracking-[0.25em] uppercase text-gold">{t.servicesPage.eyebrow}</p>
-      <h1 class="mt-4 font-serif text-5xl md:text-6xl">{t.servicesPage.title}</h1>
-      <p class="mt-5 max-w-2xl text-ivory/75">{t.servicesPage.lede}</p>
-    </div>
-  </section>
+  <PageHero eyebrow={t.servicesPage.eyebrow} title={t.servicesPage.title} lede={t.servicesPage.lede} />
 
-  <section class="mx-auto max-w-6xl space-y-16 px-4 py-16 md:px-6 md:py-24">
-    {
-      services.map((s, index) => (
-        <div class="space-y-0">
-        {s.anchors.map((anchor) => <div id={anchor} class="scroll-mt-28" />)}
-        <article
-          class:list={[
-            'grid items-center gap-8 md:grid-cols-2',
-            index % 2 === 1 && 'md:[&>img]:order-last',
-          ]}
-        >
-          <img src={s.image} alt={s.name[locale]} class="h-80 w-full rounded-3xl object-cover" />
+  <section class="section mx-auto max-w-6xl px-4 md:px-6">
+    <div class="grid gap-6 md:grid-cols-2">
+      {
+        services.map((s) => (
           <div>
-            <p class="text-xs tracking-[0.2em] text-gold-deep">{s.number}</p>
-            <h2 class="mt-2 font-serif text-4xl">{s.name[locale]}</h2>
-            <p class="mt-4 whitespace-pre-line leading-relaxed text-ink-soft">{s.body[locale]}</p>
-            <FromPrice locale={locale} />
-            <a
-              class="mt-6 inline-block text-sm tracking-[0.14em] uppercase text-gold-deep"
-              href={servicePath(locale, s.slugs)}
-            >
-              {t.servicesPage.detailCta} →
-            </a>
+            {s.anchors.map((anchor) => (
+              <div id={anchor} class="scroll-mt-28" />
+            ))}
+            <ServiceCard locale={locale} service={s} />
           </div>
-        </article>
-        </div>
-      ))
-    }
+        ))
+      }
+    </div>
     {
       pricing.showPrices ? (
-        <p class="text-sm">
-          <a class="tracking-[0.14em] uppercase text-gold-deep" href={tPath(locale, 'pricing')}>
-            {t.pricing.viewMenu} →
+        <p class="mt-12">
+          <a class="btn btn-ghost" href={tPath(locale, 'pricing')}>
+            {t.pricing.viewMenu}
           </a>
         </p>
       ) : (
-        <p class="text-sm text-ink-soft">{t.pricing.contactForPricing}</p>
+        <p class="mt-12 text-base text-ink-soft">{t.pricing.contactForPricing}</p>
       )
     }
   </section>

@@ -1,4 +1,5 @@
 ---
+import BenefitIcon from './BenefitIcon.astro';
 import { copy, site, pricing, formatUsd } from '../lib/content';
 import { whatsappUrl, type Locale } from '../lib/i18n';
 
@@ -9,56 +10,103 @@ const { locale } = Astro.props;
 const t = copy(locale);
 const m = pricing.membership;
 const join = whatsappUrl(site.whatsapp, t.cta.membershipPrefill);
+const extraPrice = m.additionalSessionPrice;
+const regularPrice = pricing.fromPrice;
 ---
 
 {
   pricing.showPrices && m.enabled && (
-    <section id="membership" class="scroll-mt-24 bg-night py-16 text-ivory md:py-24">
-      <div class="mx-auto max-w-3xl px-4 md:px-6">
-        <p class="text-xs tracking-[0.25em] uppercase text-gold">{t.pricing.membershipEyebrow}</p>
-        <h2 class="mt-3 font-serif text-4xl md:text-5xl">{m.name[locale]}</h2>
-        <p class="mt-3 font-serif text-xl italic text-gold md:text-2xl">{m.tagline[locale]}</p>
-        <p class="mt-8 font-serif text-5xl tabular-nums md:text-6xl">
-          {formatUsd(m.price)}
-          <span class="ml-2 align-middle font-sans text-base tracking-[0.14em] uppercase text-ivory/60">
-            {m.period[locale]}
-          </span>
-        </p>
+    <section id="membership" class="scroll-mt-32 bg-night py-16 text-ivory md:py-24">
+      <div class="mx-auto max-w-6xl px-4 md:px-6">
+        <div class="grid items-end gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+          <div>
+            <p class="eyebrow eyebrow-on-dark">{t.pricing.membershipEyebrow}</p>
+            <h2 class="mt-3 font-serif text-4xl md:text-[3.25rem]" style="color: var(--color-ivory)">{m.name[locale]}</h2>
+            <p class="mt-3 font-serif text-xl italic text-gold md:text-2xl">{m.tagline[locale]}</p>
+          </div>
+          <div class="rounded-[var(--radius-card)] border border-white/10 bg-night-2 p-6 md:p-8">
+            <p class="font-serif text-5xl tabular-nums text-gold md:text-6xl">
+              {formatUsd(m.price)}
+              <span class="ml-2 align-middle font-sans text-sm tracking-[0.14em] uppercase text-ivory/80">
+                {m.period[locale]}
+              </span>
+            </p>
+            <a class="btn btn-primary mt-6" href={join}>
+              {m.cta[locale]}
+            </a>
+          </div>
+        </div>
 
-        <ol class="mt-12 space-y-7">
-          {m.benefits.map((benefit, index) => (
-            <li>
-              <p class="text-xs tracking-[0.2em] uppercase text-gold">
-                {String(index + 1).padStart(2, '0')} · {benefit.title[locale]}
+        <div class="mt-12 overflow-hidden rounded-[var(--radius-card)] border border-white/10">
+          <p class="eyebrow eyebrow-on-dark px-5 pt-5">{t.pricing.compareEyebrow}</p>
+          <h3 class="px-5 pt-2 font-serif text-2xl text-ivory">{t.pricing.compareTitle}</h3>
+          <div class="mt-5 divide-y divide-white/10">
+            <div class="hidden px-5 py-2 text-xs tracking-[0.08em] uppercase text-ivory/65 sm:grid sm:grid-cols-3">
+              <span>{t.pricing.compareCol}</span>
+              <span>{t.pricing.compareGuest}</span>
+              <span class="text-gold">{t.pricing.compareMember}</span>
+            </div>
+            <div class="grid gap-1 px-5 py-4 sm:grid-cols-3 sm:items-baseline">
+              <p class="text-ivory/90">{t.pricing.compareSession}</p>
+              <p class="text-base text-ivory/80">
+                <span class="sm:hidden">{t.pricing.compareGuest}: </span>
+                <span class="tabular-nums">{formatUsd(regularPrice)}</span>
               </p>
-              <p class="mt-2 leading-relaxed text-ivory/80">{benefit.body[locale]}</p>
+              <p class="text-gold">
+                <span class="sm:hidden">{t.pricing.compareMember}: </span>
+                {t.pricing.compareIncluded}
+              </p>
+            </div>
+            <div class="grid gap-1 px-5 py-4 sm:grid-cols-3 sm:items-baseline">
+              <p class="text-ivory/90">{t.pricing.compareExtra}</p>
+              <p class="text-base text-ivory/80">
+                <span class="sm:hidden">{t.pricing.compareGuest}: </span>
+                <span class="tabular-nums">{formatUsd(regularPrice)}</span>
+              </p>
+              <p class="text-gold">
+                <span class="sm:hidden">{t.pricing.compareMember}: </span>
+                <span class="tabular-nums">{formatUsd(extraPrice)}</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <ul class="mt-12 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          {m.benefits.map((benefit) => (
+            <li class="rounded-[var(--radius-card)] border border-white/10 bg-night-2 p-5 md:p-6">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gold/15 text-gold">
+                <BenefitIcon id={benefit.id} />
+              </span>
+              <h3 class="mt-4 font-serif text-2xl text-ivory">{benefit.title[locale]}</h3>
+              <p class="mt-2 text-base leading-relaxed text-ivory/85">{benefit.body[locale]}</p>
               {'items' in benefit && Array.isArray(benefit.items) && benefit.items.length > 0 && (
-                <ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-ivory/70">
-                  {benefit.items.map((item) => (
-                    <li>{item[locale]}</li>
-                  ))}
+                <ul class="mt-3 flex flex-wrap gap-2">
+                  {benefit.items.map((item) =>
+                    item[locale].length < 42 ? (
+                      <li class="rounded-full border border-gold/35 px-3 py-1 text-sm text-ivory/90">{item[locale]}</li>
+                    ) : (
+                      <li class="w-full pt-1 text-sm leading-relaxed text-ivory/80">{item[locale]}</li>
+                    ),
+                  )}
                 </ul>
               )}
             </li>
           ))}
-        </ol>
+        </ul>
 
         <div class="mt-12 flex flex-wrap items-center gap-3">
-          <a
-            class="rounded-full bg-gold px-6 py-3 text-sm tracking-[0.12em] uppercase text-night hover:bg-gold-deep hover:text-cream"
-            href={join}
-          >
+          <a class="btn btn-primary" href={join}>
             {m.cta[locale]}
           </a>
           <a
-            class="rounded-full border border-ivory/30 px-6 py-3 text-sm tracking-[0.12em] uppercase hover:border-gold hover:text-gold"
+            class="btn btn-secondary"
             href={site.social.instagram}
             rel="noopener noreferrer"
           >
             Instagram @vmintegralmassage
           </a>
           <a
-            class="rounded-full border border-ivory/30 px-6 py-3 text-sm tracking-[0.12em] uppercase hover:border-gold hover:text-gold"
+            class="btn btn-secondary"
             href={site.social.facebook}
             rel="noopener noreferrer"
           >

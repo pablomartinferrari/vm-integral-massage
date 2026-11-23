@@ -1,0 +1,25 @@
+---
+interface Props {
+  eyebrow: string;
+  title: string;
+  lede?: string;
+  onDark?: boolean;
+}
+const { eyebrow, title, lede } = Astro.props;
+---
+
+<section class="bg-night text-ivory">
+  <div class="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
+    <p class="eyebrow eyebrow-on-dark">{eyebrow}</p>
+    <div class="gold-rule mt-4 bg-gold"></div>
+    <h1 class="mt-5 max-w-3xl font-serif text-[2.35rem] leading-[1.12] text-ivory md:text-5xl lg:text-[3.35rem]" style="color: var(--color-ivory)">
+      {title}
+    </h1>
+    {
+      lede && (
+        <p class="lede mt-5 max-w-2xl text-pretty text-ivory/88">{lede}</p>
+      )
+    }
+    <slot />
+  </div>
+</section>

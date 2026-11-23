@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import PageHero from '../PageHero.astro';
 import TodoNote from '../TodoNote.astro';
 import { copy } from '../../lib/content';
 import { tPath, type Locale } from '../../lib/i18n';
@@ -19,10 +20,9 @@ const t = copy(locale);
   canonicalPath={tPath(locale, 'journal')}
   alternatePath={tPath(locale === 'en' ? 'es' : 'en', 'journal')}
 >
-  <section class="mx-auto max-w-3xl px-4 py-20 md:px-6">
-    <p class="text-xs tracking-[0.25em] uppercase text-gold-deep">{t.journalPage.eyebrow}</p>
-    <h1 class="mt-4 font-serif text-5xl">{t.journalPage.title}</h1>
-    <p class="mt-6 leading-relaxed text-ink-soft">{t.journalPage.empty}</p>
+  <PageHero eyebrow={t.journalPage.eyebrow} title={t.journalPage.title} />
+  <section class="section mx-auto max-w-3xl px-4 md:px-6">
+    <p class="leading-relaxed text-ink">{t.journalPage.empty}</p>
     <TodoNote text={t.journalPage.todo} />
   </section>
 </Base>

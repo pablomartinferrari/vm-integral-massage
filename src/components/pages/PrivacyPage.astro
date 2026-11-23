@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import PageHero from '../PageHero.astro';
 import TodoNote from '../TodoNote.astro';
 import { copy } from '../../lib/content';
 import { tPath, type Locale } from '../../lib/i18n';
@@ -19,10 +20,9 @@ const t = copy(locale);
   canonicalPath={tPath(locale, 'privacy')}
   alternatePath={tPath(locale === 'en' ? 'es' : 'en', 'privacy')}
 >
-  <section class="mx-auto max-w-3xl px-4 py-20 md:px-6">
-    <p class="text-xs tracking-[0.25em] uppercase text-gold-deep">{t.privacyPage.eyebrow}</p>
-    <h1 class="mt-4 font-serif text-5xl">{t.privacyPage.title}</h1>
-    <div class="mt-8 space-y-5 leading-relaxed text-ink-soft">
+  <PageHero eyebrow={t.privacyPage.eyebrow} title={t.privacyPage.title} />
+  <section class="section mx-auto max-w-3xl px-4 md:px-6">
+    <div class="space-y-5 leading-relaxed text-ink">
       <p>{t.privacyPage.intro}</p>
       <p>{t.privacyPage.body1}</p>
       <p>{t.privacyPage.body2}</p>
