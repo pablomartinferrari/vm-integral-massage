@@ -22,8 +22,7 @@ npm run preview -- --host 127.0.0.1 --port 4327
 | --- | --- | --- |
 | `/` | `/es` | `/` (`page_id=11`) |
 | `/about` | `/es/nosotros` | `/?page_id=239` |
-| `/services` | `/es/servicios` | `/?page_id=467` |
-| `/pricing` | `/es/precios` | *(new — session menu, first-visit offer, couples, packages, Premium Membership; hide with `showPrices` in `src/content/pricing.json`)* |
+| `/services` | `/es/servicios` | `/?page_id=467` — merged services & pricing (session menu, first-visit offer, couples, packages, Premium Membership; hide amounts with `showPrices` in `src/content/pricing.json`). Old `/pricing` and `/es/precios` 301 to `#pricing`. |
 | `/services/relaxing-massage` (and five other service slugs) | `/es/servicios/masaje-relajante` (and Spanish slugs) | Homepage/service hash links such as `#drenajelinfatico` |
 | `/contact` | `/es/contacto` | `/?page_id=647` |
 | `/journal` | `/es/diario` | `/?p=1` (the old “Hello world!” post is not republished) |
@@ -75,7 +74,7 @@ The markup includes `#ai-assistant-root` (`src/components/AssistantSlot.astro`) 
 
 ## Screenshots
 
-Desktop and mobile captures of Home, Services, Pricing, and Contact in English and Spanish are in `screenshots/`.
+Desktop and mobile captures of Home, Services & Pricing, and Contact in English and Spanish are in `screenshots/`.
 
 ## Stack
 

@@ -16,7 +16,8 @@ export default defineConfig({
           es: 'es-US',
         },
       },
-      filter: (page) => !page.includes('/wp-redirect'),
+      filter: (page) =>
+        !page.includes('/wp-redirect') && !page.includes('/pricing') && !page.includes('/precios'),
     }),
   ],
   vite: {

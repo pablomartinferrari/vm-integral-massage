@@ -58,7 +58,17 @@
     },
     {
       "route": "/precios",
-      "redirect": "/es/precios",
+      "redirect": "/es/servicios#pricing",
+      "statusCode": 301
+    },
+    {
+      "route": "/pricing",
+      "redirect": "/services#pricing",
+      "statusCode": 301
+    },
+    {
+      "route": "/es/precios",
+      "redirect": "/es/servicios#pricing",
       "statusCode": 301
     }
   ],

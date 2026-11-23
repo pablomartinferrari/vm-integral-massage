@@ -2,7 +2,7 @@
 
 These are shown on the new site as labeled TODO placeholders. Do not invent replacements until the studio confirms them.
 
-1. **Couples duration** — couples massage is $200. Length was not given, so the pricing page does not state a duration.
+1. **Couples duration** — couples massage is $200. Length was not given, so the services & pricing page does not state a duration.
 2. **Licenses / credentials** — the site named founder Maria Victoria Malacre, founding year 2021, and “more than 17 years of experience.” No license number, NPI, or certification list was published.
 3. **Journal** — the only WordPress post was the default “Hello world!” entry. It is not republished.
 4. **Privacy policy** — there was no privacy page. The new `/privacy` page is a short placeholder for attorney review.

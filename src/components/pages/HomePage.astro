@@ -5,7 +5,7 @@ import FaqSection from '../FaqSection.astro';
 import MembershipTeaser from '../MembershipTeaser.astro';
 import ServiceCard from '../ServiceCard.astro';
 import { copy, site, services, testimonials, pricing, formatUsd } from '../../lib/content';
-import { tPath, whatsappUrl, type Locale } from '../../lib/i18n';
+import { servicesHash, tPath, whatsappUrl, type Locale } from '../../lib/i18n';
 
 interface Props {
   locale: Locale;
@@ -110,7 +110,7 @@ const saturday = site.hours[1];
     {
       pricing.showPrices && (
         <div class="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3">
-          <a class="btn btn-ghost" href={tPath(locale, 'pricing')}>
+          <a class="btn btn-ghost" href={servicesHash(locale, 'pricing')}>
             {t.pricing.viewMenu}
           </a>
           {pricing.giftCards.enabled && (
